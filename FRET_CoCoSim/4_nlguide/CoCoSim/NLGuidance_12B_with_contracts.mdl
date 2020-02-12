@@ -1,6 +1,6 @@
 Model {
-  Name			  "NLGuidance_12B_with_contracts"
-  Version		  10.0
+  Name			  "NLGuidance_12B_with_contracts_tmp"
+  Version		  9.0
   SavedCharacterEncoding  "ISO-8859-1"
   GraphicalInterface {
     NumRootInports	    5
@@ -80,7 +80,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.65"
+    ComputedModelVersion    "1.66"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -88,61 +88,55 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
-    PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
-    IsArchitectureModel	    0
-    IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
     NumExternalFileReferences 7
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/NLG002_NLG003/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/NLG002_NLG003/Compare To Zero"
       SID		      "690:1183:989"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/NLG004/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/NLG004/Compare To Zero"
       SID		      "690:1184:975"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "sldvlib/Verification Utilities/Implies"
-      Path		      "NLGuidance_12B_with_contracts/contract/NLG005/Implies"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/NLG005/Implies"
       SID		      "690:1185:996"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/NLG007/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/NLG007/Compare To Zero"
       SID		      "690:1187:974"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/NLG_001/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/NLG_001/Compare To Zero"
       SID		      "690:1182:977"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/assume Vv not null/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/assume Vv not null/Compare To Zero"
       SID		      "690:1206:974"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
-      Path		      "NLGuidance_12B_with_contracts/contract/assume Xr not null/Compare To Zero"
+      Path		      "NLGuidance_12B_with_contracts_tmp/contract/assume Xr not null/Compare To Zero"
       SID		      "690:1207:974"
       Type		      "LIBRARY_BLOCK"
     }
     OrderedModelArguments   1
   }
-  WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  AnimationPlugin	  "on"
   SLCCPlugin		  "on"
-  NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
   slprops.hdlmdlprops {
     $PropName		    "HDLParams"
@@ -155,7 +149,6 @@ Model {
       PropName		      "mdlProps"
     }
   }
-  EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -185,7 +178,6 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[9]
-	Minimized		"Unset"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -199,79 +191,65 @@ Model {
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [1.135042735042735]
 	  Offset		  [-275.87078313253011, 67.665662650602428]
-	  SceneRectInView	  [-275.87078313253011, 67.665662650602428, 1446.6415662650602, 609.66867469879514]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
-	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "10"
 	  Extents		  [1642.0, 771.0]
 	  ZoomFactor		  [0.75]
 	  Offset		  [0.0, 0.0]
-	  SceneRectInView	  [0.0, 0.0, 2189.3333333333335, 1028.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
-	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "690"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [0.90958904109589034]
 	  Offset		  [-672.605421686747, -188.39156626506025]
-	  SceneRectInView	  [-672.605421686747, -188.39156626506025, 1805.2108433734941, 760.7831325301205]
 	}
 	Object {
 	  $ObjectID		  9
 	  IsActive		  [0]
-	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "690:1182"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [4.5662754459253367]
 	  Offset		  [121.93404391263942, 131.22708526951675]
-	  SceneRectInView	  [121.93404391263942, 131.22708526951675, 359.59284967472115, 151.54582946096653]
 	}
 	Object {
 	  $ObjectID		  10
 	  IsActive		  [0]
-	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "690:1186"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [2.5]
 	  Offset		  [-80.869531249999966, 48.733333333333348]
-	  SceneRectInView	  [-80.869531249999966, 48.733333333333348, 656.8, 276.8]
 	}
 	Object {
 	  $ObjectID		  11
 	  IsActive		  [0]
-	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "690:1184"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [5.2324291467213735]
 	  Offset		  [107.3243784851301, 135.87392541821561]
-	  SceneRectInView	  [107.3243784851301, 135.87392541821561, 313.81218052973981, 132.25214916356879]
 	}
 	Object {
 	  $ObjectID		  12
 	  IsActive		  [0]
-	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "690:1187"
 	  Extents		  [1642.0, 692.0]
 	  ZoomFactor		  [3.0]
 	  Offset		  [17.024739583333314, 102.66666666666667]
-	  SceneRectInView	  [17.024739583333314, 102.66666666666667, 547.33333333333337, 230.66666666666666]
 	}
 	PropName		"EditorsInfo"
       }
@@ -288,21 +266,13 @@ Model {
 	DockPosition		"Right"
 	Width			[640]
 	Height			[480]
-	Minimized		"Unset"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADPvwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAARgAAAz4AAABqAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
       "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAaQAAAC8QAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
-      Array {
-	Type			"Cell"
-	Dimension		0
-	PropName		"PersistedApps"
-      }
-      WindowUuid	      "32c81bfb-f36a-40ff-8be0-c2faa9877f49"
     }
-    BDUuid		    "89485e6f-238c-4fa8-bc05-2b0c66686e13"
   }
   HideAutomaticNames	  on
   Created		  "Mon Apr 20 12:54:35 2015"
@@ -311,16 +281,15 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "hbourbou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Nov 04 15:12:16 2019"
-  RTWModifiedTimeStamp	  494781131
-  ModelVersionFormat	  "1.%<AutoIncrement:65>"
+  LastModifiedDate	  "Tue Feb 11 19:16:36 2020"
+  RTWModifiedTimeStamp	  503349396
+  ModelVersionFormat	  "1.%<AutoIncrement:66>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  on
   ShowPortDataTypes	  off
-  ShowAllPropagatedSignalLabels	off
   PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  on
@@ -335,7 +304,6 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  off
   VariantCondition	  off
-  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
@@ -349,21 +317,12 @@ Model {
   BrowserShowLibraryLinks off
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
-  MultiThreadCoSim	  on
   SimulationMode	  "normal"
-  SILPILModeSetting	  "automated"
-  SILPILSystemUnderTest	  "topmodel"
-  SILPILSimulationModeTopModel "normal"
-  SILPILSimulationModeModelRef "normal"
-  SimTabSimulationMode	  "normal"
-  CodeVerificationMode	  "software-in-the-loop (sil)"
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  off
-  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -375,12 +334,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    14
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "NLGuidance_12B_with_contracts"
+    model_		    "NLGuidance_12B_with_contracts_tmp"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "NLGuidance_12B_with_contracts"
+      Cell		      "NLGuidance_12B_with_contracts_tmp"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -419,7 +378,7 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      15
-      Version		      "19.1.1"
+      Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -427,14 +386,13 @@ Model {
 	Dimension		11
 	Simulink.SolverCC {
 	  $ObjectID		  16
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
 	  StopTime		  "10.0"
 	  AbsTol		  "auto"
-	  AutoScaleAbsTol	  on
 	  FixedStep		  ".02"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
@@ -465,12 +423,10 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
 	  DecoupledContinuousIntegration off
-	  MinimalZcImpactIntegration off
-	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  17
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
@@ -483,7 +439,7 @@ Model {
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
-	  SaveOperatingPoint	  off
+	  SaveCompleteFinalSimState off
 	  SaveFormat		  "Array"
 	  SignalLoggingSaveFormat "ModelDataLogs"
 	  SaveOutput		  on
@@ -512,7 +468,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  18
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    9
@@ -534,7 +490,6 @@ Model {
 	  ConditionallyExecuteInputs on
 	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
-	  GainParamInheritBuiltInType off
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -574,18 +529,10 @@ Model {
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
 	  DifferentSizesBufferReuse off
-	  UseRowMajorAlgorithm	  off
-	  OptimizationLevel	  "level2"
-	  OptimizationPriority	  "Balanced"
-	  OptimizationCustomize	  on
-	  LabelGuidedReuse	  off
-	  MultiThreadedLoops	  off
-	  DenormalBehavior	  "GradualUnderflow"
-	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  19
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -598,7 +545,6 @@ Model {
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
-	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -666,11 +612,9 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
-	  OperatingPointInterfaceChecksumMismatchMsg "warning"
-	  NonCurrentReleaseOperatingPointMsg "error"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
 	  ChecksumConsistencyForSSReuse	"none"
-	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
-	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -701,13 +645,10 @@ Model {
 	  RCSCObservableMsg	  "warning"
 	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
-	  UnderSpecifiedDimensionMsg "none"
-	  DebugExecutionForFMUViaOutOfProcess off
-	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  20
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
@@ -753,11 +694,10 @@ Model {
 	  ProdEqTarget		  on
 	  UseEmbeddedCoderFeatures on
 	  UseSimulinkCoderFeatures on
-	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  21
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
@@ -777,7 +717,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  22
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
@@ -797,7 +737,6 @@ Model {
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
-	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
 	  ModelFunctionsGlobalVisibility "on"
@@ -805,14 +744,11 @@ Model {
 	  EnableRuntimeRecursion  on
 	  MATLABDynamicMemAlloc	  on
 	  MATLABDynamicMemAllocThreshold 65536
-	  CustomCodeFunctionArrayLayout	[]
-	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
-	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  23
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    16
@@ -837,8 +773,6 @@ Model {
 	  Description		  ""
 	  SystemTargetFile	  "grt.tlc"
 	  HardwareBoard		  "None"
-	  ShowCustomHardwareApp	  off
-	  ShowEmbeddedHardwareApp off
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
@@ -863,7 +797,6 @@ Model {
 	  CustomSource		  ""
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
-	  CustomBLASCallback	  ""
 	  CustomLAPACKCallback	  ""
 	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
@@ -878,7 +811,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation "off"
+	  CodeProfilingInstrumentation off
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -901,7 +834,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      24
-	      Version		      "19.1.1"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		28
@@ -976,7 +909,6 @@ Model {
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
-	      BlockCommentType	      "BlockPathComment"
 	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
@@ -986,12 +918,11 @@ Model {
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
 	      ReservedNameArray	      []
-	      EnumMemberNameClash     "error"
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      25
-	      Version		      "19.1.1"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		18
@@ -1026,7 +957,6 @@ Model {
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
-	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
 	      ExistingSharedCode      ""
@@ -1040,7 +970,6 @@ Model {
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
-	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
@@ -1049,9 +978,9 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
-	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
+	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
@@ -1059,7 +988,6 @@ Model {
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
-	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
@@ -1074,11 +1002,6 @@ Model {
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
 	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
 	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
-	      ArrayLayout	      "Column-major"
-	      UnsupportedSFcnMsg      "error"
-	      ERTHeaderFileRootName   "$R$E"
-	      ERTSourceFileRootName   "$R$E"
-	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -1100,7 +1023,7 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  26
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Components		  []
@@ -1141,7 +1064,7 @@ Model {
 	}
 	hdlcoderui.hdlcc {
 	  $ObjectID		  27
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
 	  Components		  []
@@ -1156,7 +1079,7 @@ Model {
 	}
 	Sldv.ConfigComp {
 	  $ObjectID		  28
-	  Version		  "19.1.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Design Verifier Custom Configuration Component"
 	  Components		  []
@@ -1178,12 +1101,10 @@ Model {
 	  DVParameterConstraints  []
 	  DVParameterUseInAnalysis []
 	  DVParametersUseConfig	  off
-	  DVTestgenTarget	  "Model"
 	  DVModelCoverageObjectives "ConditionDecision"
 	  DVTestConditions	  "UseLocalSettings"
 	  DVTestObjectives	  "UseLocalSettings"
 	  DVMaxTestCaseSteps	  10000
-	  DVAllowLegacyTestSuiteOptimization off
 	  DVTestSuiteOptimization "CombinedObjectives (Nonlinear Extended)"
 	  DVPathBasedTestGeneration off
 	  DVPathBasedCustomization ""
@@ -1205,10 +1126,7 @@ Model {
 	  DVDetectOutOfBounds	  off
 	  DVDetectDivisionByZero  on
 	  DVDetectIntegerOverflow on
-	  DVDetectInfNaN	  off
-	  DVDetectSubnormal	  off
 	  DVDesignMinMaxCheck	  off
-	  DVDetectDSMAccessViolations off
 	  DVDetectSFTransConflict on
 	  DVDetectSFStateInconsistency on
 	  DVDetectSFArrayOutOfBounds on
@@ -1227,7 +1145,6 @@ Model {
 	  DVSaveHarnessModel	  off
 	  DVHarnessModelFileName  "$ModelName$_harness"
 	  DVModelReferenceHarness off
-	  DVHarnessSource	  "Signal Builder"
 	  DVSaveSystemTestHarness off
 	  DVSystemTestFileName	  "$ModelName$_harness"
 	  DVSaveReport		  off
@@ -1239,13 +1156,10 @@ Model {
 	  DVEnableObjComposition  off
 	  DVObjectiveComposeSpecFileName "sldv_compose_spec.m"
 	  DVSFcnSupport		  on
-	  DVCodeAnalysisExtraOptions ""
-	  DVReduceRationalApprox  on
+	  DVSFcnExtraOptions	  ""
 	  DVSlTestFileName	  "$ModelName$_test"
 	  DVSlTestHarnessName	  "$ModelName$_sldvharness"
 	  DVSlTestHarnessSource	  "Inport"
-	  DVStrictEnhancedMCDC	  off
-	  DVRebuildModelRepresentation "IfChangeIsDetected"
 	  DVActiveTab		  "0"
 	}
 	PropName		"Components"
@@ -1334,7 +1248,6 @@ Model {
       InitializeStates	      "held"
       PropagateVarSize	      "Only when execution is resumed"
       DisallowConstTsAndPrmTs off
-      ActionPortLabel	      "Action"
     }
     Block {
       BlockType		      Constant
@@ -1469,7 +1382,6 @@ Model {
     Block {
       BlockType		      Math
       Operator		      "exp"
-      SignedPower	      on
       OutputSignalType	      "auto"
       SampleTime	      "-1"
       OutMin		      "[]"
@@ -1579,7 +1491,6 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
-      ScheduleAs	      "Sample time"
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -1598,7 +1509,6 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
-      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
       AllowZeroVariantControls off
@@ -1606,10 +1516,6 @@ Model {
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
-      IsObserver	      off
-      Latency		      "0"
-      AutoFrameSizeCalculation off
-      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
@@ -1656,12 +1562,10 @@ Model {
     }
   }
   System {
-    Name		    "NLGuidance_12B_with_contracts"
+    Name		    "NLGuidance_12B_with_contracts_tmp"
     Location		    [0, 23, 1680, 970]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
-    SetExecutionDomain	    off
-    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1675,7 +1579,6 @@ Model {
     ZoomFactor		    "114"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "718"
-    SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Inport
       Name		      "Xtarg"
@@ -1740,10 +1643,8 @@ Model {
       System {
 	Name			"NLGuidance"
 	Location		[0, 23, 1680, 970]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1755,7 +1656,6 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"75"
-	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Xtarg"
@@ -2142,8 +2042,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2155,7 +2053,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "101"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "r"
@@ -2206,7 +2103,6 @@ Model {
 	      SID		      "341"
 	      Position		      [365, 10, 424, 38]
 	      ZOrder		      224
-	      ActionPortLabel	      "if(u1)"
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -2221,8 +2117,6 @@ Model {
 		Location		[1680, 58, 4240, 1475]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2234,7 +2128,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"150"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "cmd1"
@@ -2249,7 +2142,6 @@ Model {
 		  SID			  "343"
 		  Position		  [300, 10, 359, 38]
 		  ZOrder		  224
-		  ActionPortLabel	  "if(u1)"
 		}
 		Block {
 		  BlockType		  Outport
@@ -2282,8 +2174,6 @@ Model {
 		Location		[0, 0, 1680, 1010]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2295,7 +2185,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"150"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "cmd2"
@@ -2310,7 +2199,6 @@ Model {
 		  SID			  "344"
 		  Position		  [300, 20, 359, 48]
 		  ZOrder		  224
-		  ActionPortLabel	  "else"
 		}
 		Block {
 		  BlockType		  Outport
@@ -2343,8 +2231,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2356,7 +2242,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"144"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "k"
@@ -2924,8 +2809,6 @@ Model {
 		Location		[1680, 58, 4240, 1475]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2937,7 +2820,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"144"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "nk"
@@ -3753,8 +3635,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3766,7 +3646,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -3857,8 +3736,6 @@ Model {
 		Location		[0, 0, 1680, 1010]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3870,7 +3747,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -4402,8 +4278,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4415,7 +4289,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "150"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "r"
@@ -4511,7 +4384,6 @@ Model {
 	      SID		      "342"
 	      Position		      [375, 20, 434, 48]
 	      ZOrder		      224
-	      ActionPortLabel	      "else"
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -4526,8 +4398,6 @@ Model {
 		Location		[0, 0, 1680, 1010]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -4539,7 +4409,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"774"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Xap1"
@@ -4554,7 +4423,6 @@ Model {
 		  SID			  "645"
 		  Position		  [365, 10, 424, 38]
 		  ZOrder		  224
-		  ActionPortLabel	  "else"
 		}
 		Block {
 		  BlockType		  Outport
@@ -4587,8 +4455,6 @@ Model {
 		Location		[1680, 58, 4240, 1475]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -4600,7 +4466,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"774"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Xap1"
@@ -4615,7 +4480,6 @@ Model {
 		  SID			  "521"
 		  Position		  [365, 10, 424, 38]
 		  ZOrder		  224
-		  ActionPortLabel	  "if(u1)"
 		}
 		Block {
 		  BlockType		  Outport
@@ -5208,8 +5072,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5221,7 +5083,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"410"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "A"
@@ -5269,8 +5130,6 @@ Model {
 		    Location		    [0, 23, 1680, 970]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
-		    SetExecutionDomain	    off
-		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5282,7 +5141,6 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "410"
-		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "A1"
@@ -5475,8 +5333,6 @@ Model {
 		    Location		    [0, 23, 1680, 970]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
-		    SetExecutionDomain	    off
-		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5488,7 +5344,6 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "410"
-		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "A1"
@@ -5755,8 +5610,6 @@ Model {
 		Location		[1680, 58, 4240, 1475]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5768,7 +5621,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "r"
@@ -7149,8 +7001,6 @@ Model {
 	    Location		    [1680, 58, 4240, 1475]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7162,7 +7012,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "In"
@@ -7257,8 +7106,6 @@ Model {
 	    Location		    [0, 0, 1680, 1010]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7270,7 +7117,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "420"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "In"
@@ -8013,8 +7859,6 @@ Model {
 	Location		[0, 23, 1680, 970]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -8027,7 +7871,6 @@ Model {
 	ShowPageBoundaries	off
 	ZoomFactor		"91"
 	SIDHighWatermark	"1224"
-	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Xtarg"
@@ -8363,8 +8206,6 @@ Model {
 	    Location		    [1680, 58, 4240, 1475]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8377,7 +8218,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "420"
 	    SIDHighWatermark	    "989"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "yout"
@@ -8420,7 +8260,7 @@ Model {
 	      Ports		      [1, 1]
 	      Position		      [340, 295, 370, 325]
 	      ZOrder		      99
-	      LibraryVersion	      "1.401"
+	      LibraryVersion	      "1.453"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -8500,8 +8340,6 @@ Model {
 		Location		[1680, 58, 4240, 1475]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -8513,7 +8351,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -8766,8 +8603,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8780,7 +8615,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "523"
 	    SIDHighWatermark	    "977"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "yout"
@@ -8926,8 +8760,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8940,7 +8772,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "188"
 	    SIDHighWatermark	    "1005"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "r1"
@@ -9085,8 +8916,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9098,7 +8927,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -9189,8 +9017,6 @@ Model {
 		Location		[0, 0, 1680, 1010]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9202,7 +9028,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -9293,8 +9118,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9306,7 +9129,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -9578,8 +9400,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9592,7 +9412,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "250"
 	    SIDHighWatermark	    "994"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "yout"
@@ -9710,8 +9529,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9723,7 +9540,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -9814,8 +9630,6 @@ Model {
 		Location		[0, 23, 1680, 970]
 		Open			off
 		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9827,7 +9641,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -10078,8 +9891,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10092,7 +9903,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "300"
 	    SIDHighWatermark	    "978"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "yout"
@@ -10262,8 +10072,6 @@ Model {
 	    Location		    [0, 23, 1680, 970]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10276,7 +10084,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "457"
 	    SIDHighWatermark	    "977"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Vv"
@@ -10461,8 +10268,6 @@ Model {
 	    Location		    [1680, 58, 4240, 1475]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10475,7 +10280,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "300"
 	    SIDHighWatermark	    "975"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Vv"
@@ -10606,8 +10410,6 @@ Model {
 	    Location		    [1680, 58, 4240, 1475]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10620,7 +10422,6 @@ Model {
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "300"
 	    SIDHighWatermark	    "975"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Xr"
@@ -11444,8 +11245,8 @@ MatData {
     " $         \"0    @            80 X    X    !@    @    &          4    (     0    $    !          D    (          "
     "     .    T (   8    (     @         %    \"     $    !     0         %  0 \"0    $   !1    26YP;W)T    3W5T<&]R= "
     "  16YA8FQE    5')I9V=E<@  4W1A=&4     3$-O;FX     4D-O;FX     269A8W1I;VX 4F5S970               X   !P    !@    @ "
-    "   &          4    (     0    @    !          D   !         8 %0D$    !@ 5200    & !6)!     8 %<D$    !@ 6\"00    "
-    "& !9)!     8 %HD$    !@ 6R00 X    X    !@    @    &          4    (     0    $    !          D    (        8 %PD$ "
+    "   &          4    (     0    @    !          D   !         0 %0D$    !  5200    $ !6)!     0 %<D$    !  6\"00    "
+    "$ !9)!     0 %HD$    !  6R00 X    X    !@    @    &          4    (     0    $    !          D    (        0 %PD$ "
     ".    ,     8    (    !@         %    \"                0         )          X    P    !@    @    &          4    ("
     "               !          D         #@   #     &    \"     8         !0    @               $         \"0         ."
     "    ,     8    (    !@         %    \"                0         )          X    P    !@    @    &          4    ( "
@@ -11454,49 +11255,49 @@ MatData {
     "   \"0    $    !          4 !  )     0   #8   !4>7!E      !0;W-I=&EO;@!3<F-\";&]C:P!3<F-0;W)T  !$<W1\";&]C:P!$<W10"
     ";W)T      X    P    !@    @    $          4    (     0    $    !         !   0 Q    #@   $     &    \"     8      "
     "   !0    @    !     @    $         \"0   !           -!V0       0&# #@   #@    &    \"     8         !0    @    ! "
-    "    0    $         \"0    @       \"  XB-0 X    X    !@    @    &          4    (     0    $    !          D    ( "
+    "    0    $         \"0    @       \"  8B-0 X    X    !@    @    &          4    (     0    $    !          D    ( "
     "              .    ,     8    (    !@         %    \"                0         )          X    P    !@    @    &  "
     "        4    (               !          D         #@   #     &    \"     0         !0    @    !     0    $        "
     " $  ! #(    .    0     8    (    !@         %    \"     $    \"     0         )    $           T'9         1, .   "
-    " .     8    (    !@         %    \"     $    !     0         )    \"        ( #R(U #@   #@    &    \"     8       "
+    " .     8    (    !@         %    \"     $    !     0         )    \"        ( !R(U #@   #@    &    \"     8       "
     "  !0    @    !     0    $         \"0    @               X    P    !@    @    &          4    (               !   "
     "       D         #@   #     &    \"     8         !0    @               $         \"0         .    ,     8    (   "
     " !          %    \"     $    !     0         0  $ ,P    X   !     !@    @    &          4    (     0    (    !    "
     "      D    0          #0=D        !)0 X    X    !@    @    &          4    (     0    $    !          D    (      "
-    "  @ ,@C4 .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #     &    \""
+    "  @ $@C4 .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #     &    \""
     "     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"                "
     "0         )          X    P    !@    @    $          4    (     0    $    !         !   0 T    #@   $     &    \" "
     "    8         !0    @    !     @    $         \"0   !           -!V0       @&% #@   #@    &    \"     8         !0"
-    "    @    !     0    $         \"0    @       \"  _\"'0 X    X    !@    @    &          4    (     0    $    !     "
+    "    @    !     0    $         \"0    @       \"  ?\"'0 X    X    !@    @    &          4    (     0    $    !     "
     "     D    (               .    ,     8    (    !@         %    \"                0         )          X    P    !@"
     "    @    &          4    (               !          D         #@   #     &    \"     0         !0    @    !     0 "
     "   $         $  ! #4    .    0     8    (    !@         %    \"     $    \"     0         )    $           T'9    "
-    "   # ;$ .    .     8    (    !@         %    \"     $    !     0         )    \"          $&(E #@   #@    &    \" "
+    "   # ;$ .    .     8    (    !@         %    \"     $    !     0         )    \"        ( !&(E #@   #@    &    \" "
     "    8         !0    @    !     0    $         \"0    @               X    P    !@    @    &          4    (       "
     "        !          D         #@   #     &    \"     8         !0    @               $         \"0         .    ,  "
     "   8    (    !          %    \"     $    !     0         0  $ -@    X   !     !@    @    &          4    (     0  "
     "  (    !          D    0          #0=D        !T0 X    X    !@    @    &          4    (     0    $    !          "
-    "D    (          1HB4 .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #"
+    "D    (        @ %HB4 .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #"
     "     &    \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"    "
     "            0         )          X    P    !@    @    $          4    (     0    $    !         !   0 W    #@   $ "
     "    &    \"     8         !0    @    !     @    $         \"0   !           -!V0       H'E #@   #@    &    \"     "
-    "8         !0    @    !     0    $         \"0    @         !%\"+0 X    X    !@    @    &          4    (     0    "
-    "$    !          D    (               .    ,     8    (    !@         %    \"                0         )          X"
-    "    P    !@    @    &          4    (               !          D         #@   #     &    \"     0         !0    @ "
-    "   !     0    $         $  ! #@    .    0     8    (    !@         %    \"     $    \"     0         )    $       "
-    "    T'9       ! ?T .    .     8    (    !@         %    \"     $    !     0         )    \"          $P(Q #@   #@ "
-    "   &    \"     8         !0    @    !     0    $         \"0    @               X    P    !@    @    &          4 "
-    "   (               !          D         #@   #     &    \"     8         !0    @               $         \"0      "
-    "   .    ,     8    (    !          %    \"     $    !     0         0  $ ,0    X   !     !@    @    &          4  "
-    "  (     0    (    !          D    0          #@?T       \"!G0 X    P    !@    @    &          4    (              "
-    " !          D         #@   #     &    \"     8         !0    @               $         \"0         .    .     8   "
-    " (    !@         %    \"     $    !     0         )    \"        ( #$(Y #@   #@    &    \"     8         !0    @  "
-    "  !     0    $         \"0    @               X    P    !@    @    ) @        4    (     0    $    !          (  0"
-    "      #@   #     &    \"     0         !0    @    !    !     $         $  $ &-H87(.    ,     8    (    !          "
-    "%    \"     $    #     0         0  , 86YY  X    X    !@    @    ,          4    (     @    $    !          4    ("
-    "               .    J     8    (     0         %    \"     (    !     0         .    .     8    (     @         % "
-    "   \"     $          0         %  0  0    $         #@   #@    &    \"     (         !0    @    !          $      "
-    "   !0 $  $    !          X   \"(    !@    @    )          4    (     0   %@    !          (   !8      %)30     .  "
-    "  2     8    (     @         %    \"     $    !     0         %  0 !0    $    %    34-/4P     .          "
+    "8         !0    @    !     0    $         \"0    @       \"  5\"+0 X    X    !@    @    &          4    (     0   "
+    " $    !          D    (               .    ,     8    (    !@         %    \"                0         )          "
+    "X    P    !@    @    &          4    (               !          D         #@   #     &    \"     0         !0    @"
+    "    !     0    $         $  ! #@    .    0     8    (    !@         %    \"     $    \"     0         )    $      "
+    "     T'9       ! ?T .    .     8    (    !@         %    \"     $    !     0         )    \"        ( !P(Q #@   #@"
+    "    &    \"     8         !0    @    !     0    $         \"0    @               X    P    !@    @    &          4"
+    "    (               !          D         #@   #     &    \"     8         !0    @               $         \"0     "
+    "    .    ,     8    (    !          %    \"     $    !     0         0  $ ,0    X   !     !@    @    &          4 "
+    "   (     0    (    !          D    0          #@?T       \"!G0 X    P    !@    @    &          4    (             "
+    "  !          D         #@   #     &    \"     8         !0    @               $         \"0         .    .     8  "
+    "  (    !@         %    \"     $    !     0         )    \"        ( !$(Y #@   #@    &    \"     8         !0    @ "
+    "   !     0    $         \"0    @               X    P    !@    @    ) @        4    (     0    $    !          (  "
+    "0      #@   #     &    \"     0         !0    @    !    !     $         $  $ &-H87(.    ,     8    (    !         "
+    " %    \"     $    #     0         0  , 86YY  X    X    !@    @    ,          4    (     @    $    !          4    "
+    "(               .    J     8    (     0         %    \"     (    !     0         .    .     8    (     @         %"
+    "    \"     $          0         %  0  0    $         #@   #@    &    \"     (         !0    @    !          $     "
+    "    !0 $  $    !          X   \"(    !@    @    )          4    (     0   %@    !          (   !8      %)30     . "
+    "   2     8    (     @         %    \"     $    !     0         %  0 !0    $    %    34-/4P     .          "
   }
 }
