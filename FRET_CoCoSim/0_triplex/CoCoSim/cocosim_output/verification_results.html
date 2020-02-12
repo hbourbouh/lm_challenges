@@ -1,0 +1,207 @@
+<!--
+ This file is part of CoCoSim.
+ Copyright (C) 2018  The university of Iowa
+ Author: Mudathir Mahgoub
+-->
+
+<html lang="en">
+<head>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/fa-svg-with-js.css" rel="stylesheet">
+    <script src="js/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            color:#337ab7;
+            text-align: center;
+        }
+        body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Verification Summary</h1>
+<br/>
+<div id="summary"></div>
+<br/>
+<h1>Verification Results</h1>
+<br/>
+<div id="verificationResults"></div>
+<script>
+    $(document).ready(function () {
+
+        var verificationResults = {"analysisResults":{"top":"triplex_12B_with_contracts_PP\/TriplexMonitorNoFail","abstract":"","concrete":"spec351_operator_1509_003,spec334_operator_1507_003,spec326_operator_1506_003,spec309_operator_1505_003,spec292_operator_1504_004,spec284_operator_1503_003,int_to_real,int_to_int32,choose_1176_013,choose1_1211_004,abs_call_1447_004,abs_call1_1462_004,abs_call11_1477_004,TSM_minus_004_1443_004,TSM_minus_003c_1439_003,TSM_minus_003b_1435_004,TSM_minus_003a_1431_005,TSM_minus_002_1427_004,TSM_minus_001_1423_004,Single_minus_BranchC_minus_Fail_1318_004_condExecSS,Single_minus_BranchC_minus_Fail_1318_004,Single_minus_BranchB_minus_Fail_1290_004_condExecSS,Single_minus_BranchB_minus_Fail_1290_004,Single_minus_BranchA_minus_Fail_1262_004_condExecSS,Single_minus_BranchA_minus_Fail_1262_004,Output_1124_004,No_minus_Fail_1146_004_condExecSS,No_minus_Fail_1146_004,Conditions_1035_004,Avg3_1151_004,Avg2_1322_004,Avg2_1294_004,Avg2_1266_004,Actions_13_578,Actions5_6_7_343_578,Actions1_2_309_578,Action8_297_578,Action4_225_578,Action3_170_578,Act8_149_578_condExecSS,Act8_149_578,Act7_130_578_condExecSS,Act7_130_578,Act6_111_578_condExecSS,Act6_111_578,Act5_92_578_condExecSS,Act5_92_578,Act4_67_578_condExecSS,Act4_67_578,Act3_61_578_condExecSS,Act3_61_578,Act2_40_578_condExecSS,Act2_40_578,Act1_20_578_condExecSS,Act1_20_578","assumptions":"(abs_call_1447_004,1)","properties":[{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_004_1443_004[6]","answer":"CEX","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_004","propertyType":"guarantee","counterExample":{"node":{"name":"TriplexMonitorNoFail_7_578","timeSteps":2,"streams":[{"name":"ia","type":"real","enumName":"","class":"input","values":[10181.07600671642,-22129.41305367889],"stringValues":["5090538003358209\/500000000000","-13830883158549306376919723\/625000000000000000000"]},{"name":"ib","type":"real","enumName":"","class":"input","values":[-753.313010776418,-754.313010776418],"stringValues":["-376656505388209\/500000000000","-377156505388209\/500000000000"]},{"name":"ic","type":"real","enumName":"","class":"input","values":[751.313010776418,-18031.66435092877],"stringValues":["375656505388209\/500000000000","-1126979021933048000913\/62500000000000000"]},{"name":"Tlevel","type":"real","enumName":"","class":"input","values":[1504.626021552836,17276.35134015235],"stringValues":["376156505388209\/250000000000","1079771958759521875913\/62500000000000000"]},{"name":"PClimit","type":"int","enumName":"","class":"input","values":[-1,0],"stringValues":["-1","0"]},{"name":"PC","type":"int","enumName":"","class":"output","values":[0,1],"stringValues":["0","1"]},{"name":"FC","type":"int","enumName":"","class":"output","values":[4,4],"stringValues":["4","4"]},{"name":"sel_val","type":"real","enumName":"","class":"output","values":[-1,-9392.988680852593],"stringValues":["-1","-1174123585106574125913\/125000000000000000"]},{"name":"Output","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"Actions(1)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"Conditions","type":"bool","enumName":"","class":"local","values":[1,1],"stringValues":["true","true"]},{"name":"Delay1(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Delay1(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Actions(2)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"Delay1(3)","type":"int","enumName":"","class":"local","values":[0,4],"stringValues":["0","4"]},{"name":"Actions(3)","type":"int","enumName":"","class":"local","values":[4,4],"stringValues":["4","4"]},{"name":"Conditions","type":"bool","enumName":"","class":"local","values":[0,1],"stringValues":["false","true"]},{"name":"Conditions","type":"bool","enumName":"","class":"local","values":[1,0],"stringValues":["true","false"]},{"name":"Conditions","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Conditions","type":"bool","enumName":"","class":"local","values":[1,0],"stringValues":["true","false"]},{"name":"Output","type":"int","enumName":"","class":"local","values":[4,4],"stringValues":["4","4"]},{"name":"Output","type":"real","enumName":"","class":"local","values":[-1,-9392.988680852593],"stringValues":["-1","-1174123585106574125913\/125000000000000000"]}],"nodes":[{"name":"abs_call11_1477_004","timeSteps":2,"streams":[{"name":"abs_x","type":"real","enumName":"","class":"input","values":[9429.76299594,-4097.748702750122],"stringValues":["471488149797\/50000000","-2561092939218826367789723\/625000000000000000000"]},{"name":"abs_y","type":"real","enumName":"","class":"output","values":[9429.76299594,4097.748702750122],"stringValues":["471488149797\/50000000","2561092939218826367789723\/625000000000000000000"]},{"name":"branch_6_IF","type":"real","enumName":"","class":"local","values":[9429.76299594,4097.748702750122],"stringValues":["471488149797\/50000000","2561092939218826367789723\/625000000000000000000"]}]},{"name":"abs_call1_1462_004","timeSteps":2,"streams":[{"name":"abs_x","type":"real","enumName":"","class":"input","values":[-1504.626021552836,17277.35134015235],"stringValues":["-376156505388209\/250000000000","1079834458759521875913\/62500000000000000"]},{"name":"abs_y","type":"real","enumName":"","class":"output","values":[1504.626021552836,17277.35134015235],"stringValues":["376156505388209\/250000000000","1079834458759521875913\/62500000000000000"]},{"name":"branch_6_IF","type":"real","enumName":"","class":"local","values":[1504.626021552836,17277.35134015235],"stringValues":["376156505388209\/250000000000","1079834458759521875913\/62500000000000000"]}]},{"name":"abs_call_1447_004","timeSteps":2,"streams":[{"name":"abs_x","type":"real","enumName":"","class":"input","values":[10934.38901749284,-21375.10004290247],"stringValues":["2733597254373209\/250000000000","-13359437526814045126919723\/625000000000000000000"]},{"name":"abs_y","type":"real","enumName":"","class":"output","values":[10934.38901749284,21375.10004290247],"stringValues":["2733597254373209\/250000000000","13359437526814045126919723\/625000000000000000000"]},{"name":"branch_6_IF","type":"real","enumName":"","class":"local","values":[10934.38901749284,21375.10004290247],"stringValues":["2733597254373209\/250000000000","13359437526814045126919723\/625000000000000000000"]}]},{"name":"Conditions_1035_004","timeSteps":2,"streams":[{"name":"ia","type":"real","enumName":"","class":"input","values":[10181.07600671642,-22129.41305367889],"stringValues":["5090538003358209\/500000000000","-13830883158549306376919723\/625000000000000000000"]},{"name":"ib","type":"real","enumName":"","class":"input","values":[-753.313010776418,-754.313010776418],"stringValues":["-376656505388209\/500000000000","-377156505388209\/500000000000"]},{"name":"ic","type":"real","enumName":"","class":"input","values":[751.313010776418,-18031.66435092877],"stringValues":["375656505388209\/500000000000","-1126979021933048000913\/62500000000000000"]},{"name":"Tlevel","type":"real","enumName":"","class":"input","values":[1504.626021552836,17276.35134015235],"stringValues":["376156505388209\/250000000000","1079771958759521875913\/62500000000000000"]},{"name":"PClimit","type":"int","enumName":"","class":"input","values":[-1,0],"stringValues":["-1","0"]},{"name":"state(1)","type":"int","enumName":"","class":"input","values":[0,0],"stringValues":["0","0"]},{"name":"state(2)","type":"int","enumName":"","class":"input","values":[0,0],"stringValues":["0","0"]},{"name":"state(3)","type":"int","enumName":"","class":"input","values":[0,4],"stringValues":["0","4"]},{"name":"C1","type":"bool","enumName":"","class":"output","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"output","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"output","values":[1,0],"stringValues":["true","false"]},{"name":"C4","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]},{"name":"C5","type":"bool","enumName":"","class":"output","values":[1,0],"stringValues":["true","false"]},{"name":"Abs","type":"real","enumName":"","class":"local","values":[10934.38901749284,21375.10004290247],"stringValues":["2733597254373209\/250000000000","13359437526814045126919723\/625000000000000000000"]},{"name":"Sum","type":"real","enumName":"","class":"local","values":[10934.38901749284,-21375.10004290247],"stringValues":["2733597254373209\/250000000000","-13359437526814045126919723\/625000000000000000000"]},{"name":"Abs1","type":"real","enumName":"","class":"local","values":[1504.626021552836,17277.35134015235],"stringValues":["376156505388209\/250000000000","1079834458759521875913\/62500000000000000"]},{"name":"Sum1","type":"real","enumName":"","class":"local","values":[-1504.626021552836,17277.35134015235],"stringValues":["-376156505388209\/250000000000","1079834458759521875913\/62500000000000000"]},{"name":"Abs2","type":"real","enumName":"","class":"local","values":[9429.76299594,4097.748702750122],"stringValues":["471488149797\/50000000","2561092939218826367789723\/625000000000000000000"]},{"name":"Sum2","type":"real","enumName":"","class":"local","values":[9429.76299594,-4097.748702750122],"stringValues":["471488149797\/50000000","-2561092939218826367789723\/625000000000000000000"]},{"name":"Demux","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]}]},{"name":"Actions_13_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"C4","type":"bool","enumName":"","class":"input","values":[0,0],"stringValues":["false","false"]},{"name":"C5","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"state(1)","type":"int","enumName":"","class":"input","values":[0,0],"stringValues":["0","0"]},{"name":"state(2)","type":"int","enumName":"","class":"input","values":[0,0],"stringValues":["0","0"]},{"name":"state(3)","type":"int","enumName":"","class":"input","values":[0,4],"stringValues":["0","4"]},{"name":"NextState(1)","type":"int","enumName":"","class":"output","values":[0,1],"stringValues":["0","1"]},{"name":"NextState(2)","type":"int","enumName":"","class":"output","values":[0,1],"stringValues":["0","1"]},{"name":"NextState(3)","type":"int","enumName":"","class":"output","values":[4,4],"stringValues":["4","4"]},{"name":"Merge(1)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Actions1_2","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act1(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Actions1_2","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act2(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Action3","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act3(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,1],"stringValues":["false","true"]},{"name":"Action4","type":"bool","enumName":"","class":"local","values":[0,1],"stringValues":["false","true"]},{"name":"Act4(1)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Actions5_6_7","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act5(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[1,0],"stringValues":["true","false"]},{"name":"Actions5_6_7","type":"bool","enumName":"","class":"local","values":[1,0],"stringValues":["true","false"]},{"name":"Act6(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Actions5_6_7","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act7(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Action8","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Act8(1)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Merge(2)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"Act1(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act2(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act3(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act4(2)","type":"int","enumName":"","class":"local","values":[0,1],"stringValues":["0","1"]},{"name":"Act5(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act6(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act7(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act8(2)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Merge(3)","type":"int","enumName":"","class":"local","values":[4,4],"stringValues":["4","4"]},{"name":"Act1(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act2(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act3(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act4(3)","type":"int","enumName":"","class":"local","values":[0,4],"stringValues":["0","4"]},{"name":"Act5(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act6(3)","type":"int","enumName":"","class":"local","values":[4,4],"stringValues":["4","4"]},{"name":"Act7(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"Act8(3)","type":"int","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]}],"nodes":[{"name":"Action8_297_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"A8","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]}]},{"name":"Actions5_6_7_343_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"C5","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"A5","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]},{"name":"A6","type":"bool","enumName":"","class":"output","values":[1,0],"stringValues":["true","false"]},{"name":"A7","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]}]},{"name":"Action4_225_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"C5","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"A4","type":"bool","enumName":"","class":"output","values":[0,1],"stringValues":["false","true"]}]},{"name":"Action3_170_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"A3","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]},{"name":"LogicalOperator12","type":"bool","enumName":"","class":"local","values":[0,1],"stringValues":["false","true"]}]},{"name":"Actions1_2_309_578","timeSteps":2,"streams":[{"name":"C1","type":"bool","enumName":"","class":"input","values":[1,1],"stringValues":["true","true"]},{"name":"C2","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"C3","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"C4","type":"bool","enumName":"","class":"input","values":[0,0],"stringValues":["false","false"]},{"name":"A1","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]},{"name":"A2","type":"bool","enumName":"","class":"output","values":[0,0],"stringValues":["false","false"]},{"name":"LogicalOperator4","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]}]}]},{"name":"Output_1124_004","timeSteps":2,"streams":[{"name":"NextState(1)","type":"int","enumName":"","class":"input","values":[0,1],"stringValues":["0","1"]},{"name":"NextState(2)","type":"int","enumName":"","class":"input","values":[0,1],"stringValues":["0","1"]},{"name":"NextState(3)","type":"int","enumName":"","class":"input","values":[4,4],"stringValues":["4","4"]},{"name":"ia","type":"real","enumName":"","class":"input","values":[10181.07600671642,-22129.41305367889],"stringValues":["5090538003358209\/500000000000","-13830883158549306376919723\/625000000000000000000"]},{"name":"ib","type":"real","enumName":"","class":"input","values":[-753.313010776418,-754.313010776418],"stringValues":["-376656505388209\/500000000000","-377156505388209\/500000000000"]},{"name":"ic","type":"real","enumName":"","class":"input","values":[751.313010776418,-18031.66435092877],"stringValues":["375656505388209\/500000000000","-1126979021933048000913\/62500000000000000"]},{"name":"PC","type":"int","enumName":"","class":"output","values":[0,1],"stringValues":["0","1"]},{"name":"TC","type":"int","enumName":"","class":"output","values":[0,1],"stringValues":["0","1"]},{"name":"FC","type":"int","enumName":"","class":"output","values":[4,4],"stringValues":["4","4"]},{"name":"sel_val","type":"real","enumName":"","class":"output","values":[-1,-9392.988680852593],"stringValues":["-1","-1174123585106574125913\/125000000000000000"]},{"name":"Demux","type":"int","enumName":"","class":"local","values":[4,4],"stringValues":["4","4"]},{"name":"Merge","type":"real","enumName":"","class":"local","values":[-1,-9392.988680852593],"stringValues":["-1","-1174123585106574125913\/125000000000000000"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"No_minus_Fail","type":"real","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[1,1],"stringValues":["true","true"]},{"name":"Single_minus_BranchA_minus_Fail","type":"real","enumName":"","class":"local","values":[-1,-9392.988680852593],"stringValues":["-1","-1174123585106574125913\/125000000000000000"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Single_minus_BranchB_minus_Fail","type":"real","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]},{"name":"If","type":"bool","enumName":"","class":"local","values":[0,0],"stringValues":["false","false"]},{"name":"Single_minus_BranchC_minus_Fail","type":"real","enumName":"","class":"local","values":[0,0],"stringValues":["0","0"]}]},{"name":"spec284_operator_1503_003","timeSteps":2,"streams":[{"name":"A","type":"bool","enumName":"","class":"input","values":[0,1],"stringValues":["false","true"]},{"name":"B","type":"bool","enumName":"","class":"input","values":[0,0],"stringValues":["false","false"]},{"name":"A_equal__equal__gt_B","type":"bool","enumName":"","class":"output","values":[1,0],"stringValues":["true","false"]}]},{"name":"TSM_minus_004_1443_004","timeSteps":2,"streams":[{"name":"In1","type":"bool","enumName":"","class":"input","values":[1,0],"stringValues":["true","false"]},{"name":"guarantee","type":"bool","enumName":"","class":"output","values":[1,0],"stringValues":["true","false"]}]}]}}},{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_002_1427_004[2]","answer":"SAFE","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_002","propertyType":"guarantee"},{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003a_1431_005[3]","answer":"SAFE","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_003a","propertyType":"guarantee"},{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003b_1435_004[4]","answer":"SAFE","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_003b","propertyType":"guarantee"},{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003c_1439_003[5]","answer":"SAFE","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_003c","propertyType":"guarantee"},{"propertyName":"triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_001_1423_004[1]","answer":"SAFE","originPath":"triplex_12B_with_contracts_PP\/triplex_12B_TriplexSignalMonitorSpec\/TSM_minus_001","propertyType":"guarantee"}]},"sampleTime":0.1};
+
+        var modelPath = '/Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/0_triplex/CoCoSim/triplex_12B_with_contracts_PP.slx';
+
+        // make sure analysisResults is an array
+        if (! Array.isArray(verificationResults.analysisResults)){
+            verificationResults.analysisResults = [verificationResults.analysisResults];
+        }
+
+        // group contracts per analysis result
+        var summary = {};
+
+        verificationResults.analysisResults.forEach(function (result, index) {
+            // split subnodes
+            result.subnodes = result.abstract.split(',');
+            result.subnodes = result.subnodes.map(function(node){
+                return node.trim();
+            });
+
+            if(!summary[result.top]){
+                summary[result.top] = {};
+                summary[result.top].analyses = [result];
+                summary[result.top].subnodes = result.subnodes.slice();
+            }
+            else {
+                summary[result.top].analyses.push(result);
+
+                result.subnodes.forEach(function (node){
+                    if(! $.inArray(node, summary[result.top].subnodes)){
+                        summary[result.top].subnodes.push(node);
+                    }
+                });
+            }
+
+            $('#verificationResults').append('<h2>' + result.top + '</h2>');
+
+            if(result.abstract === '') {
+                $('#verificationResults').append('<h3>No abstract</h3>');
+            }
+            else {
+                $('#verificationResults').append('<h3>' + result.abstract + '</h3>');
+            }
+
+            // make sure properties is an array
+            if (! Array.isArray(result.properties)){
+                result.properties = [result.properties];
+            }
+
+            // overall default answer is safe
+            result.answer = 'SAFE';
+
+            var table = $.parseHTML(
+                '<table class="table table-striped">' +
+                '<thead><tr>' +
+                '<th class="text-left">Property</th>' +
+                '<th class="text-left">Answer</th>' +
+                '</tr></thead>' +
+                '</table>');
+
+            var tbody = $.parseHTML('<tbody></tbody>');
+
+            $(table).append(tbody);
+
+            $('#verificationResults').append(table);
+
+            result.properties.forEach(function(property, propertyIndex){
+
+                var row = $.parseHTML('<tr></tr>');
+
+                $(tbody).append(row);
+
+                if(property.answer == 'SAFE'){
+                    $(row).append('<td>' + property.originPath + '  (Type: ' + property.propertyType + ')' + '</td>');
+                    $(row).append('<td><i style="color: green" class="fas fa-check-circle"></i></td>');
+                }
+                else if(property.answer === "CEX"){
+
+                    result.answer = 'CEX';
+
+                    var matlabCommands = 'open(\'' + modelPath + '\');' +
+                        'displayCexHtmlTables(' + (index+1) + ','+ (propertyIndex +1) + ');';
+
+                    $(row).append(
+                        '<td>'+
+                        '<a href="CEX'+(propertyIndex +1)+'.html">' +
+                        property.originPath + '  (Type: ' + property.propertyType + ')' +
+                        '</a>' +
+                        '</td>');
+
+                    $(row).append(
+                        '<td>'+
+                        '<a href="matlab:'+matlabCommands+'">' +
+                        '<i style="color: orangered" class="fas fa-times-circle"></i>' +
+                        '</a>' +
+                        '</td>');
+                }
+                else {
+                    $(row).append('<td>' + property.originPath + '</td>');
+                    $(row).append('<td><i style="color: yellow" class="fas fa-exclamation-circle"></i></td>');
+                    if(property.answer === 'UNKNOWN' && result.answer === 'SAFE'){
+                        result.answer = 'UNKNOWN';
+                    }
+                }
+
+            });
+        });
+
+        console.log(summary);
+
+        Object.keys(summary).forEach(function(key, keyIndex){
+
+            $('#summary').append('<h2> ' + key + ' </h2>');
+
+            var table = $.parseHTML('<table class="table table-striped"></table>');
+            var thead = $.parseHTML('<thead></thead>');
+            var head = $.parseHTML('<tr></tr>');
+
+            $(table).append(thead);
+            $(thead).append(head);
+
+            // remove empty strings
+            summary[key].subnodes = summary[key].subnodes.filter(function (node) {
+                return node != '';
+            });
+
+            // table head
+            summary[key].subnodes.forEach(function (node, nodeIndex){
+                $(head).append('<th class="text-left">'+ node + '</th>');
+            });
+
+            $(head).append('<th class="text-left">Result</th>');
+
+            var tbody = $.parseHTML('<tbody></tbody>');
+            $(table).append(tbody);
+
+            // table rows
+            for(var i = 0 ; i < summary[key].analyses.length; i++) {
+                var row = $.parseHTML('<tr></tr>');
+                var analysis = summary[key].analyses[i];
+
+                for(var j = 0; j < summary[key].subnodes.length; j++) {
+                    var node = summary[key].subnodes[j];
+
+                    if($.inArray(node, analysis.subnodes) > -1){
+                        $(row).append('<td><i class="fas fa-check"></i></td>');
+                    }
+                    else {
+                        $(row).append('<td><i class="fas fa-times"></i></td>');
+                    }
+                }
+
+                var answer =  analysis.answer;
+                if(answer === 'SAFE') {
+                    $(row).append('<td><i style="color: green" class="fas fa-check-circle"></i></td>');
+                }
+                else if(answer === 'CEX') {
+                    $(row).append('<td><i style="color: orangered" class="fas fa-times-circle"></i></td>');
+                }
+                else{
+                    $(row).append('<td><i style="color: yellow" class="fas fa-exclamation-circle"></i></td>');
+                }
+
+                $(tbody).append(row);
+            }
+
+            $('#summary').append(table);
+
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1505 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="7200.000000" bmc_max="0" compositional="true" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System kind2_times has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System cos has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System sin has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Create3x3Matrix_3337_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Euler3Rotation_newline__lpar_Roll_rpar__3335_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Create3x3Matrix_3268_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Euler2Rotation_newline__lpar_Pitch_rpar__3266_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Create3x3Matrix_3199_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Euler1Rotation_newline__lpar_Yaw_rpar__3197_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Compare_newline_ToConstant_3424_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System guarantee_3487_008 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System det_3x3_call_3427_008 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="COORDINATETRANSFORM_newline_EULER321_newline__lpar_INERTIALTOBODY_rpar__3192_008" concrete="sin,kind2_times,guarantee_3487_008,det_3x3_call_3427_008,cos,Euler3Rotation_newline__lpar_Roll_rpar__3335_008,Euler2Rotation_newline__lpar_Pitch_rpar__3266_008,Euler1Rotation_newline__lpar_Yaw_rpar__3197_008,Create3x3Matrix_3337_008,Create3x3Matrix_3268_008,Create3x3Matrix_3199_008,Compare_newline_ToConstant_3424_008" abstract="" assumptions="(det_3x3_call_3427_008,1)"/>
+
+<Log class="warn" source="parse">In bounded model checking: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In 2-induction: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In inductive step: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (int): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In two state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Property name="euler321_I2B_12B_euler321_Spec_3422_008[l251c1].guarantee_3487_008[1]" line="235" column="1" scope="COORDINATETRANSFORM_newline_EULER321_newline__lpar_INERTIALTOBODY_rpar__3192_008">
+  <Runtime unit="sec" timeout="false">0.152</Runtime>
+  <K>0</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="COORDINATETRANSFORM_newline_EULER321_newline__lpar_INERTIALTOBODY_rpar__3192_008">
+      <Stream name="phi_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="theta_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="psi_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="DCM321_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_5" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="DCM321_9" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_1" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__1" type="real" class="local"><Value instant="0">(real 1)</Value>
+      </Stream>
+      <Stream name="Product_1" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__1" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__1" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__4" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__2" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__7" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__3" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__4" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product_2" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__2" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__5" type="real" class="local"><Value instant="0">(real 1)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__8" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__7" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product_3" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__3" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__6" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler2Rotation_newline__lpar_Pitch_rpar__9" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_2" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__2" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__5" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__8" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_3" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__3" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__6" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler3Rotation_newline__lpar_Roll_rpar__9" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_4" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Product_4" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__4" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__5" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__6" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product_5" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product_6" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_5" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Product1_6" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Product1_7" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Product_7" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__7" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__8" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Euler1Rotation_newline__lpar_Yaw_rpar__9" type="real" class="local"><Value instant="0">(real 1)</Value>
+      </Stream>
+      <Stream name="Product_8" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product_9" type="real" class="local"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="Product1_8" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="Product1_9" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Node name="kind2_times" line="284" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="284" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="284" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="281" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="281" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="281" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="275" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="275" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="275" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="278" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="272" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="272" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="272" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="278" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="269" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="269" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="269" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="278" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="283" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="283" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="283" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="280" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="280" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="280" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="274" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="274" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="274" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="277" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="271" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="271" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="271" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="277" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="268" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="268" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="268" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="277" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="282" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="282" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="282" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="279" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="279" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="279" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="273" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="273" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="273" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="276" column="155">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="270" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="270" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="270" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="276" column="85">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="267" column="218">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="267" column="116">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="Euler1Rotation_newline__lpar_Yaw_rpar__3197_008" line="264" column="382">
+        <Stream name="psi_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="R1_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_5" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R1_9" type="real" class="output"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Mux_2" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Mux_1" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_3" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_4" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_5" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_6" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_7" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_8" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_9" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Node name="sin" line="72" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="cos" line="73" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="Create3x3Matrix_3199_008" line="69" column="175">
+          <Stream name="M11_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M12_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M13_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M21_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M22_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M23_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M31_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M32_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M33_1" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="Matrix_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_5" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_9" type="real" class="output"><Value instant="0">(real 1)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Euler2Rotation_newline__lpar_Pitch_rpar__3266_008" line="265" column="400">
+        <Stream name="theta_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="R2_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_5" type="real" class="output"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="R2_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R2_9" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Mux_2" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Mux_1" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_3" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_4" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_5" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_6" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_7" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_8" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_9" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="sin" line="123" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="cos" line="124" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="Create3x3Matrix_3268_008" line="120" column="175">
+          <Stream name="M11_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M12_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M13_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M21_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M22_1" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="M23_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M31_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M32_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M33_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="Matrix_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_5" type="real" class="output"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="Matrix_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_9" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="267" column="14">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="Euler3Rotation_newline__lpar_Roll_rpar__3335_008" line="266" column="391">
+        <Stream name="phi_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="R3_1" type="real" class="output"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="R3_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_5" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="R3_9" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_1" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="Mux_2" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Mux_1" type="real" class="local"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="sincos_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_2" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_3" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_4" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_5" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_6" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_7" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_8" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="Create3x3Matrix_9" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="sin" line="174" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="cos" line="175" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="Create3x3Matrix_3337_008" line="171" column="175">
+          <Stream name="M11_1" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="M12_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M13_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M21_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M22_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M23_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M31_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M32_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="M33_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="Matrix_1" type="real" class="output"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="Matrix_2" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_3" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_4" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_5" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_6" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_7" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_8" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="Matrix_9" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="276" column="15">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="det_3x3_call_3427_008" line="233" column="29">
+        <Stream name="det_3x3_a11_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a21_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a31_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a12_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a22_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a32_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a13_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a23_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="det_3x3_a33_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="det_3x3_det_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Node name="kind2_times" line="209" column="524">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="512">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="446">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="409">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="397">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="336">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="324">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="258">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="221">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="209">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="150">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="138">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="84">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="72">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="35">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="209" column="23">
+          <Stream name="x" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">(real 0)</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Compare_newline_ToConstant_3424_008" line="232" column="43">
+        <Stream name="u_1" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="y_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="guarantee_3487_008" line="234" column="26">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System euler321_I2B_12B_with_contracts_EUL009_PP has no property, skipping verification step.</Log>
+
+
+</Results>

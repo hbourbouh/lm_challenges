@@ -1,0 +1,89 @@
+<!-- 
+ This file is part of CoCoSim.
+ Copyright (C) 2018  The university of Iowa
+ Author: Mudathir Mahgoub 
+-->
+
+<html lang="en">
+
+<head>
+    <script src="../js/jquery.min.js"></script>	
+    <script src="../js/jquery.dataTables.min.js"></script>	
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css"/>
+</head>
+
+<body>
+	<div id="property" class="table-responsive">
+	</div>
+	<br/>
+	<script>		
+
+		$(document).ready(function () {
+
+			var property = {"originPath":"integrator_12B_with_contracts_Req_TUI003v1_PP\/integrator_12B_Tustin_IntegratorSpec\/TUI003v1","tables":[{"columnNames":["Time","0"],"data":[["xin (input)","0"],["T (input)","0"],["TL (input)","-1"],["BL (input)","-1"],["reset (input)","0"],["ic (input)","0"],["yout (output)","-1"],["Saturation Dynamic (local)","-1"],["bounds (local)","-1"],["Switch (local)","0"],["bounds (local)","-1"]],"name":"integrator_12B_with_contracts_Req_TUI003v1_PP\/Tustin Integrator (Limited, Resettable, States)"},{"columnNames":["Time","0"],"data":[["TL (input)","-1"],["BL (input)","-1"],["TLc (output)","-1"],["BLc (output)","-1"],["Switch1 (local)","-1"],["Relational Operator (local)","0"],["Switch2 (local)","-1"]],"name":"integrator_12B_with_contracts_Req_TUI003v1_PP\/Tustin Integrator (Limited, Resettable, States)\/bounds"},{"columnNames":["Time","0"],"data":[["up (input)","-1"],["u (input)","0"],["lo (input)","-1"],["y (output)","-1"],["Switch2 (local)","-1"],["Switch (local)","0"]],"name":"integrator_12B_with_contracts_Req_TUI003v1_PP\/Tustin Integrator (Limited, Resettable, States)\/Saturation Dynamic"},{"columnNames":["Time","0"],"data":[["A (input)","1"],["B (input)","0"],["A ==> B (output)","0"]],"name":"integrator_12B_with_contracts_Req_TUI003v1_PP\/integrator_12B_Tustin_IntegratorSpec\/spec160_operator"},{"columnNames":["Time","0"],"data":[["In1 (input)","0"],["guarantee (output)","0"]],"name":"integrator_12B_with_contracts_Req_TUI003v1_PP\/integrator_12B_Tustin_IntegratorSpec\/TUI003v1"}]};
+
+			$('#property').append('<h1 style="font-weight: bold;">' + property.originPath + '</h1>');
+            if( property.tables.length >= 1) {
+                property.tables.forEach(function (table, index) {
+                    for (var i = 0; i < table.columnNames.length; i++) {
+                        table.columnNames[i] = { title: table.columnNames[i] };
+                    }
+
+                    $('#property').append('<br/>');
+                    $('#property').append('<h2 style="margin-left:10px;">' + property.tables[index].name + '</h2>');
+                    $('#property').append('<table id="table' + index + '" class="display" width="100%"></table>');
+
+                    // handle the cases when there is a single row
+                    if(property.tables[index].data[0].constructor !== Array){
+                        //  DataTable requires data to be a 2 dimensional array
+                        property.tables[index].data = [property.tables[index].data];
+                    }
+
+                    $('#table' + index).DataTable({
+                        data: property.tables[index].data,
+                        columns: property.tables[index].columnNames,
+                        "paging": false,
+                        "ordering": false,
+                        "searching": false,
+                        "info": false,
+                        "columnDefs": [
+                            { className: "dt-left", targets: '_all'}
+                        ]
+                    });
+                });
+            }else{
+                    var table = property.tables;
+                    var index = 1;
+                    for (var i = 0; i < table.columnNames.length; i++) {
+                        table.columnNames[i] = { title: table.columnNames[i] };
+                    }
+
+                    $('#property').append('<br/>');
+                    $('#property').append('<h2 style="margin-left:10px;">' + property.tables.name + '</h2>');
+                    $('#property').append('<table id="table' + index + '" class="display" width="100%"></table>');
+
+					// handle the cases when there is a single row
+					if(property.tables.data[0].constructor !== Array){
+						//  DataTable requires data to be a 2 dimensional array
+						property.tables.data = [property.tables.data];
+					}
+
+                    $('#table' + index).DataTable({
+                        data: property.tables.data,
+                        columns: property.tables.columnNames,
+                        "paging": false,
+                        "ordering": false,
+                        "searching": false,
+                        "info": false,
+                        "columnDefs": [
+                            { className: "dt-left", targets: '_all'}
+                        ]
+                    });
+            }
+		});
+
+
+	</script>
+</body>
+
+</html>

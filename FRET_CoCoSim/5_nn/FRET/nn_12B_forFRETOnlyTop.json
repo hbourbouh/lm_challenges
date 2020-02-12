@@ -1,0 +1,53 @@
+[
+  {
+    "id": "nn_12B/x",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "x",
+    "portType": "Inport",
+    "component_name": "nn_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "nn_12B/y",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "y",
+    "portType": "Inport",
+    "component_name": "nn_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "nn_12B/z",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "z",
+    "portType": "Outport",
+    "component_name": "nn_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  }
+]

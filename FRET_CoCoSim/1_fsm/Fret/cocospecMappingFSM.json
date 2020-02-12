@@ -1,0 +1,30 @@
+{
+  "FSMSpec": {
+    "contract_name": "FSMSpec",
+    "model_path": "fsm_12B",
+    "Inputs": [
+      {
+        "variable_name": "apfail",
+        "variable_path": "fsm_12B/apfail"
+      },
+      {
+        "variable_name": "limits",
+        "variable_path": "fsm_12B/limits"
+      },
+      {
+        "variable_name": "standby",
+        "variable_path": "fsm_12B/standby"
+      },
+      {
+        "variable_name": "supported",
+        "variable_path": "fsm_12B/supported"
+      }
+    ],
+    "Outputs": [
+      {
+        "variable_name": "pullup",
+        "variable_path": "fsm_12B/pullup"
+      }
+    ]
+  }
+}

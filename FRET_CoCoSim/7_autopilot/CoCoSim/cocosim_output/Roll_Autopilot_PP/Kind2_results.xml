@@ -1,0 +1,1631 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="7200.000000" bmc_max="0" compositional="true" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System latch_1412_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System RollReference_1402_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System kind2_times has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="_floor" concrete="" abstract="" assumptions="(kind2_times,1)"/>
+
+<Property name="guarantee[l66c1][1]" line="66" column="1" scope="_floor"><Runtime unit="sec" timeout="false">0.034</Runtime><Answer source="ic3">valid</Answer></Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System kind2_divide has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System anglediff_1356_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System HeadingMode_1343_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System _min_real has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System _max_real has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Saturation_192_100 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System ResetIntegratorInternal_1270_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System RateLimit_188_100 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System DispLimit_182_100 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System CmdLimit_1_100 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System BasicRollMode_1247_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_001_3094_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_003A_3098_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_003B_3106_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_003C_3110_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_003D_3118_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AP_minus_007_3122_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System H_call_3146_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System H_call1_3176_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System H_call11_3220_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call_3275_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call1_3300_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call11_3343_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call111_3368_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call1111_3392_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call11111_3420_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call111111_3445_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call1111111_3494_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SI_call11111111_3541_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_11_operator_3738_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_99_operator_4150_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_87_operator_4113_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_82_operator_4087_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_77_operator_4052_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_6_operator_4033_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_62_operator_4011_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_57_operator_3993_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_48_operator_3970_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_36_operator_3949_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_31_operator_3935_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_26_operator_3911_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_148_operator_3823_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_136_operator_3805_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_131_operator_3787_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_127_operator_3754_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_112_operator_3722_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System xxRollAutopilotSpec_107_operator_3700_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec252_operator_3676_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec206_operator_3661_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System roll_hold_mode_require_3654_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System roll_hold_mode_ensure_3648_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System hdg_hold_mode_require_3619_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System hdg_hold_mode_ensure_3614_001 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Roll_Autopilot_1232_002" concrete="xxRollAutopilotSpec_99_operator_4150_001,xxRollAutopilotSpec_87_operator_4113_001,xxRollAutopilotSpec_82_operator_4087_001,xxRollAutopilotSpec_77_operator_4052_001,xxRollAutopilotSpec_6_operator_4033_001,xxRollAutopilotSpec_62_operator_4011_001,xxRollAutopilotSpec_57_operator_3993_001,xxRollAutopilotSpec_48_operator_3970_001,xxRollAutopilotSpec_36_operator_3949_001,xxRollAutopilotSpec_31_operator_3935_001,xxRollAutopilotSpec_26_operator_3911_001,xxRollAutopilotSpec_148_operator_3823_001,xxRollAutopilotSpec_136_operator_3805_001,xxRollAutopilotSpec_131_operator_3787_001,xxRollAutopilotSpec_127_operator_3754_001,xxRollAutopilotSpec_11_operator_3738_001,xxRollAutopilotSpec_112_operator_3722_001,xxRollAutopilotSpec_107_operator_3700_001,spec252_operator_3676_001,spec206_operator_3661_001,roll_hold_mode_require_3654_001,roll_hold_mode_ensure_3648_001,kind2_times,hdg_hold_mode_require_3619_001,hdg_hold_mode_ensure_3614_001,SI_call_3275_002,SI_call1_3300_002,SI_call11_3343_002,SI_call111_3368_002,SI_call1111_3392_002,SI_call11111_3420_003,SI_call111111_3445_002,SI_call1111111_3494_002,SI_call11111111_3541_002,H_call_3146_002,H_call1_3176_002,H_call11_3220_002,AP_minus_007_3122_002,AP_minus_003D_3118_002,AP_minus_003C_3110_002,AP_minus_003B_3106_002,AP_minus_003A_3098_002,AP_minus_001_3094_002" abstract="" assumptions="(hdg_hold_mode_ensure_3614_001,1)"/>
+
+<Log class="warn" source="parse">In bounded model checking: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In 2-induction: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In inductive step: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002._one_mode_active" line="872" column="2" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.098</Runtime>
+  <K>0</K>
+  <Answer source="bmc" comment="contract has non-exhaustive modes">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+        </ActiveModes>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="AilCmd_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="HdgMode_cmd_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Stream name="phiCmd_1" type="real" class="output"><Value instant="0">(real 0)</Value>
+      </Stream>
+      <Node name="roll_hold_mode_require_3654_001" line="877" column="39">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="require_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="hdg_hold_mode_require_3619_001" line="870" column="38">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="require_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Log class="warn" source="parse">In one state invariant generator (int): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In two state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (real): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+
+<AnalysisStop/>
+
+
+
+<AnalysisStart top="Roll_Autopilot_1232_002" concrete="xxRollAutopilotSpec_99_operator_4150_001,xxRollAutopilotSpec_87_operator_4113_001,xxRollAutopilotSpec_82_operator_4087_001,xxRollAutopilotSpec_77_operator_4052_001,xxRollAutopilotSpec_6_operator_4033_001,xxRollAutopilotSpec_62_operator_4011_001,xxRollAutopilotSpec_57_operator_3993_001,xxRollAutopilotSpec_48_operator_3970_001,xxRollAutopilotSpec_36_operator_3949_001,xxRollAutopilotSpec_31_operator_3935_001,xxRollAutopilotSpec_26_operator_3911_001,xxRollAutopilotSpec_148_operator_3823_001,xxRollAutopilotSpec_136_operator_3805_001,xxRollAutopilotSpec_131_operator_3787_001,xxRollAutopilotSpec_127_operator_3754_001,xxRollAutopilotSpec_11_operator_3738_001,xxRollAutopilotSpec_112_operator_3722_001,xxRollAutopilotSpec_107_operator_3700_001,spec252_operator_3676_001,spec206_operator_3661_001,roll_hold_mode_require_3654_001,roll_hold_mode_ensure_3648_001,latch_1412_002,kind2_times,kind2_divide,hdg_hold_mode_require_3619_001,hdg_hold_mode_ensure_3614_001,anglediff_1356_002,_min_real,_max_real,Saturation_192_100,SI_call_3275_002,SI_call1_3300_002,SI_call11_3343_002,SI_call111_3368_002,SI_call1111_3392_002,SI_call11111_3420_003,SI_call111111_3445_002,SI_call1111111_3494_002,SI_call11111111_3541_002,RollReference_1402_002,ResetIntegratorInternal_1270_002,RateLimit_188_100,HeadingMode_1343_002,H_call_3146_002,H_call1_3176_002,H_call11_3220_002,DispLimit_182_100,CmdLimit_1_100,BasicRollMode_1247_002,AP_minus_007_3122_002,AP_minus_003D_3118_002,AP_minus_003C_3110_002,AP_minus_003B_3106_002,AP_minus_003A_3098_002,AP_minus_001_3094_002" abstract="_floor" assumptions="(hdg_hold_mode_ensure_3614_001,1)"/>
+
+<Log class="warn" source="parse">In bounded model checking: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In inductive step: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="fatal" source="parse">
+  Caught IC3.UnsupportedFeature("Disabling IC3: Yices 2 does not support unsat-cores with non-linear models.") in property directed reachability. Backtrace:
+  Raised at file "format.ml" (inlined), line 242, characters 35-52 Called from file "format.ml", line 469, characters 8-33 Called from file "format.ml", line 484, characters 6-24
+</Log>
+<Log class="warn" source="parse">In 2-induction: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">Disabling IC3: Yices 2 does not support unsat-cores with non-linear models.</Log>
+<Log class="warn" source="parse">In one state invariant generator (int): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In two state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (real): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003B_3106_002[3]" line="815" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.830</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <ActiveModes instant="1">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>hdg_hold_mode_3594_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 5)</Value><Value instant="1">(real -83)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">-335/3</Value><Value instant="1">-2125/16</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real 39)</Value><Value instant="1">(real 6)</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">(real 4)</Value><Value instant="1">19/2</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">73/48</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real 4)</Value><Value instant="1">(real 20)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real 4)</Value><Value instant="1">(real 20)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">4</Value><Value instant="1">20</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_57_operator_3993_001" line="893" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_62_operator_4011_001" line="894" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call111_3368_002" line="832" column="27">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11_3343_002" line="831" column="26">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_77_operator_4052_001" line="896" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 5)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real 4)</Value><Value instant="1">(real 20)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real 4)</Value><Value instant="1">(real 20)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">4</Value><Value instant="1">20</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">4</Value><Value instant="1">20</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">(real -83)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="xxRollAutopilotSpec_82_operator_4087_001" line="897" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_87_operator_4113_001" line="898" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call111111_3445_002" line="835" column="30">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_99_operator_4150_001" line="899" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call1_3176_002" line="827" column="24">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003B_3106_002" line="814" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003A_3098_002[2]" line="813" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.830</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <ActiveModes instant="1">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">-335/3</Value><Value instant="1">(real 0)</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real -166)</Value><Value instant="1">8/3</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">(real 22)</Value><Value instant="1">(real 384)</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">-4343/48</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real 19)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 19)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">19</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_6_operator_4033_001" line="895" column="47">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_11_operator_3738_001" line="883" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1_3300_002" line="830" column="25">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call_3275_002" line="829" column="24">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_26_operator_3911_001" line="889" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real 19)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 19)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">19</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">19</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="864" column="13">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real -17)</Value><Value instant="1">(real 83)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">17</Value><Value instant="1">83</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">17</Value><Value instant="1">83</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_31_operator_3935_001" line="890" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_36_operator_3949_001" line="891" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1111111_3494_002" line="836" column="31">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_48_operator_3970_001" line="892" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call_3146_002" line="826" column="23">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003A_3098_002" line="812" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003C_3110_002[4]" line="817" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.830</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>hdg_hold_mode_3594_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <ActiveModes instant="1">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">-335/3</Value><Value instant="1">(real 0)</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real -155)</Value><Value instant="1">8/3</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">(real 22)</Value><Value instant="1">(real 384)</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">-4343/48</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real 22)</Value><Value instant="1">(real 19)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real 22)</Value><Value instant="1">(real 19)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">22</Value><Value instant="1">19</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_107_operator_3700_001" line="881" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_112_operator_3722_001" line="882" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11111_3420_003" line="834" column="29">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1111_3392_002" line="833" column="28">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_127_operator_3754_001" line="884" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="881" column="173">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="881" column="161">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real -1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 30)</Value><Value instant="1">(real -30)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real 22)</Value><Value instant="1">(real 19)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real 22)</Value><Value instant="1">(real 19)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">22</Value><Value instant="1">19</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">22</Value><Value instant="1">19</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="864" column="13">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 17)</Value><Value instant="1">(real -83)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real -17)</Value><Value instant="1">(real 83)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">17</Value><Value instant="1">83</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">17</Value><Value instant="1">83</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_131_operator_3787_001" line="885" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_136_operator_3805_001" line="886" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11111111_3541_002" line="837" column="32">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_148_operator_3823_001" line="887" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call11_3220_002" line="828" column="25">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003C_3110_002" line="816" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].hdg_hold_mode_ensure_3614_001[1]" line="867" column="2" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">1.131</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].roll_hold_mode_ensure_3648_001[1]" line="874" column="2" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">1.131</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_001_3094_002[1]" line="811" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">1.131</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003D_3118_002[5]" line="819" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">1.131</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_007_3122_002[6]" line="821" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">1.131</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+
+
+<AnalysisStart top="Roll_Autopilot_1232_002" concrete="xxRollAutopilotSpec_99_operator_4150_001,xxRollAutopilotSpec_87_operator_4113_001,xxRollAutopilotSpec_82_operator_4087_001,xxRollAutopilotSpec_77_operator_4052_001,xxRollAutopilotSpec_6_operator_4033_001,xxRollAutopilotSpec_62_operator_4011_001,xxRollAutopilotSpec_57_operator_3993_001,xxRollAutopilotSpec_48_operator_3970_001,xxRollAutopilotSpec_36_operator_3949_001,xxRollAutopilotSpec_31_operator_3935_001,xxRollAutopilotSpec_26_operator_3911_001,xxRollAutopilotSpec_148_operator_3823_001,xxRollAutopilotSpec_136_operator_3805_001,xxRollAutopilotSpec_131_operator_3787_001,xxRollAutopilotSpec_127_operator_3754_001,xxRollAutopilotSpec_11_operator_3738_001,xxRollAutopilotSpec_112_operator_3722_001,xxRollAutopilotSpec_107_operator_3700_001,spec252_operator_3676_001,spec206_operator_3661_001,roll_hold_mode_require_3654_001,roll_hold_mode_ensure_3648_001,latch_1412_002,kind2_times,kind2_divide,hdg_hold_mode_require_3619_001,hdg_hold_mode_ensure_3614_001,anglediff_1356_002,_min_real,_max_real,_floor,Saturation_192_100,SI_call_3275_002,SI_call1_3300_002,SI_call11_3343_002,SI_call111_3368_002,SI_call1111_3392_002,SI_call11111_3420_003,SI_call111111_3445_002,SI_call1111111_3494_002,SI_call11111111_3541_002,RollReference_1402_002,ResetIntegratorInternal_1270_002,RateLimit_188_100,HeadingMode_1343_002,H_call_3146_002,H_call1_3176_002,H_call11_3220_002,DispLimit_182_100,CmdLimit_1_100,BasicRollMode_1247_002,AP_minus_007_3122_002,AP_minus_003D_3118_002,AP_minus_003C_3110_002,AP_minus_003B_3106_002,AP_minus_003A_3098_002,AP_minus_001_3094_002" abstract="" assumptions="(AP_minus_001_3094_002,1),(AP_minus_003A_3098_002,1),(AP_minus_003B_3106_002,1),(AP_minus_003C_3110_002,1),(AP_minus_003D_3118_002,1),(AP_minus_007_3122_002,1),(BasicRollMode_1247_002,1),(CmdLimit_1_100,1),(DispLimit_182_100,1),(H_call11_3220_002,1),(H_call1_3176_002,1),(H_call_3146_002,1),(HeadingMode_1343_002,1),(RateLimit_188_100,1),(ResetIntegratorInternal_1270_002,1),(RollReference_1402_002,1),(Roll_Autopilot_1232_002,1),(SI_call11111111_3541_002,1),(SI_call1111111_3494_002,1),(SI_call111111_3445_002,1),(SI_call11111_3420_003,1),(SI_call1111_3392_002,1),(SI_call111_3368_002,1),(SI_call11_3343_002,1),(SI_call1_3300_002,1),(SI_call_3275_002,1),(Saturation_192_100,1),(_floor,1),(_max_real,1),(_min_real,1),(anglediff_1356_002,1),(hdg_hold_mode_ensure_3614_001,1),(hdg_hold_mode_require_3619_001,1),(kind2_divide,1),(kind2_times,1),(latch_1412_002,1),(roll_hold_mode_ensure_3648_001,1),(roll_hold_mode_require_3654_001,1),(spec206_operator_3661_001,1),(spec252_operator_3676_001,1),(xxRollAutopilotSpec_107_operator_3700_001,1),(xxRollAutopilotSpec_112_operator_3722_001,1),(xxRollAutopilotSpec_11_operator_3738_001,1),(xxRollAutopilotSpec_127_operator_3754_001,1),(xxRollAutopilotSpec_131_operator_3787_001,1),(xxRollAutopilotSpec_136_operator_3805_001,1),(xxRollAutopilotSpec_148_operator_3823_001,1),(xxRollAutopilotSpec_26_operator_3911_001,1),(xxRollAutopilotSpec_31_operator_3935_001,1),(xxRollAutopilotSpec_36_operator_3949_001,1),(xxRollAutopilotSpec_48_operator_3970_001,1),(xxRollAutopilotSpec_57_operator_3993_001,1),(xxRollAutopilotSpec_62_operator_4011_001,1),(xxRollAutopilotSpec_6_operator_4033_001,1),(xxRollAutopilotSpec_77_operator_4052_001,1),(xxRollAutopilotSpec_82_operator_4087_001,1),(xxRollAutopilotSpec_87_operator_4113_001,1),(xxRollAutopilotSpec_99_operator_4150_001,1)"/>
+
+<Log class="warn" source="parse">In bounded model checking: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In 2-induction: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In inductive step: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (int): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In two state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (real): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003A_3098_002[2]" line="813" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.864</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <ActiveModes instant="1">
+        </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 13)</Value><Value instant="1">(real 14)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">(real -91)</Value><Value instant="1">(real 45)</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real -6)</Value><Value instant="1">(real -6)</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">2800/537</Value><Value instant="1">5000/471</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">(real -158)</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -4)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real -4)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-4</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_6_operator_4033_001" line="895" column="47">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_11_operator_3738_001" line="883" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1_3300_002" line="830" column="25">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call_3275_002" line="829" column="24">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_26_operator_3911_001" line="889" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real 13)</Value><Value instant="1">(real 14)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -4)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real -4)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-4</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real 13)</Value><Value instant="1">(real 14)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real 13)</Value><Value instant="1">(real 14)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 14)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="864" column="13">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 13)</Value><Value instant="1">(real 14)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real -13)</Value><Value instant="1">(real -14)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">13</Value><Value instant="1">14</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">13</Value><Value instant="1">14</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_31_operator_3935_001" line="890" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_36_operator_3949_001" line="891" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1111111_3494_002" line="836" column="31">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_48_operator_3970_001" line="892" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call_3146_002" line="826" column="23">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003A_3098_002" line="812" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003C_3110_002[4]" line="817" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.864</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>hdg_hold_mode_3594_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <ActiveModes instant="1">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real -21)</Value><Value instant="1">(real 105)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">(real -91)</Value><Value instant="1">(real 45)</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real -6)</Value><Value instant="1">(real -6)</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">5800/537</Value><Value instant="1">(real 500)</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">(real 45)</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -12)</Value><Value instant="1">(real -6)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real -12)</Value><Value instant="1">(real -6)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">-12</Value><Value instant="1">-6</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_107_operator_3700_001" line="881" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_112_operator_3722_001" line="882" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11111_3420_003" line="834" column="29">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call1111_3392_002" line="833" column="28">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_127_operator_3754_001" line="884" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="881" column="173">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+      </Node>
+      <Node name="kind2_times" line="881" column="161">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real 30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real -30)</Value><Value instant="1">(real 30)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">30</Value><Value instant="1">30</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real -21)</Value><Value instant="1">(real 105)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -12)</Value><Value instant="1">(real -6)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real -12)</Value><Value instant="1">(real -6)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">-12</Value><Value instant="1">-6</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">12</Value><Value instant="1">6</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-21</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real -21)</Value><Value instant="1">(real 105)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real -21)</Value><Value instant="1">(real 105)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real -21)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-21</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real -21)</Value><Value instant="1">(real -21)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="kind2_times" line="864" column="13">
+        <Stream name="x" type="real" class="input"><Value instant="0">(real -21)</Value><Value instant="1">(real 105)</Value>
+        </Stream>
+        <Stream name="y" type="real" class="input"><Value instant="0">(real -1)</Value><Value instant="1">(real -1)</Value>
+        </Stream>
+        <Stream name="z" type="real" class="output"><Value instant="0">(real 21)</Value><Value instant="1">(real -105)</Value>
+        </Stream>
+        <Stream name="abs_x" type="real" class="local"><Value instant="0">21</Value><Value instant="1">105</Value>
+        </Stream>
+        <Stream name="abs_y" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_z" type="real" class="local"><Value instant="0">21</Value><Value instant="1">105</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_131_operator_3787_001" line="885" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_136_operator_3805_001" line="886" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11111111_3541_002" line="837" column="32">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_148_operator_3823_001" line="887" column="49">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call11_3220_002" line="828" column="25">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003C_3110_002" line="816" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="Roll_Autopilot_RollAutopilotSpec1_3081_002[l913c1].AP_minus_003B_3106_002[3]" line="815" column="1" scope="Roll_Autopilot_1232_002">
+  <Runtime unit="sec" timeout="false">0.864</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Roll_Autopilot_1232_002">
+      <ActiveModes instant="0">
+        </ActiveModes>
+      <ActiveModes instant="1">
+          <Contract name="Roll_Autopilot_RollAutopilotSpec1_3081_002">
+          <Mode>roll_hold_mode_3628_001</Mode>
+          </Contract>
+      </ActiveModes>
+      <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real -7)</Value><Value instant="1">(real 0)</Value>
+      </Stream>
+      <Stream name="Psi_1" type="real" class="input"><Value instant="0">(real -91)</Value><Value instant="1">(real 45)</Value>
+      </Stream>
+      <Stream name="p_1" type="real" class="input"><Value instant="0">(real -5)</Value><Value instant="1">(real -4)</Value>
+      </Stream>
+      <Stream name="TAS_1" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">(real 500)</Value>
+      </Stream>
+      <Stream name="APEng_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="HDGMode_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="HDGRef_1" type="real" class="input"><Value instant="0">(real 90)</Value><Value instant="1">(real 45)</Value>
+      </Stream>
+      <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -12)</Value><Value instant="1">(real -4)</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PhiRef_cmd_1" type="real" class="output"><Value instant="0">(real -12)</Value><Value instant="1">(real -4)</Value>
+      </Stream>
+      <Stream name="RollReference_1" type="real" class="local"><Value instant="0">-12</Value><Value instant="1">-4</Value>
+      </Stream>
+      <Node name="xxRollAutopilotSpec_57_operator_3993_001" line="893" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_62_operator_4011_001" line="894" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call111_3368_002" line="832" column="27">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call11_3343_002" line="831" column="26">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_77_operator_4052_001" line="896" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="RollReference_1402_002" line="932" column="19">
+        <Stream name="Phi_1" type="real" class="input"><Value instant="0">(real -7)</Value><Value instant="1">(real 0)</Value>
+        </Stream>
+        <Stream name="APeng_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="TurnKnob_1" type="real" class="input"><Value instant="0">(real -12)</Value><Value instant="1">(real -4)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PhiRef_1" type="real" class="output"><Value instant="0">(real -12)</Value><Value instant="1">(real -4)</Value>
+        </Stream>
+        <Stream name="TKswitch_1" type="real" class="local"><Value instant="0">-12</Value><Value instant="1">-4</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local"><Value instant="0">12</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="latch_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-7</Value>
+        </Stream>
+        <Stream name="refswitch_1" type="real" class="local"><Value instant="0">(real -7)</Value><Value instant="1">(real 0)</Value>
+        </Stream>
+        <Node name="latch_1412_002" line="263" column="11">
+          <Stream name="u_1" type="real" class="input"><Value instant="0">(real -7)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="E_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="y_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real -7)</Value>
+          </Stream>
+          <Stream name="FixPt_newline_UnitDelay1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-7</Value>
+          </Stream>
+          <Stream name="Enable_1" type="real" class="local"><Value instant="0">(real -7)</Value><Value instant="1">(real -7)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="xxRollAutopilotSpec_82_operator_4087_001" line="897" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_87_operator_4113_001" line="898" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SI_call111111_3445_002" line="835" column="30">
+        <Stream name="SI_X_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="SI_Y_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SI_Z_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Z_operator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="branch_4_IF_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="xxRollAutopilotSpec_99_operator_4150_001" line="899" column="48">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="H_call1_3176_002" line="827" column="24">
+        <Stream name="H_X_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="H_Y_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+      </Node>
+      <Node name="AP_minus_003B_3106_002" line="814" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/40</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System Roll_Autopilot_PP has no property, skipping verification step.</Log>
+
+
+</Results>

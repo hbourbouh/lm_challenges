@@ -1,0 +1,2679 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="300.000000" bmc_max="0" compositional="false" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="warn" source="parse" line="443" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="481" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="519" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="558" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="631" column="3">Unguarded pre in expression (pre Output_1)</Log>
+<Log class="warn" source="parse" line="634" column="3">Unguarded pre in expression (pre Output_2)</Log>
+<Log class="warn" source="parse" line="637" column="3">Unguarded pre in expression (pre Output_3)</Log>
+<Log class="warn" source="parse" line="668" column="3">Unguarded pre in expression (pre Output_1)</Log>
+<Log class="warn" source="parse" line="671" column="3">Unguarded pre in expression (pre Output_2)</Log>
+<Log class="warn" source="parse" line="674" column="3">Unguarded pre in expression (pre Output_3)</Log>
+<Log class="warn" source="parse" line="705" column="3">Unguarded pre in expression (pre Output_1)</Log>
+<Log class="warn" source="parse" line="708" column="3">Unguarded pre in expression (pre Output_2)</Log>
+<Log class="warn" source="parse" line="711" column="3">Unguarded pre in expression (pre Output_3)</Log>
+<Log class="warn" source="parse" line="742" column="3">Unguarded pre in expression (pre Output_1)</Log>
+<Log class="warn" source="parse" line="745" column="3">Unguarded pre in expression (pre Output_2)</Log>
+<Log class="warn" source="parse" line="748" column="3">Unguarded pre in expression (pre Output_3)</Log>
+<Log class="warn" source="parse" line="924" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="962" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="997" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="note" source="parse">System Output_2531_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Transition_2462_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Transition_2462_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2429_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2429_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Fault_2368_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Fault_2368_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Actions_2363_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM010_1456_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM011v1_1460_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM011v2_1477_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM012_1481_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM013_1489_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec130_operator_1493_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec151_operator_1494_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec165_operator_1495_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec182_operator_1496_014 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec203_operator_1498_014 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Sen_2358_005" concrete="spec203_operator_1498_014,spec182_operator_1496_014,spec165_operator_1495_014,spec151_operator_1494_014,spec130_operator_1493_014,Transition_2462_005_condExecSS,Transition_2462_005,Nominal_2429_005_condExecSS,Nominal_2429_005,Fault_2368_005_condExecSS,Fault_2368_005,FSM013_1489_014,FSM012_1481_014,FSM011v2_1477_014,FSM011v1_1460_014,FSM010_1456_014,Actions_2363_005" abstract="" assumptions="(spec203_operator_1498_014,1)"/>
+
+<Property name="FiniteStateMachine_FSM_SensorSpec_1446_014[l1095c1].FSM011v1_1460_014[2]" line="1067" column="1" scope="Sen_2358_005">
+  <Runtime unit="sec" timeout="false">0.110</Runtime>
+  <K>0</K>
+  <Answer source="ic3">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Sen_2358_005">
+      <Stream name="mode_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value>
+      </Stream>
+      <Stream name="Actions_1" type="real" class="local"><Value instant="0">2</Value>
+      </Stream>
+      <Node name="Actions_2363_005" line="1100" column="13">
+        <Stream name="mode_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Fault_2368_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Fault_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Nominal_2429_005" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Nominal_1" type="real" class="local"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Transition_2462_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="Transition_2462_005_condExecSS" line="1035" column="16">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="mode_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2462_005" line="1000" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="request_1" type="bool" class="input">
+            </Stream>
+            <Stream name="mode_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Nominal_2429_005_condExecSS" line="1033" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Nominal_2429_005" line="965" column="3">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local"><Value instant="0">1</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Fault_2368_005_condExecSS" line="1017" column="11">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="request_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Fault_2368_005" line="927" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="request_1" type="bool" class="input">
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec130_operator_1493_014" line="1074" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM011v1_1460_014" line="1066" column="25">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="FiniteStateMachine_FSM_SensorSpec_1446_014[l1095c1].FSM010_1456_014[1]" line="1065" column="1" scope="Sen_2358_005">
+  <Runtime unit="sec" timeout="false">0.132</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_SensorSpec_1446_014[l1095c1].FSM011v2_1477_014[3]" line="1069" column="1" scope="Sen_2358_005">
+  <Runtime unit="sec" timeout="false">0.132</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_SensorSpec_1446_014[l1095c1].FSM012_1481_014[4]" line="1071" column="1" scope="Sen_2358_005">
+  <Runtime unit="sec" timeout="false">0.132</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_SensorSpec_1446_014[l1095c1].FSM013_1489_014[5]" line="1073" column="1" scope="Sen_2358_005">
+  <Runtime unit="sec" timeout="false">0.132</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System Transition_2296_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Transition_2296_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Standby_2280_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Standby_2280_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2265_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2265_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Maneuver_2242_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Maneuver_2242_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Output_2237_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Transition_2141_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Transition_2141_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Standby_2101_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Standby_2101_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2036_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Nominal_2036_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Maneuver_1934_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Maneuver_1934_005_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Actions_1694_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM002_413_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM003_421_118 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM003v2_425_118 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM004_449_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM004v2_437_120 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM005_417_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM006_457_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM007_445_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM007v2_453_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM008v1_429_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM008v2_441_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM009_433_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec129_operator_461_118 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec143_operator_471_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec160_operator_481_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec182_operator_491_117 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec198_operator_501_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec212_operator_511_116 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec233_operator_521_114 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec254_operator_531_114 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec271_operator_541_113 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec287_operator_551_114 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec309_operator_561_114 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec326_operator_571_115 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Manager_1687_005" concrete="spec326_operator_571_115,spec309_operator_561_114,spec287_operator_551_114,spec271_operator_541_113,spec254_operator_531_114,spec233_operator_521_114,spec212_operator_511_116,spec198_operator_501_116,spec182_operator_491_117,spec160_operator_481_117,spec143_operator_471_116,spec129_operator_461_118,Transition_2141_005_condExecSS,Transition_2141_005,Standby_2101_005_condExecSS,Standby_2101_005,Nominal_2036_005_condExecSS,Nominal_2036_005,Maneuver_1934_005_condExecSS,Maneuver_1934_005,FSM009_433_116,FSM008v2_441_117,FSM008v1_429_116,FSM007v2_453_116,FSM007_445_117,FSM006_457_117,FSM005_417_116,FSM004v2_437_120,FSM004_449_116,FSM003v2_425_118,FSM003_421_118,FSM002_413_117,Actions_1694_005" abstract="" assumptions="(spec326_operator_571_115,1)"/>
+
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM007_445_117[8]" line="842" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.135</Runtime>
+  <K>0</K>
+  <Answer source="ic3">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Manager_1687_005">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+      </Stream>
+      <Stream name="Actions_1" type="real" class="local"><Value instant="0">3</Value>
+      </Stream>
+      <Node name="Actions_1694_005" line="888" column="13">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Nominal_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Standby_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2141_005" line="561" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="stby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Standby_2101_005" line="522" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Nominal_2036_005" line="484" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Maneuver_1934_005" line="446" column="3">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec271_operator_541_113" line="862" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM007_445_117" line="841" column="23">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM008v1_429_116[10]" line="846" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.165</Runtime>
+  <K>0</K>
+  <Answer source="ic3">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Manager_1687_005">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="STATE_1" type="real" class="output"><Value instant="0">2</Value>
+      </Stream>
+      <Stream name="Actions_1" type="real" class="local"><Value instant="0">2</Value>
+      </Stream>
+      <Node name="Actions_1694_005" line="888" column="13">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Nominal_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Standby_1" type="real" class="local"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2141_005" line="561" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="stby_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Standby_2101_005" line="522" column="3">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Nominal_2036_005" line="484" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Maneuver_1934_005" line="446" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec198_operator_501_116" line="858" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM008v1_429_116" line="845" column="25">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM004_449_116[4]" line="834" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.191</Runtime>
+  <K>0</K>
+  <Answer source="ic3">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Manager_1687_005">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+      </Stream>
+      <Stream name="Actions_1" type="real" class="local"><Value instant="0">3</Value>
+      </Stream>
+      <Node name="Actions_1694_005" line="888" column="13">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Nominal_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Standby_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2141_005" line="561" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="stby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Standby_2101_005" line="522" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Nominal_2036_005" line="484" column="3">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local"><Value instant="0">2</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Maneuver_1934_005" line="446" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec287_operator_551_114" line="863" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM004_449_116" line="833" column="23">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM003_421_118[2]" line="830" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.191</Runtime>
+  <K>0</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Manager_1687_005">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+      </Stream>
+      <Stream name="Actions_1" type="real" class="local"><Value instant="0">3</Value>
+      </Stream>
+      <Node name="Actions_1694_005" line="888" column="13">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Nominal_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Standby_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Transition_1" type="real" class="local"><Value instant="0">3</Value>
+        </Stream>
+        <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2141_005" line="561" column="3">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local"><Value instant="0">3</Value>
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local"><Value instant="0">1</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="stby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Standby_2101_005" line="522" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Nominal_2036_005" line="484" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Maneuver_1934_005" line="446" column="3">
+            <Stream name="state_1" type="real" class="input">
+            </Stream>
+            <Stream name="good_1" type="bool" class="input">
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input">
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input">
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output">
+            </Stream>
+            <Stream name="Switch2_1" type="real" class="local">
+            </Stream>
+            <Stream name="Switch1_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec160_operator_481_117" line="856" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM003_421_118" line="829" column="23">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM002_413_117[1]" line="828" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM003v2_425_118[3]" line="832" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM004v2_437_120[5]" line="836" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM005_417_116[6]" line="838" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM006_457_117[7]" line="840" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM007v2_453_116[9]" line="844" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM008v2_441_117[11]" line="848" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+<Property name="FiniteStateMachine_FSM_AutopilotSpec1_403_116[l883c1].FSM009_433_116[12]" line="850" column="1" scope="Manager_1687_005">
+  <Runtime unit="sec" timeout="false">0.252</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System FSM001v1_2628_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM001v2_2636_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System FSM001v3_2647_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System abs_int has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System rem_int_int has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System int_to_int32 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System delay_call_2730_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System OTlore_call_2664_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System OT_call_2660_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System HT_call_2656_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System delay_call_2875_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System OTlore_call_2799_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System OT_call_2790_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System HT_call1_2782_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec222_operator_2921_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec194_operator_2920_032 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec166_operator_2919_032 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="FiniteStateMachine_940_113" concrete="spec326_operator_571_115,spec309_operator_561_114,spec287_operator_551_114,spec271_operator_541_113,spec254_operator_531_114,spec233_operator_521_114,spec222_operator_2921_032,spec212_operator_511_116,spec203_operator_1498_014,spec198_operator_501_116,spec194_operator_2920_032,spec182_operator_491_117,spec182_operator_1496_014,spec166_operator_2919_032,spec165_operator_1495_014,spec160_operator_481_117,spec151_operator_1494_014,spec143_operator_471_116,spec130_operator_1493_014,spec129_operator_461_118,rem_int_int,int_to_int32,delay_call_2875_032,delay_call_2730_032,abs_int,Transition_2462_005_condExecSS,Transition_2462_005,Transition_2296_005_condExecSS,Transition_2296_005,Transition_2141_005_condExecSS,Transition_2141_005,Standby_2280_005_condExecSS,Standby_2280_005,Standby_2101_005_condExecSS,Standby_2101_005,Sen_2358_005,Output_2531_005,Output_2237_005,OTlore_call_2799_032,OTlore_call_2664_032,OT_call_2790_032,OT_call_2660_032,Nominal_2429_005_condExecSS,Nominal_2429_005,Nominal_2265_005_condExecSS,Nominal_2265_005,Nominal_2036_005_condExecSS,Nominal_2036_005,Maneuver_2242_005_condExecSS,Maneuver_2242_005,Maneuver_1934_005_condExecSS,Maneuver_1934_005,Manager_1687_005,HT_call_2656_032,HT_call1_2782_032,Fault_2368_005_condExecSS,Fault_2368_005,FSM013_1489_014,FSM012_1481_014,FSM011v2_1477_014,FSM011v1_1460_014,FSM010_1456_014,FSM009_433_116,FSM008v2_441_117,FSM008v1_429_116,FSM007v2_453_116,FSM007_445_117,FSM006_457_117,FSM005_417_116,FSM004v2_437_120,FSM004_449_116,FSM003v2_425_118,FSM003_421_118,FSM002_413_117,FSM001v3_2647_032,FSM001v2_2636_032,FSM001v1_2628_032,Actions_2363_005,Actions_1694_005" abstract="" assumptions="(spec166_operator_2919_032,1)"/>
+
+<Property name="fsm_12B_FSMSpec_2614_032[l1376c1].FSM001v1_2628_032[1]" line="1331" column="1" scope="FiniteStateMachine_940_113">
+  <Runtime unit="sec" timeout="false">0.254</Runtime>
+  <K>0</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="FiniteStateMachine_940_113">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="pullup_1" type="bool" class="output"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="Manager_3" type="bool" class="local"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="Sen_1" type="bool" class="local"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="Manager_1" type="bool" class="local"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="Manager_2" type="bool" class="local"><Value instant="0">true</Value>
+      </Stream>
+      <Stream name="Sen_2" type="real" class="local"><Value instant="0">2</Value>
+      </Stream>
+      <Stream name="Manager_4" type="real" class="local"><Value instant="0">1</Value>
+      </Stream>
+      <Node name="Sen_2358_005" line="1383" column="18">
+        <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value>
+        </Stream>
+        <Stream name="Output_1" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Actions_1" type="real" class="local"><Value instant="0">2</Value>
+        </Stream>
+        <Node name="Actions_2363_005" line="1100" column="13">
+          <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="Merge_1" type="real" class="local"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Fault_2368_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Fault_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2429_005" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="real" class="local"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2462_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Node name="Transition_2462_005_condExecSS" line="1035" column="16">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Transition_2462_005" line="1000" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="request_1" type="bool" class="input">
+              </Stream>
+              <Stream name="mode_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2429_005_condExecSS" line="1033" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Nominal_2429_005" line="965" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="0">2</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="0">0</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Fault_2368_005_condExecSS" line="1017" column="11">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Fault_2368_005" line="927" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="request_1" type="bool" class="input">
+              </Stream>
+              <Stream name="limits_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Output_2531_005" line="1101" column="12">
+          <Stream name="Newstate_1" type="real" class="input"><Value instant="0">2</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="Good_1" type="bool" class="output"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Switch2_1" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Manager_1687_005" line="1382" column="48">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="MODE_1" type="bool" class="output"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="REQUEST_1" type="bool" class="output"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="PULL_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="Output_1" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Actions_1" type="real" class="local"><Value instant="0">1</Value>
+        </Stream>
+        <Stream name="Output_2" type="bool" class="local"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="Output_3" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Node name="Actions_1694_005" line="888" column="13">
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="STATE_1" type="real" class="output"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="Merge_1" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Standby_1" type="real" class="local"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="Transition_1" type="real" class="local"><Value instant="0">1</Value>
+          </Stream>
+          <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">1</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Transition_2141_005" line="561" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="0">1</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="0">1</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="0">1</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Standby_2101_005" line="522" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="stby_1" type="bool" class="input">
+              </Stream>
+              <Stream name="apfail_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Nominal_2036_005" line="484" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="good_1" type="bool" class="input">
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value>
+            </Stream>
+            <Node name="Maneuver_1934_005" line="446" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="good_1" type="bool" class="input">
+              </Stream>
+              <Stream name="supported_1" type="bool" class="input">
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input">
+              </Stream>
+              <Stream name="apfail_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Output_2237_005" line="889" column="34">
+          <Stream name="Newstate_1" type="real" class="input"><Value instant="0">1</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+          </Stream>
+          <Stream name="MODE_1" type="bool" class="output"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="REQUEST_1" type="bool" class="output"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="PULL_1" type="bool" class="output"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Merge_1" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Maneuver_2242_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Maneuver_1" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2265_005" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Standby_2280_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Standby_1" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2296_005" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Transition_1" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Merge_2" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="Maneuver_2" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Nominal_2" type="bool" class="local"><Value instant="0">true</Value>
+          </Stream>
+          <Stream name="Standby_2" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Transition_2" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Merge_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Maneuver_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Nominal_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Standby_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Stream name="Transition_3" type="bool" class="local"><Value instant="0">false</Value>
+          </Stream>
+          <Node name="Transition_2296_005_condExecSS" line="812" column="46">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Node name="Transition_2296_005" line="751" column="3">
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Standby_2280_005_condExecSS" line="810" column="37">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Node name="Standby_2280_005" line="714" column="3">
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2265_005_condExecSS" line="808" column="37">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">true</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Node name="Nominal_2265_005" line="677" column="3">
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Maneuver_2242_005_condExecSS" line="779" column="40">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value>
+            </Stream>
+            <Node name="Maneuver_2242_005" line="640" column="3">
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec166_operator_2919_032" line="1360" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM001v1_2628_032" line="1330" column="25">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="fsm_12B_FSMSpec_2614_032[l1376c1].FSM001v2_2636_032[2]" line="1333" column="1" scope="FiniteStateMachine_940_113">
+  <Runtime unit="sec" timeout="false">0.465</Runtime>
+  <K>2</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="FiniteStateMachine_940_113">
+      <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+      </Stream>
+      <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+      </Stream>
+      <Stream name="pullup_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="Manager_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="Sen_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+      </Stream>
+      <Stream name="Manager_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+      </Stream>
+      <Stream name="Manager_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+      </Stream>
+      <Stream name="Sen_2" type="real" class="local"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+      </Stream>
+      <Stream name="Manager_4" type="real" class="local"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+      </Stream>
+      <Node name="Sen_2358_005" line="1383" column="18">
+        <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">1</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+        </Stream>
+        <Stream name="Output_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="Actions_1" type="real" class="local"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+        </Stream>
+        <Node name="Actions_2363_005" line="1100" column="13">
+          <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="senstate_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">1</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="SENSTATE_1" type="real" class="output"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+          </Stream>
+          <Stream name="Merge_1" type="real" class="local"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Fault_2368_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Fault_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2429_005" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="real" class="local"><Value instant="0">2</Value><Value instant="1">2</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2462_005" type="bool" class="local">
+            <Value instant="0">false</Value>
+            <Value instant="1">false</Value>
+            <Value instant="2">true</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Transition_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">1</Value>
+          </Stream>
+          <Node name="Transition_2462_005_condExecSS" line="1035" column="16">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="mode_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+            </Stream>
+            <Node name="Transition_2462_005" line="1000" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="2">1</Value>
+              </Stream>
+              <Stream name="request_1" type="bool" class="input"><Value instant="2">true</Value>
+              </Stream>
+              <Stream name="mode_1" type="bool" class="input"><Value instant="2">false</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="2">2/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="2">2</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="2">1</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="2">1</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2429_005_condExecSS" line="1033" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value><Value instant="1">2</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">2</Value>
+            </Stream>
+            <Node name="Nominal_2429_005" line="965" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="0">2</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="0">2</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="0">0</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Fault_2368_005_condExecSS" line="1017" column="11">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="request_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="limits_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">1</Value>
+            </Stream>
+            <Node name="Fault_2368_005" line="927" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="1">2</Value>
+              </Stream>
+              <Stream name="request_1" type="bool" class="input"><Value instant="1">false</Value>
+              </Stream>
+              <Stream name="limits_1" type="bool" class="input"><Value instant="1">true</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="1">1/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="1">1</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Output_2531_005" line="1101" column="12">
+          <Stream name="Newstate_1" type="real" class="input"><Value instant="0">2</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="Good_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Switch2_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Manager_1687_005" line="1382" column="48">
+        <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+        </Stream>
+        <Stream name="MODE_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="REQUEST_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="PULL_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="STATE_1" type="real" class="output"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+        </Stream>
+        <Stream name="Output_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="Actions_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+        </Stream>
+        <Stream name="Output_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="Output_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Node name="Actions_1694_005" line="888" column="13">
+          <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="STATE_1" type="real" class="output"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+          </Stream>
+          <Stream name="Merge_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Maneuver_1934_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Maneuver_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2036_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Standby_2101_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Standby_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2141_005" type="bool" class="local">
+            <Value instant="0">true</Value>
+            <Value instant="1">false</Value>
+            <Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Transition_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+          </Stream>
+          <Node name="Transition_2141_005_condExecSS" line="603" column="16">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">1</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">1</Value>
+            </Stream>
+            <Node name="Transition_2141_005" line="561" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="0">1</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="0">1</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="0">1</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Standby_2101_005_condExecSS" line="601" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="stby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+            </Stream>
+            <Node name="Standby_2101_005" line="522" column="3">
+              <Stream name="state_1" type="real" class="input">
+              </Stream>
+              <Stream name="stby_1" type="bool" class="input">
+              </Stream>
+              <Stream name="apfail_1" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local">
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2036_005_condExecSS" line="599" column="13">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">2</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">2</Value>
+            </Stream>
+            <Node name="Nominal_2036_005" line="484" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="good_1" type="bool" class="input"><Value instant="1">false</Value>
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input"><Value instant="1">false</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="1">1/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="1">2</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="1">2</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="1">2</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Maneuver_1934_005_condExecSS" line="588" column="14">
+            <Stream name="state_1" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="good_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="supported_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="standby_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="apfail_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="NextState_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+            </Stream>
+            <Stream name="pre_NextState_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value><Value instant="2">0</Value>
+            </Stream>
+            <Node name="Maneuver_1934_005" line="446" column="3">
+              <Stream name="state_1" type="real" class="input"><Value instant="2">2</Value>
+              </Stream>
+              <Stream name="good_1" type="bool" class="input"><Value instant="2">true</Value>
+              </Stream>
+              <Stream name="supported_1" type="bool" class="input"><Value instant="2">true</Value>
+              </Stream>
+              <Stream name="standby_1" type="bool" class="input"><Value instant="2">false</Value>
+              </Stream>
+              <Stream name="apfail_1" type="bool" class="input"><Value instant="2">false</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="2">2/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="2">2</Value>
+              </Stream>
+              <Stream name="NextState_1" type="real" class="output"><Value instant="2">0</Value>
+              </Stream>
+              <Stream name="Switch2_1" type="real" class="local"><Value instant="2">0</Value>
+              </Stream>
+              <Stream name="Switch1_1" type="real" class="local"><Value instant="2">0</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Output_2237_005" line="889" column="34">
+          <Stream name="Newstate_1" type="real" class="input"><Value instant="0">1</Value><Value instant="1">2</Value><Value instant="2">0</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+          </Stream>
+          <Stream name="MODE_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="REQUEST_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="PULL_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Merge_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Maneuver_2242_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Maneuver_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Nominal_2265_005" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Nominal_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Standby_2280_005" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Standby_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="ExecutionCond_of_Transition_2296_005" type="bool" class="local">
+            <Value instant="0">false</Value>
+            <Value instant="1">false</Value>
+            <Value instant="2">true</Value>
+          </Stream>
+          <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Transition_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Merge_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Maneuver_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Nominal_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Standby_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Transition_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Merge_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Maneuver_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+          </Stream>
+          <Stream name="Nominal_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Standby_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Stream name="Transition_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+          </Stream>
+          <Node name="Transition_2296_005_condExecSS" line="812" column="46">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Node name="Transition_2296_005" line="751" column="3">
+              <Stream name="__time_step" type="real" class="input"><Value instant="2">2/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="2">2</Value>
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output"><Value instant="2">false</Value>
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output"><Value instant="2">true</Value>
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output"><Value instant="2">false</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Standby_2280_005_condExecSS" line="810" column="37">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Node name="Standby_2280_005" line="714" column="3">
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output">
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output">
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Nominal_2265_005_condExecSS" line="808" column="37">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Node name="Nominal_2265_005" line="677" column="3">
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output"><Value instant="0">true</Value>
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value>
+              </Stream>
+            </Node>
+          </Node>
+          <Node name="Maneuver_2242_005_condExecSS" line="779" column="40">
+            <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+            </Stream>
+            <Stream name="Output_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="Output_2" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="Output_3" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="pre_Output_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Stream name="pre_Output_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">false</Value>
+            </Stream>
+            <Stream name="pre_Output_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+            </Stream>
+            <Node name="Maneuver_2242_005" line="640" column="3">
+              <Stream name="__time_step" type="real" class="input"><Value instant="1">1/5</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="Output_1" type="bool" class="output"><Value instant="1">true</Value>
+              </Stream>
+              <Stream name="Output_2" type="bool" class="output"><Value instant="1">false</Value>
+              </Stream>
+              <Stream name="Output_3" type="bool" class="output"><Value instant="1">true</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node name="spec194_operator_2920_032" line="1361" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value><Value instant="2">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+      </Node>
+      <Node name="FSM001v2_2636_032" line="1332" column="25">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/5</Value><Value instant="2">2/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value><Value instant="2">2</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value><Value instant="2">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Log class="fatal" source="parse">
+  Caught Failure("SMT solver failed: line 12592 column 13: logic does not support nonlinear arithmetic") in property directed reachability. Backtrace:
+  Raised at file "format.ml" (inlined), line 242, characters 35-52 Called from file "format.ml", line 469, characters 8-33 Called from file "format.ml", line 484, characters 6-24
+</Log>
+<Log class="fatal" source="parse">Runtime failure in property directed reachability: SMT solver failed: line 12592 column 13: logic does not support nonlinear arithmetic</Log>
+<Log class="warn" source="parse">Child process 64928 (property directed reachability) exited with return code 2</Log>
+<Property name="fsm_12B_FSMSpec_2614_032[l1376c1].FSM001v3_2647_032[3]" line="1335" column="1" scope="FiniteStateMachine_940_113">
+  <Answer>unknown</Answer>
+  
+  <TrueFor>28</TrueFor>
+  
+</Property>
+<AnalysisStop/>
+
+<Log class="note" source="parse">System fsm_12B_with_contracts_PP has no property, skipping verification step.</Log>
+
+
+</Results>

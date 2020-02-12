@@ -1,0 +1,2049 @@
+[
+  {
+    "file_path": "/Users/amavrido/Documents/CoCoSpecMaterial/lm_challenges/0_triplex/triplex_12B.mdl",
+    "date": "01-Mar-2019",
+    "Declarations": {
+      "Enumerations": []
+    }
+  },
+  {
+    "id": "triplex_12B/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/Tlevel",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Tlevel",
+    "portType": "Inport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/PClimit",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PClimit",
+    "portType": "Inport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Tlevel",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Tlevel",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/PClimit",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PClimit",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/C4",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C4",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/C5",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C5",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act1/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act1",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act1/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act1",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act2/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act2",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act2/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act2",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act3/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act3",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act3/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act3",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act4/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act4",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act4/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act4",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act5/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act5",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act5/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act5",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act6/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act6",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act6/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act6",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act7/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act7",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act7/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act7",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act8/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act8",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Act8/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Act8",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action3/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action3",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action3/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action3",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action3/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action3",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action3/A3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A3",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action3",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action4/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action4",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action4/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action4",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action4/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action4",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action4/C5",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C5",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action4",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action4/A4",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A4",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action4",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action8/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action8",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action8/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action8",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action8/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action8",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Action8/A8",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A8",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Action8",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/C4",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C4",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/A1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A1",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2/A2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A2",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions1_2",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/C5",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C5",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/A5",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A5",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/A6",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A6",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7/A7",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "A7",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions/Actions5_6_7",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Actions/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Actions",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/Tlevel",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Tlevel",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/PClimit",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PClimit",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/state",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "state",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/C1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C1",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/C2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C2",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/C3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C3",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/C4",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C4",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Conditions/C5",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "C5",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Conditions",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/NextState",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "NextState",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3/i3",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i3",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3/Avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Avg",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/Avg3",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose/avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "avg",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose/choice",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "choice",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1/avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "avg",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1/choice",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "choice",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/choose1",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/No-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2/Avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Avg",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchA-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/ic",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ic",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2/Avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Avg",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchB-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/ia",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ia",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/ib",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ib",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2/i1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i1",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2/i2",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "i2",
+    "portType": "Inport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2/Avg",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Avg",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/Avg2",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output/Single-BranchC-Fail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/PC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/TC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "TC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/FC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "FC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/Output/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail/Output",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/PC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/TC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "TC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/FC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "FC",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TriplexMonitorNoFail/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B/TriplexMonitorNoFail",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/PC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "PC",
+    "portType": "Outport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/TC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "TC",
+    "portType": "Outport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/FC",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "FC",
+    "portType": "Outport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "int32"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "triplex_12B/sel_val",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "sel_val",
+    "portType": "Outport",
+    "component_name": "triplex_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  }
+]

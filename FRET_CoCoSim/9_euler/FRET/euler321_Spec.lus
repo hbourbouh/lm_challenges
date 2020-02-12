@@ -1,0 +1,138 @@
+#open <lustrec_math>
+
+node  det_3x3(a11 : real;
+     	a21 : real;
+     	a31 : real;
+     	a12 : real;
+     	a22 : real;
+     	a32 : real;
+     	a13 : real;
+     	a23 : real;
+     	a33 : real;)
+     returns(det : real;);
+     var 
+     	adj11 : real;
+     	adj21 : real;
+     	adj31 : real;
+     let
+     	det = (((a11 * adj11) + (a12 * adj21)) + (a13 * adj31));
+     	adj11 = ((a22 * a33) - (a23 * a32));
+     	adj21 = ((a23 * a31) - (a21 * a33));
+     	adj31 = ((a21 * a32) - (a31 * a22));
+     tel
+
+node abs(x:real)
+returns(y:real);
+let
+	y = if x >= 0.0 then x else -x;
+tel
+
+(*@contract  euler321_Spec(phi : real;
+	theta : real;
+	psi : real;
+	Vi_1 : real;
+	Vi_2 : real;
+	Vi_3 : real;)
+returns(DCM321_1_1 : real;
+	DCM321_2_1 : real;
+	DCM321_3_1 : real;
+	DCM321_1_2 : real;
+	DCM321_2_2 : real;
+	DCM321_3_2 : real;
+	DCM321_1_3 : real;
+	DCM321_2_3 : real;
+	DCM321_3_3 : real;
+	Vb_1 : real;
+	Vb_2 : real;
+	Vb_3 : real;);
+let
+    var DCM_det :real = det_3x3(DCM321_1_1, DCM321_2_1, DCM321_3_1, DCM321_1_2, DCM321_2_2, DCM321_3_2, DCM321_1_3, DCM321_2_3, DCM321_3_3);
+    --EUL-001: The Rotation Matrix Output, DCM321, of this Function Shall Equal a 3x3 Matrix Product of a 3x3 Euler 3 (Roll) Rotation Matrix times a 3x3 Euler 2 (Pitch) Rotation Matrix times a 3x3 Euler 1 (Heading) Rotation Matrix.
+
+    guarantee "EUL-001.1" DCM321_1_1 = cos(theta)*cos(psi);
+    guarantee "EUL-001.2" DCM321_2_1 = -cos(phi)*sin(psi) + sin(phi)*sin(theta)*cos(psi);
+    guarantee "EUL-001.3" DCM321_3_1 = sin(phi)*sin(psi) + cos(phi)*sin(theta)*cos(psi);
+    guarantee "EUL-001.4" DCM321_1_2 = cos(theta)*sin(psi);
+    guarantee "EUL-001.5" DCM321_2_2 = cos(phi)*cos(psi) + sin(phi)*sin(theta)*sin(psi);
+    guarantee "EUL-001.6" DCM321_3_2 = -sin(phi)*cos(psi) + cos(phi)*sin(theta)*sin(psi);
+    guarantee "EUL-001.7" DCM321_1_3 = -sin(theta);
+    guarantee "EUL-001.8" DCM321_2_3 = sin(phi)*cos(theta);
+    guarantee "EUL-001.9" DCM321_3_3 = cos(phi)*cos(theta);
+
+    --EUL-002: 	The Body Vector Output, Vb, of this Function Shall Equal a 3x1 Vector Product of the 3x3 Rotation Matrix Output, DCM321, times the Input Inertial Vector, Vi.
+    --NOTE: DCM321 matrix is inlined column wise: e.g. DCM321_2 = DCM321(2,1), DCM321_4 = DCM321(1,2)
+
+    guarantee "EUL-002.1" Vb_1 = DCM321_1_1 * Vi_1 + DCM321_1_2 * Vi_2 + DCM321_1_3 * Vi_3;
+    guarantee "EUL-002.2" Vb_2 = DCM321_2_1 * Vi_1 + DCM321_2_2 * Vi_2 + DCM321_2_3 * Vi_3;
+    guarantee "EUL-002.3" Vb_3 = DCM321_3_1 * Vi_1 + DCM321_3_2 * Vi_2 + DCM321_3_3 * Vi_3;
+
+
+    --EUL-003: 	The magnitude of the Body Vector Output, Vb, shall equal the magnitude of the Input Inertial Vector, Vi.
+
+    guarantee "EUL-003" Vb_1*Vb_1 + Vb_2*Vb_2 + Vb_3*Vb_3 = Vi_1*Vi_1 + Vi_2*Vi_2 + Vi_3*Vi_3;
+
+
+    --EUL-004 : The Rotation Matrix, DCM321, shall be invertible with the exception of the case where theta = +/- pi/2 radians.
+
+    var pi:real = 3.1415926536;
+    
+
+    guarantee "EUL-004" abs(theta) <> pi/2.0 =>  DCM_det <> 0.0;
+
+
+    --EUL-005: The Rotation Matrix, DCM321, shall provide a distinct mapping from the input vector, Vi, to the output vector, Vb, for each pitch angle, theta.  Note:  the DCM321 is not distinct for all phi and psi inputs.   
+    
+
+    --EUL-006: The rows and columns of the Rotation Matrix, DCM321, shall be orthonormal.  For instance, denoting r1 as row 1 and r2 as row 2 of DCM321, $<r1, r2> = r1*r2' = 0$ and $<r1, r1> = r1*r1' = 1$.  Likewise, with c1 as column 1 and c2 as column 2 of DCM321, $<c1, c2> = c1*c2' = 0$ and $<c1, c1> = c1*c1' = 1$.
+
+    var c1xc1Transpose : real = DCM321_1_1 * DCM321_1_1 + DCM321_2_1 * DCM321_2_1 + DCM321_3_1 * DCM321_3_1;
+    var c2xc2Transpose : real = DCM321_1_2 * DCM321_1_2 + DCM321_2_2 * DCM321_2_2 + DCM321_3_2 * DCM321_3_2;
+    var c3xc3Transpose : real = DCM321_1_3 * DCM321_1_3 + DCM321_2_3 * DCM321_2_3 + DCM321_3_3 * DCM321_3_3;
+
+    var c1xc2Transpose : real = DCM321_1_1 * DCM321_1_2 + DCM321_2_1 * DCM321_2_2 + DCM321_3_1 * DCM321_3_2;
+    var c1xc3Transpose : real = DCM321_1_1 * DCM321_1_3 + DCM321_2_1 * DCM321_2_3 + DCM321_3_1 * DCM321_3_3;
+    var c2xc3Transpose : real = DCM321_1_2 * DCM321_1_3 + DCM321_2_2 * DCM321_2_3 + DCM321_3_2 * DCM321_3_3;
+
+    
+    guarantee "EUL-006.1" r1xr1Transpose = 1.0 and r2xr2Transpose = 1.0 and r3xr3Transpose = 1.0;
+    guarantee "EUL-006.2" r1xr2Transpose = 0.0 and r1xr3Transpose = 0.0 and r2xr3Transpose = 0.0;
+    guarantee "EUL-006.3" c1xc1Transpose = 1.0 and c2xc2Transpose = 1.0 and c3xc3Transpose = 1.0;
+    guarantee "EUL-006.4" c1xc2Transpose = 0.0 and c1xc3Transpose = 0.0 and c2xc3Transpose = 0.0;
+    
+
+    --EUL-007: The Rotation Matrix, DCM321, multiplied by the transpose of the Rotation Matrix, DCM321T shall be the Identity (3x3) Matrix.
+    var r1xr1Transpose : real = DCM321_1_1 * DCM321_1_1 + DCM321_1_2 * DCM321_1_2 + DCM321_1_3 * DCM321_1_3;
+    var r1xr2Transpose : real = DCM321_1_1 * DCM321_2_1 + DCM321_1_2 * DCM321_2_2 + DCM321_1_3 * DCM321_2_3;
+    var r1xr3Transpose : real = DCM321_1_1 * DCM321_3_1 + DCM321_1_2 * DCM321_3_2 + DCM321_1_3 * DCM321_3_3;
+
+    var r2xr1Transpose : real = DCM321_2_1 * DCM321_1_1 + DCM321_2_2 * DCM321_1_2 + DCM321_2_3 * DCM321_1_3;
+    var r2xr2Transpose : real = DCM321_2_1 * DCM321_2_1 + DCM321_2_2 * DCM321_2_2 + DCM321_2_3 * DCM321_2_3;
+    var r2xr3Transpose : real = DCM321_2_1 * DCM321_3_1 + DCM321_2_2 * DCM321_3_2 + DCM321_2_3 * DCM321_3_3;
+
+    var r3xr1Transpose : real = DCM321_3_1 * DCM321_1_1 + DCM321_3_2 * DCM321_1_2 + DCM321_3_3 * DCM321_1_3;
+    var r3xr2Transpose : real = DCM321_3_1 * DCM321_2_1 + DCM321_3_2 * DCM321_2_2 + DCM321_3_3 * DCM321_2_3;
+    var r3xr3Transpose : real = DCM321_3_1 * DCM321_3_1 + DCM321_3_2 * DCM321_3_2 + DCM321_3_3 * DCM321_3_3;
+
+    
+    var DCMxDCMTranspose_1_1 : real = r1xr1Transpose;
+    var DCMxDCMTranspose_1_2 : real = r1xr2Transpose;
+    var DCMxDCMTranspose_1_3 : real = r1xr3Transpose;
+    var DCMxDCMTranspose_2_1 : real = r2xr1Transpose;
+    var DCMxDCMTranspose_2_2 : real = r2xr2Transpose;
+    var DCMxDCMTranspose_2_3 : real = r2xr3Transpose;
+    var DCMxDCMTranspose_3_1 : real = r3xr1Transpose;
+    var DCMxDCMTranspose_3_2 : real = r3xr2Transpose;
+    var DCMxDCMTranspose_3_3 : real = r3xr3Transpose;
+
+    guarantee "EUL-007" DCMxDCMTranspose_1_1 = 1.0 and DCMxDCMTranspose_1_2 = 0.0 and DCMxDCMTranspose_1_3 = 0.0
+                 and    DCMxDCMTranspose_2_1 = 0.0 and DCMxDCMTranspose_2_2 = 1.0 and DCMxDCMTranspose_2_3 = 0.0
+                 and    DCMxDCMTranspose_3_1 = 0.0 and DCMxDCMTranspose_3_2 = 0.0 and DCMxDCMTranspose_3_3 = 1.0;
+
+
+
+
+    --EUL-008: The determinant of the Rotation Matrix, |DCM321|, shall be equal to 1.0.       
+    guarantee "EUL-008"  DCM_det = 1.0;
+
+tel
+*)

@@ -1,0 +1,64 @@
+(* Generated Lustre Interface file from AutopilotSpec.lus *)
+(* by Lustre-C compiler version 1.7-1087-unstable, 2019/10/7, 01:00:19 *)
+(* Feel free to mask some of the definitions by removing them from this file. *)
+
+node OTlore (const N: int; X: bool) returns (Y: bool)
+
+;
+
+function delay (X: bool; const R: int) returns (Y: bool)
+
+;
+
+node OT (const L: int; const R: int; X: bool) returns (Y: bool)
+
+;
+
+node SI (X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node S (X: bool; Y: bool) returns (Z: bool)
+
+;
+
+function abs_real (x: real) returns (y: real)
+
+;
+
+node O (X: bool) returns (Y: bool)
+
+;
+
+node H (X: bool) returns (Y: bool)
+
+;
+
+node SIT (const L: int; const R: int; X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node ST (const L: int; const R: int; X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node HT (const L: int; const R: int; X: bool) returns (Y: bool)
+
+;
+
+node AutopilotSpec (ALTMode: bool; HDGmode: bool; autopilot_engaged: bool)
+     returns (Psi: real; altitude: real; roll_angle: real; roll_cmd: real;
+              roll_rate: real; HDGmodeCmd: real)
+(*@contract guarantee  (ALTMode => (absOf_alt_minus_altIC <= 35.0));
+   guarantee  (abs_roll_rate <= 6.6); guarantee  (abs_roll_angle < 33.0);
+   mode roll_hold_mode (require  (autopilot_engaged and (not (HDGmode)));
+                        ensure  (steady_state => (abs_real (roll_err) <= 1.0));
+                        ensure  (overshoot <= 0.1););
+   mode hdg_mode (require  HDGmode;
+                  ensure  (hdg_steady_state => (abs_real (hdg_err) <= 1.0));
+                  ensure  (hdg_overshoot <= 0.1);); *)
+
+
+;
+
+

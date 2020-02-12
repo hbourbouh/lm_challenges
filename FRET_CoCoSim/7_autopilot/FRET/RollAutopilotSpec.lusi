@@ -1,0 +1,64 @@
+(* Generated Lustre Interface file from RollAutopilotSpec.lus *)
+(* by Lustre-C compiler version 1.7-1087-unstable, 2019/10/6, 23:50:18 *)
+(* Feel free to mask some of the definitions by removing them from this file. *)
+
+node OTlore (const N: int; X: bool) returns (Y: bool)
+
+;
+
+function delay (X: bool; const R: int) returns (Y: bool)
+
+;
+
+node OT (const L: int; const R: int; X: bool) returns (Y: bool)
+
+;
+
+node SI (X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node S (X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node H (X: bool) returns (Y: bool)
+
+;
+
+node O (X: bool) returns (Y: bool)
+
+;
+
+node SIT (const L: int; const R: int; X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node ST (const L: int; const R: int; X: bool; Y: bool) returns (Z: bool)
+
+;
+
+node HT (const L: int; const R: int; X: bool) returns (Y: bool)
+
+;
+
+node RollAutopilotSpec (roll_angle: real; TurnKnob: real; HDGmode: bool;
+                        autopilot_engaged: bool)
+     returns (hdg_hold_mode_cmd: real; roll_actuator_command: real;
+              roll_cmd: real; roll_hold_reference: real)
+(*@contract
+  guarantee  ((not (autopilot_engaged)) => (roll_actuator_command = 0.0));
+   guarantee  ((((TurnKnob >= 3.0) or (TurnKnob <= -3.0)) and ((TurnKnob <= 30.0) or (TurnKnob >= -30.0))) => (roll_hold_reference = TurnKnob));
+   guarantee  (true -> (H (((((not (roll_hold)) and pre roll_hold) and (not (FTP))) => pre SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => ((abs_roll_angle >= 30.0) => (roll_hold_reference = (30.0 * sign_roll_angle))))))) and (SI ((roll_hold and (FTP or pre (not (roll_hold)))),(not (((not (roll_hold)) and pre roll_hold)))) => SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => ((abs_roll_angle >= 30.0) => (roll_hold_reference = (30.0 * sign_roll_angle))))))));
+   guarantee  (true -> (H (((((not (roll_hold)) and pre roll_hold) and (not (FTP))) => pre SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => (((roll_angle < 6.0) and (roll_angle > -6.0)) => (roll_hold_reference = 0.0)))))) and (SI ((roll_hold and (FTP or pre (not (roll_hold)))),(not (((not (roll_hold)) and pre roll_hold)))) => SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => (((roll_angle < 6.0) and (roll_angle > -6.0)) => (roll_hold_reference = 0.0)))))));
+   guarantee  (true -> (H (((((not (roll_hold)) and pre roll_hold) and (not (FTP))) => pre SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => ((not (((Cb or Cc) or Cd))) => (roll_hold_reference = roll_angle)))))) and (SI ((roll_hold and (FTP or pre (not (roll_hold)))),(not (((not (roll_hold)) and pre roll_hold)))) => SI ((roll_hold and (FTP or pre (not (roll_hold)))),((roll_hold and (FTP or pre (not (roll_hold)))) => ((not (((Cb or Cc) or Cd))) => (roll_hold_reference = roll_angle)))))));
+   guarantee  (abs_roll_actuator_command <= 15.0);
+   mode roll_hold_mode (require  (no_other_lateral_mode and autopilot_engaged);
+                        ensure  (roll_cmd = roll_hold_reference););
+   mode hdg_hold_mode (require  HDGmode;
+                       ensure  (roll_cmd = hdg_hold_mode_cmd);); *)
+
+
+;
+
+

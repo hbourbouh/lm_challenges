@@ -1,0 +1,73 @@
+
+06-Nov-2019 16:01:49
+Checking compatibility for property proving: model 'Roll_Autopilot_SLDV'
+Compiling model...done
+Building model representation...done
+
+06-Nov-2019 16:01:55
+'Roll_Autopilot_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 06-Nov-2019 16:01:55...
+
+VALID
+Roll_Autopilot_RollAutopilotSpec1/Assertion1
+Objective: T
+Analysis Time = 00:00:08
+
+VALID
+Roll_Autopilot_RollAutopilotSpec1/Assertion6
+Objective: T
+Analysis Time = 00:00:08
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+VALID UNDER APPROXIMATION
+Roll_Autopilot_RollAutopilotSpec1/Assertion2
+Objective: T
+Analysis Time = 00:00:12
+
+VALID UNDER APPROXIMATION
+Roll_Autopilot_RollAutopilotSpec1/Assertion7
+Objective: T
+Analysis Time = 00:00:17
+
+VALID UNDER APPROXIMATION
+Roll_Autopilot_RollAutopilotSpec1/Assertion8
+Objective: T
+Analysis Time = 00:00:17
+
+FALSIFIED
+Roll_Autopilot_RollAutopilotSpec1/Assertion3
+Objective: T
+Analysis Time = 00:00:17
+
+FALSIFIED
+Roll_Autopilot_RollAutopilotSpec1/Assertion5
+Objective: T
+Analysis Time = 00:00:22
+
+FALSIFIED
+Roll_Autopilot_RollAutopilotSpec1/Assertion4
+Objective: T
+Analysis Time = 00:00:27
+
+VALID
+Roll_Autopilot_RollAutopilotSpec1/Assertion2
+Objective: T
+Analysis Time = 00:00:28
+
+
+06-Nov-2019 16:02:29
+
+Property proving was stopped.
+
+Generating output files:
+
+06-Nov-2019 16:02:33
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/7_autopilot/SLDV/sldv_output/Roll_Autopilot_SLDV/Roll_Autopilot_SLDV_sldvdata.mat
+

@@ -1,0 +1,58 @@
+
+30-Oct-2019 19:04:04
+Checking compatibility for property proving: model 'triplex_12B_with_contracts_SLDV'
+Compiling model...done
+Building model representation...done
+
+30-Oct-2019 19:04:17
+'triplex_12B_with_contracts_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 30-Oct-2019 19:04:17...
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+VALID UNDER APPROXIMATION
+triplex_12B_TriplexSignalMonitorSpec/Assertion2
+Objective: T
+Analysis Time = 00:00:26
+
+VALID UNDER APPROXIMATION
+triplex_12B_TriplexSignalMonitorSpec/Assertion3
+Objective: T
+Analysis Time = 00:00:26
+
+VALID UNDER APPROXIMATION
+triplex_12B_TriplexSignalMonitorSpec/Assertion4
+Objective: T
+Analysis Time = 00:00:26
+
+VALID UNDER APPROXIMATION
+triplex_12B_TriplexSignalMonitorSpec/Assertion5
+Objective: T
+Analysis Time = 00:00:26
+
+VALID UNDER APPROXIMATION
+triplex_12B_TriplexSignalMonitorSpec/Assertion6
+Objective: T
+Analysis Time = 00:00:26
+
+FALSIFIED
+triplex_12B_TriplexSignalMonitorSpec/Assertion1
+Objective: T
+Analysis Time = 00:00:26
+
+
+30-Oct-2019 19:08:16
+
+Property proving was stopped.
+
+Generating output files:
+
+30-Oct-2019 19:08:22
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/0_triplex/SLDV/sldv_output/triplex_12B_with_contracts_SLDV/triplex_12B_with_contracts_SLDV_sldvdata.mat
+

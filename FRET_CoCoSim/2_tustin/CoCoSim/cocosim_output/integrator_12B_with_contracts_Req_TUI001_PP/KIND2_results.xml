@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="300.000000" bmc_max="0" compositional="false" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System bounds_63_125 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Saturation_newline_Dynamic_22_118 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TUI001_118_120 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec136_operator_129_125 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System assume_124_119 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__9_119" concrete="spec136_operator_129_125,bounds_63_125,assume_124_119,TUI001_118_120,Saturation_newline_Dynamic_22_118" abstract="" assumptions="(assume_124_119,1)"/>
+
+<Log class="warn" source="parse">
+  In property directed reachability: a check-sat resulted in "unknown". This is most likely due to non-linear expressions in the model,
+  usually multiplications `v_1 * v_2` or divisions `v_1 / v_2`. Consider running Kind 2 with `--check_sat_assume false` or
+  abstracting non-linear expressions using contracts.
+</Log>
+<Property name="integrator_12B_Tustin_IntegratorSpec_110_124[l112c1].TUI001_118_120[1]" line="93" column="1" scope="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__9_119">
+  <Runtime unit="sec" timeout="false">0.077</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System integrator_12B_with_contracts_Req_TUI001_PP has no property, skipping verification step.</Log>
+
+
+</Results>

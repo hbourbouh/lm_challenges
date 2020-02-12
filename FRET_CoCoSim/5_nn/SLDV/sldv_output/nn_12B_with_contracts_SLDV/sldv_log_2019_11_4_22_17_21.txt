@@ -1,0 +1,29 @@
+
+04-Nov-2019 20:17:08
+Checking compatibility for property proving: model 'nn_12B_with_contracts_SLDV'
+Compiling model...done
+Building model representation...done
+
+04-Nov-2019 20:17:19
+'nn_12B_with_contracts_SLDV' is partially compatible for property proving with Simulink Design Verifier.
+
+The model can be analyzed by Simulink Design Verifier. 
+It contains unsupported elements that will be stubbed out during analysis. The results of the analysis might be incomplete. 
+ <a href="matlab:helpview([docroot '/sldv/sldv.map'], 'msginfo_stubbing')">See documentation.</a>
+
+
+Proving properties using model representation from 04-Nov-2019 20:17:19...
+
+
+04-Nov-2019 22:17:21
+
+Property proving exceeded time limit.
+
+Generating output files:
+
+04-Nov-2019 22:17:21
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/5_nn/SLDV/sldv_output/nn_12B_with_contracts_SLDV/nn_12B_with_contracts_SLDV_sldvdata.mat
+

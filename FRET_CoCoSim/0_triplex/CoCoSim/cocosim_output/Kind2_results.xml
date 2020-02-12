@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="600.000000" bmc_max="0" compositional="true" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="warn" source="parse" line="53" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="56" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="59" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="97" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="100" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="103" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="138" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="141" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="144" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="184" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="187" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="190" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="225" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="228" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="231" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="266" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="269" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="272" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="307" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="310" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="313" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="351" column="3">Unguarded pre in expression (pre NextState_1)</Log>
+<Log class="warn" source="parse" line="354" column="3">Unguarded pre in expression (pre NextState_2)</Log>
+<Log class="warn" source="parse" line="357" column="3">Unguarded pre in expression (pre NextState_3)</Log>
+<Log class="warn" source="parse" line="674" column="3">Unguarded pre in expression (pre sel_val_1)</Log>
+<Log class="warn" source="parse" line="717" column="3">Unguarded pre in expression (pre sel_val_1)</Log>
+<Log class="warn" source="parse" line="760" column="3">Unguarded pre in expression (pre sel_val_1)</Log>
+<Log class="warn" source="parse" line="803" column="3">Unguarded pre in expression (pre sel_val_1)</Log>
+<Log class="note" source="parse">System Avg2_1322_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchC_minus_Fail_1318_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchC_minus_Fail_1318_004_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Avg2_1294_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchB_minus_Fail_1290_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchB_minus_Fail_1290_004_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Avg2_1266_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchA_minus_Fail_1262_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Single_minus_BranchA_minus_Fail_1262_004_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System choose1_1211_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System choose_1176_013 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Avg3_1151_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System No_minus_Fail_1146_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System No_minus_Fail_1146_004_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System int_to_real has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Output_1124_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Conditions_1035_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Actions5_6_7_343_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Actions1_2_309_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Action8_297_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Action4_225_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Action3_170_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System int_to_int32 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act8_149_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act8_149_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act7_130_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act7_130_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act6_111_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act6_111_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act5_92_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act5_92_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act4_67_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act4_67_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act3_61_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act3_61_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act2_40_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act2_40_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act1_20_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Act1_20_578_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Actions_13_578 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_001_1423_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_002_1427_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_003a_1431_005 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_003b_1435_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_003c_1439_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TSM_minus_004_1443_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec351_operator_1509_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec334_operator_1507_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec326_operator_1506_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec309_operator_1505_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec292_operator_1504_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec284_operator_1503_003 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System abs_call11_1477_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System abs_call1_1462_004 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System abs_call_1447_004 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="TriplexMonitorNoFail_7_578" concrete="spec351_operator_1509_003,spec334_operator_1507_003,spec326_operator_1506_003,spec309_operator_1505_003,spec292_operator_1504_004,spec284_operator_1503_003,int_to_real,int_to_int32,choose_1176_013,choose1_1211_004,abs_call_1447_004,abs_call1_1462_004,abs_call11_1477_004,TSM_minus_004_1443_004,TSM_minus_003c_1439_003,TSM_minus_003b_1435_004,TSM_minus_003a_1431_005,TSM_minus_002_1427_004,TSM_minus_001_1423_004,Single_minus_BranchC_minus_Fail_1318_004_condExecSS,Single_minus_BranchC_minus_Fail_1318_004,Single_minus_BranchB_minus_Fail_1290_004_condExecSS,Single_minus_BranchB_minus_Fail_1290_004,Single_minus_BranchA_minus_Fail_1262_004_condExecSS,Single_minus_BranchA_minus_Fail_1262_004,Output_1124_004,No_minus_Fail_1146_004_condExecSS,No_minus_Fail_1146_004,Conditions_1035_004,Avg3_1151_004,Avg2_1322_004,Avg2_1294_004,Avg2_1266_004,Actions_13_578,Actions5_6_7_343_578,Actions1_2_309_578,Action8_297_578,Action4_225_578,Action3_170_578,Act8_149_578_condExecSS,Act8_149_578,Act7_130_578_condExecSS,Act7_130_578,Act6_111_578_condExecSS,Act6_111_578,Act5_92_578_condExecSS,Act5_92_578,Act4_67_578_condExecSS,Act4_67_578,Act3_61_578_condExecSS,Act3_61_578,Act2_40_578_condExecSS,Act2_40_578,Act1_20_578_condExecSS,Act1_20_578" abstract="" assumptions="(abs_call_1447_004,1)"/>
+
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_004_1443_004[6]" line="1066" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.427</Runtime>
+  <K>1</K>
+  <Answer source="ic3">falsifiable</Answer>
+   <CounterExample>
+    <Node name="TriplexMonitorNoFail_7_578">
+      <Stream name="ia_1" type="real" class="input">
+        <Value instant="0">5090538003358209/500000000000</Value>
+        <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+      </Stream>
+      <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+      </Stream>
+      <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+      </Stream>
+      <Stream name="Tlevel_1" type="real" class="input"><Value instant="0">376156505388209/250000000000</Value><Value instant="1">1079771958759521875913/62500000000000000</Value>
+      </Stream>
+      <Stream name="PClimit_1" type="int" class="input"><Value instant="0">-1</Value><Value instant="1">0</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="PC_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="FC_1" type="int" class="output"><Value instant="0">4</Value><Value instant="1">4</Value>
+      </Stream>
+      <Stream name="sel_val_1" type="real" class="output"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+      </Stream>
+      <Stream name="Output_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="Actions_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="Conditions_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="Delay1_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+      </Stream>
+      <Stream name="Delay1_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+      </Stream>
+      <Stream name="Actions_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="Delay1_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">4</Value>
+      </Stream>
+      <Stream name="Actions_3" type="int" class="local"><Value instant="0">4</Value><Value instant="1">4</Value>
+      </Stream>
+      <Stream name="Conditions_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="Conditions_3" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="Conditions_4" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="Conditions_5" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="Output_3" type="int" class="local"><Value instant="0">4</Value><Value instant="1">4</Value>
+      </Stream>
+      <Stream name="Output_4" type="real" class="local"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+      </Stream>
+      <Node name="abs_call11_1477_004" line="1069" column="27">
+        <Stream name="abs_x_1" type="real" class="input"><Value instant="0">471488149797/50000000</Value><Value instant="1">-2561092939218826367789723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_y_1" type="real" class="output"><Value instant="0">471488149797/50000000</Value><Value instant="1">2561092939218826367789723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="real" class="local">
+          <Value instant="0">471488149797/50000000</Value>
+          <Value instant="1">2561092939218826367789723/625000000000000000000</Value>
+        </Stream>
+      </Node>
+      <Node name="abs_call1_1462_004" line="1068" column="26">
+        <Stream name="abs_x_1" type="real" class="input"><Value instant="0">-376156505388209/250000000000</Value><Value instant="1">1079834458759521875913/62500000000000000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_y_1" type="real" class="output"><Value instant="0">376156505388209/250000000000</Value><Value instant="1">1079834458759521875913/62500000000000000</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="real" class="local">
+          <Value instant="0">376156505388209/250000000000</Value>
+          <Value instant="1">1079834458759521875913/62500000000000000</Value>
+        </Stream>
+      </Node>
+      <Node name="abs_call_1447_004" line="1067" column="25">
+        <Stream name="abs_x_1" type="real" class="input">
+          <Value instant="0">2733597254373209/250000000000</Value>
+          <Value instant="1">-13359437526814045126919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="abs_y_1" type="real" class="output">
+          <Value instant="0">2733597254373209/250000000000</Value>
+          <Value instant="1">13359437526814045126919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="branch_6_IF_1" type="real" class="local">
+          <Value instant="0">2733597254373209/250000000000</Value>
+          <Value instant="1">13359437526814045126919723/625000000000000000000</Value>
+        </Stream>
+      </Node>
+      <Node name="Conditions_1035_004" line="1121" column="74">
+        <Stream name="ia_1" type="real" class="input">
+          <Value instant="0">5090538003358209/500000000000</Value>
+          <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+        </Stream>
+        <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+        </Stream>
+        <Stream name="Tlevel_1" type="real" class="input"><Value instant="0">376156505388209/250000000000</Value><Value instant="1">1079771958759521875913/62500000000000000</Value>
+        </Stream>
+        <Stream name="PClimit_1" type="int" class="input"><Value instant="0">-1</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="C1_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="C2_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="C3_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="C4_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="C5_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Abs_1" type="real" class="local">
+          <Value instant="0">2733597254373209/250000000000</Value>
+          <Value instant="1">13359437526814045126919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="Sum_1" type="real" class="local">
+          <Value instant="0">2733597254373209/250000000000</Value>
+          <Value instant="1">-13359437526814045126919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="Abs1_1" type="real" class="local"><Value instant="0">376156505388209/250000000000</Value><Value instant="1">1079834458759521875913/62500000000000000</Value>
+        </Stream>
+        <Stream name="Sum1_1" type="real" class="local"><Value instant="0">-376156505388209/250000000000</Value><Value instant="1">1079834458759521875913/62500000000000000</Value>
+        </Stream>
+        <Stream name="Abs2_1" type="real" class="local"><Value instant="0">471488149797/50000000</Value><Value instant="1">2561092939218826367789723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="Sum2_1" type="real" class="local"><Value instant="0">471488149797/50000000</Value><Value instant="1">-2561092939218826367789723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="Demux_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Node name="int_to_real" line="583" column="11">
+          <Stream name="x" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Actions_13_578" line="1120" column="37">
+        <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="C4_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="C5_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="NextState_3" type="int" class="output"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="Merge_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act1_20_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Actions1_2_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act1_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act2_40_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Actions1_2_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act2_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act3_61_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Action3_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act3_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act4_67_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Action4_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Act4_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act5_92_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_5" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Actions5_6_7_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act5_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act6_111_578" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_6" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Actions5_6_7_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act6_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act7_130_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_7" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Actions5_6_7_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act7_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Act8_149_578" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_8" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Action8_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Act8_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Merge_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="Act1_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act2_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act3_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act4_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="Act5_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act6_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act7_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act8_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Merge_3" type="int" class="local"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="Act1_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act2_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act3_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act4_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="Act5_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act6_3" type="int" class="local"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="Act7_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="Act8_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Node name="Act8_149_578_condExecSS" line="470" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act8_149_578" line="360" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="int" class="output">
+            </Stream>
+            <Stream name="Sum1_1" type="int" class="local">
+            </Stream>
+            <Node name="int_to_int32" line="333" column="10"><Stream name="x" type="int" class="input"></Stream><Stream name="y" type="int" class="output"></Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Action8_297_578" line="473" column="13">
+          <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="A8_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+        </Node>
+        <Node name="Act7_130_578_condExecSS" line="468" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act7_130_578" line="316" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="subrange" min="0" max="0" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="subrange" min="1" max="1" class="output">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Act6_111_578_condExecSS" line="466" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">4</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Node name="Act6_111_578" line="275" column="3">
+            <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_1" type="subrange" min="0" max="0" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="NextState_3" type="subrange" min="4" max="4" class="output"><Value instant="0">4</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Act5_92_578_condExecSS" line="464" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act5_92_578" line="234" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="subrange" min="0" max="0" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="subrange" min="2" max="2" class="output">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Actions5_6_7_343_578" line="475" column="52">
+          <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="C5_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="A5_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="A6_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="A7_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+        </Node>
+        <Node name="Act4_67_578_condExecSS" line="462" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act4_67_578" line="193" column="3">
+            <Stream name="state_1" type="int" class="input"><Value instant="1">0</Value>
+            </Stream>
+            <Stream name="state_2" type="int" class="input"><Value instant="1">0</Value>
+            </Stream>
+            <Stream name="state_3" type="int" class="input"><Value instant="1">4</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="1">1/10</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="NextState_1" type="int" class="output"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="NextState_3" type="int" class="output"><Value instant="1">4</Value>
+            </Stream>
+            <Stream name="Sum1_1" type="int" class="local"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="Constant1_1" type="subrange" min="1" max="1" class="local"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="Sum_1" type="int" class="local"><Value instant="1">1</Value>
+            </Stream>
+            <Node name="int_to_int32" line="165" column="9">
+              <Stream name="x" type="int" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="y" type="int" class="output"><Value instant="1">1</Value>
+              </Stream>
+            </Node>
+            <Node name="int_to_int32" line="166" column="10">
+              <Stream name="x" type="int" class="input"><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="y" type="int" class="output"><Value instant="1">1</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Action4_225_578" line="472" column="13">
+          <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="C5_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="A4_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+        </Node>
+        <Node name="Act3_61_578_condExecSS" line="460" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act3_61_578" line="147" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="int" class="output">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Action3_170_578" line="471" column="13">
+          <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="A3_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="LogicalOperator12_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+        </Node>
+        <Node name="Act2_40_578_condExecSS" line="458" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act2_40_578" line="106" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="int" class="output">
+            </Stream>
+            <Stream name="Sum_1" type="int" class="local">
+            </Stream>
+            <Node name="int_to_int32" line="79" column="9"><Stream name="x" type="int" class="input"></Stream><Stream name="y" type="int" class="output"></Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Act1_20_578_condExecSS" line="456" column="28">
+          <Stream name="state_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="state_3" type="int" class="input"><Value instant="0">0</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="NextState_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_2" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="NextState_3" type="int" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_1" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_2" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_NextState_3" type="int" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Act1_20_578" line="62" column="3">
+            <Stream name="state_1" type="int" class="input">
+            </Stream>
+            <Stream name="state_2" type="int" class="input">
+            </Stream>
+            <Stream name="state_3" type="int" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="NextState_1" type="subrange" min="0" max="0" class="output">
+            </Stream>
+            <Stream name="NextState_2" type="int" class="output">
+            </Stream>
+            <Stream name="NextState_3" type="int" class="output">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="Actions1_2_309_578" line="474" column="32">
+          <Stream name="C1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C2_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="C3_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="C4_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="A1_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="A2_1" type="bool" class="output"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="LogicalOperator4_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Output_1124_004" line="1125" column="44">
+        <Stream name="NextState_1" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="NextState_2" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="NextState_3" type="int" class="input"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="ia_1" type="real" class="input">
+          <Value instant="0">5090538003358209/500000000000</Value>
+          <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+        </Stream>
+        <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+        </Stream>
+        <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="PC_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="TC_1" type="int" class="output"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="FC_1" type="int" class="output"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="sel_val_1" type="real" class="output"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+        </Stream>
+        <Stream name="Demux_3" type="int" class="local"><Value instant="0">4</Value><Value instant="1">4</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_No_minus_Fail_1146_004" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="No_minus_Fail_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Single_minus_BranchA_minus_Fail_1262_004" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If_4" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Single_minus_BranchA_minus_Fail_1" type="real" class="local"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Single_minus_BranchB_minus_Fail_1290_004" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_3" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Single_minus_BranchB_minus_Fail_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_Single_minus_BranchC_minus_Fail_1318_004" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Single_minus_BranchC_minus_Fail_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Node name="Single_minus_BranchC_minus_Fail_1318_004_condExecSS" line="852" column="37">
+          <Stream name="ia_1" type="real" class="input">
+            <Value instant="0">5090538003358209/500000000000</Value>
+            <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+          </Stream>
+          <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="sel_val_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_sel_val_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Single_minus_BranchC_minus_Fail_1318_004" line="806" column="3">
+            <Stream name="ia_1" type="real" class="input">
+            </Stream>
+            <Stream name="ib_1" type="real" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="sel_val_1" type="real" class="output">
+            </Stream>
+            <Stream name="Avg2_1" type="real" class="local">
+            </Stream>
+            <Node name="Avg2_1322_004" line="788" column="10">
+              <Stream name="i1_1" type="real" class="input">
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Avg_1" type="real" class="output">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Single_minus_BranchB_minus_Fail_1290_004_condExecSS" line="850" column="37">
+          <Stream name="ia_1" type="real" class="input">
+            <Value instant="0">5090538003358209/500000000000</Value>
+            <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+          </Stream>
+          <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="sel_val_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_sel_val_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="Single_minus_BranchB_minus_Fail_1290_004" line="763" column="3">
+            <Stream name="ia_1" type="real" class="input">
+            </Stream>
+            <Stream name="ic_1" type="real" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="sel_val_1" type="real" class="output">
+            </Stream>
+            <Stream name="Avg2_1" type="real" class="local">
+            </Stream>
+            <Node name="Avg2_1294_004" line="745" column="10">
+              <Stream name="i1_1" type="real" class="input">
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Avg_1" type="real" class="output">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="Single_minus_BranchA_minus_Fail_1262_004_condExecSS" line="848" column="37">
+          <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+          </Stream>
+          <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="sel_val_1" type="real" class="output"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+          </Stream>
+          <Stream name="pre_sel_val_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">-1</Value>
+          </Stream>
+          <Node name="Single_minus_BranchA_minus_Fail_1262_004" line="720" column="3">
+            <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+            </Stream>
+            <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="sel_val_1" type="real" class="output"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+            </Stream>
+            <Stream name="Avg2_1" type="real" class="local"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+            </Stream>
+            <Node name="Avg2_1266_004" line="702" column="10">
+              <Stream name="i1_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+                <Value instant="0">375656505388209/500000000000</Value>
+                <Value instant="1">-1126979021933048000913/62500000000000000</Value>
+              </Stream>
+              <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="Avg_1" type="real" class="output"><Value instant="0">-1</Value><Value instant="1">-1174123585106574125913/125000000000000000</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="No_minus_Fail_1146_004_condExecSS" line="846" column="19">
+          <Stream name="ia_1" type="real" class="input">
+            <Value instant="0">5090538003358209/500000000000</Value>
+            <Value instant="1">-13830883158549306376919723/625000000000000000000</Value>
+          </Stream>
+          <Stream name="ib_1" type="real" class="input"><Value instant="0">-376656505388209/500000000000</Value><Value instant="1">-377156505388209/500000000000</Value>
+          </Stream>
+          <Stream name="ic_1" type="real" class="input"><Value instant="0">375656505388209/500000000000</Value><Value instant="1">-1126979021933048000913/62500000000000000</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="sel_val_1" type="real" class="output"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Stream name="pre_sel_val_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="No_minus_Fail_1146_004" line="677" column="3">
+            <Stream name="ia_1" type="real" class="input">
+            </Stream>
+            <Stream name="ib_1" type="real" class="input">
+            </Stream>
+            <Stream name="ic_1" type="real" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="sel_val_1" type="real" class="output">
+            </Stream>
+            <Stream name="choose1_1" type="real" class="local">
+            </Stream>
+            <Stream name="choose_1" type="real" class="local">
+            </Stream>
+            <Stream name="Avg3_1" type="real" class="local">
+            </Stream>
+            <Node name="Avg3_1151_004" line="656" column="10">
+              <Stream name="i1_1" type="real" class="input">
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+              </Stream>
+              <Stream name="i3_1" type="real" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="Avg_1" type="real" class="output">
+              </Stream>
+            </Node>
+            <Node name="choose_1176_013" line="657" column="12">
+              <Stream name="i1_1" type="real" class="input">
+              </Stream>
+              <Stream name="avg_1" type="real" class="input">
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="choice_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch_1" type="real" class="local">
+              </Stream>
+              <Stream name="Abs_1" type="real" class="local">
+              </Stream>
+              <Stream name="Sum_1" type="real" class="local">
+              </Stream>
+              <Stream name="Abs1_1" type="real" class="local">
+              </Stream>
+              <Stream name="Sum1_1" type="real" class="local">
+              </Stream>
+            </Node>
+            <Node name="choose1_1211_004" line="658" column="13">
+              <Stream name="i1_1" type="real" class="input">
+              </Stream>
+              <Stream name="avg_1" type="real" class="input">
+              </Stream>
+              <Stream name="i2_1" type="real" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="choice_1" type="real" class="output">
+              </Stream>
+              <Stream name="Switch_1" type="real" class="local">
+              </Stream>
+              <Stream name="Abs_1" type="real" class="local">
+              </Stream>
+              <Stream name="Sum_1" type="real" class="local">
+              </Stream>
+              <Stream name="Abs1_1" type="real" class="local">
+              </Stream>
+              <Stream name="Sum1_1" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="int_to_real" line="827" column="31">
+          <Stream name="x" type="int" class="input"><Value instant="0">4</Value><Value instant="1">4</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">4</Value><Value instant="1">4</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="spec284_operator_1503_003" line="1088" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="TSM_minus_004_1443_004" line="1065" column="30">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_002_1427_004[2]" line="1058" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.716</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003a_1431_005[3]" line="1060" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.716</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003b_1435_004[4]" line="1062" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.716</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_003c_1439_003[5]" line="1064" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.716</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+<Property name="triplex_12B_TriplexSignalMonitorSpec_1407_004[l1112c1].TSM_minus_001_1423_004[1]" line="1056" column="1" scope="TriplexMonitorNoFail_7_578">
+  <Runtime unit="sec" timeout="false">0.716</Runtime>
+  <Answer source="ind2">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System triplex_12B_with_contracts_PP has no property, skipping verification step.</Log>
+
+
+</Results>

@@ -1,0 +1,77 @@
+
+05-Nov-2019 21:01:03
+Checking compatibility for property proving: model 'euler321_I2B_12B_with_contracts_EUL001_SLDV'
+Compiling model...done
+Building model representation...done
+
+05-Nov-2019 21:01:11
+'euler321_I2B_12B_with_contracts_EUL001_SLDV' is partially compatible for property proving with Simulink Design Verifier.
+
+The model can be analyzed by Simulink Design Verifier. 
+It contains unsupported elements that will be stubbed out during analysis. The results of the analysis might be incomplete. 
+ <a href="matlab:helpview([docroot '/sldv/sldv.map'], 'msginfo_stubbing')">See documentation.</a>
+
+
+Proving properties using model representation from 05-Nov-2019 21:01:11...
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion1
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion4
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion8
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion9
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion6
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion5
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO STUBBING
+euler321_I2B_12B_euler321_Spec/Assertion7
+Objective: T
+Analysis Time = 00:00:30
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion3
+Objective: T
+Analysis Time = 00:00:31
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/Assertion2
+Objective: T
+Analysis Time = 00:00:31
+
+
+05-Nov-2019 21:02:13
+
+Property proving was stopped.
+
+Generating output files:
+
+05-Nov-2019 21:02:16
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/9_euler/SLDV/sldv_output/euler321_I2B_12B_with_contracts_EUL001_SLDV/euler321_I2B_12B_with_contracts_EUL001_SLDV_sldvdata.mat
+

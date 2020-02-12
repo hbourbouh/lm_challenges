@@ -1,0 +1,66 @@
+{
+  "EBSpec": {
+    "contract_name": "EBSpec",
+    "model_path": "EB_12B",
+    "Inputs": [],
+    "Outputs": [
+      {
+        "variable_name": "Buminusd_1",
+        "variable_path": "EB_12B/Buminusd",
+        "index": "1"
+      },
+      {
+        "variable_name": "Buminusd_2",
+        "variable_path": "EB_12B/Buminusd",
+        "index": "2"
+      },
+      {
+        "variable_name": "Buminusd_3",
+        "variable_path": "EB_12B/Buminusd",
+        "index": "3"
+      },
+      {
+        "variable_name": "check_1_1",
+        "variable_path": "EB_12B/check",
+        "index": "1"
+      },
+      {
+        "variable_name": "check_1_2",
+        "variable_path": "EB_12B/check",
+        "index": "4"
+      },
+      {
+        "variable_name": "check_1_3",
+        "variable_path": "EB_12B/check",
+      },
+      {
+        "variable_name": "check_2_1",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "check_2_2",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "check_2_3",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "check_3_1",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "check_3_2",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "check_3_3",
+        "variable_path": "EB_12B/check"
+      },
+      {
+        "variable_name": "ridge_on",
+        "variable_path": "EB_12B/ridge_on"
+      }
+    ]
+  }
+}

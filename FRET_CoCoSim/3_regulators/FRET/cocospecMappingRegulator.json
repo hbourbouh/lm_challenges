@@ -1,0 +1,29 @@
+{
+  "RegulatorSpec": {
+    "contract_name": "RegulatorSpec",
+    "model_path": "regs_12B",
+    "Inputs": [],
+    "Outputs": [
+      {
+        "variable_name": "hcvdt_cmd_fcs_fps2",
+        "variable_path": "regs_12B/hcvdt_cmd_fcs_fps2"
+      },
+      {
+        "variable_name": "lcvdt_cmd_fcs_dps2",
+        "variable_path": "regs_12B/lcvdt_cmd_fcs_dps2"
+      },
+      {
+        "variable_name": "mcvdt_cmd_fcs_dps2",
+        "variable_path": "regs_12B/mcvdt_cmd_fcs_dps2"
+      },
+      {
+        "variable_name": "ncvdt_cmd_fcs_dps2",
+        "variable_path": "regs_12B/ncvdt_cmd_fcs_dps2"
+      },
+      {
+        "variable_name": "xcvdt_cmd_fcs_fps2",
+        "variable_path": "regs_12B/xcvdt_cmd_fcs_fps2"
+      }
+    ]
+  }
+}

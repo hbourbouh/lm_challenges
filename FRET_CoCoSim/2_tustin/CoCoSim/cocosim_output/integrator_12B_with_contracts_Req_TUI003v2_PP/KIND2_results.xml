@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="300.000000" bmc_max="0" compositional="false" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System bounds_1347_063 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Saturation_newline_Dynamic_1306_063 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TUI003v2_1405_063 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec148_operator_1420_063 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System assume_1411_063 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__1293_063" concrete="spec148_operator_1420_063,bounds_1347_063,assume_1411_063,TUI003v2_1405_063,Saturation_newline_Dynamic_1306_063" abstract="" assumptions="(assume_1411_063,1)"/>
+
+<Log class="warn" source="parse">
+  In property directed reachability: a check-sat resulted in "unknown". This is most likely due to non-linear expressions in the model,
+  usually multiplications `v_1 * v_2` or divisions `v_1 / v_2`. Consider running Kind 2 with `--check_sat_assume false` or
+  abstracting non-linear expressions using contracts.
+</Log>
+<Property name="integrator_12B_Tustin_IntegratorSpec_1394_063[l120c1].TUI003v2_1405_063[1]" line="94" column="1" scope="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__1293_063">
+  <Runtime unit="sec" timeout="false">0.072</Runtime>
+  <K>0</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__1293_063">
+      <Stream name="xin_1" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="T_1" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="TL_1" type="real" class="input"><Value instant="0">-1</Value>
+      </Stream>
+      <Stream name="BL_1" type="real" class="input"><Value instant="0">-1</Value>
+      </Stream>
+      <Stream name="reset_1" type="bool" class="input"><Value instant="0">false</Value>
+      </Stream>
+      <Stream name="ic_1" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="yout_1" type="real" class="output"><Value instant="0">-1</Value>
+      </Stream>
+      <Stream name="Saturation_newline_Dynamic_1" type="real" class="local"><Value instant="0">-1</Value>
+      </Stream>
+      <Stream name="bounds_1" type="real" class="local"><Value instant="0">-1</Value>
+      </Stream>
+      <Stream name="Switch_1" type="real" class="local"><Value instant="0">0</Value>
+      </Stream>
+      <Stream name="bounds_2" type="real" class="local"><Value instant="0">-1</Value>
+      </Stream>
+      <Node name="bounds_1347_063" line="129" column="24">
+        <Stream name="TL_1" type="real" class="input"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="BL_1" type="real" class="input"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="TLc_1" type="real" class="output"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="BLc_1" type="real" class="output"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="Switch1_1" type="real" class="local"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="RelationalOperator_1" type="bool" class="local"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="Switch2_1" type="real" class="local"><Value instant="0">-1</Value>
+        </Stream>
+      </Node>
+      <Node name="Saturation_newline_Dynamic_1306_063" line="125" column="32">
+        <Stream name="up_1" type="real" class="input"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="u_1" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="lo_1" type="real" class="input"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="y_1" type="real" class="output"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="Switch2_1" type="real" class="local"><Value instant="0">-1</Value>
+        </Stream>
+        <Stream name="Switch_1" type="real" class="local"><Value instant="0">0</Value>
+        </Stream>
+      </Node>
+      <Node name="spec148_operator_1420_063" line="103" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+      <Node name="TUI003v2_1405_063" line="93" column="25">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Log class="warn" source="parse">
+  In inductive step: a check-sat resulted in "unknown". This is most likely due to non-linear expressions in the model,
+  usually multiplications `v_1 * v_2` or divisions `v_1 / v_2`. Consider running Kind 2 with `--check_sat_assume false` or
+  abstracting non-linear expressions using contracts.
+</Log>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System integrator_12B_with_contracts_Req_TUI003v2_PP has no property, skipping verification step.</Log>
+
+
+</Results>

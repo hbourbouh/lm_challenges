@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="300.000000" bmc_max="0" compositional="false" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System bounds_1598_009 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Saturation_newline_Dynamic_1557_009 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TUI003v3_1656_009 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec160_operator_1671_009 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System assume_1662_009 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__1544_009" concrete="spec160_operator_1671_009,bounds_1598_009,assume_1662_009,TUI003v3_1656_009,Saturation_newline_Dynamic_1557_009" abstract="" assumptions="(assume_1662_009,1)"/>
+
+<Log class="fatal" source="parse">
+  Runtime failure in property directed reachability: SMT solver failed: line 376 column 13: logic does not support nonlinear arithmetic
+</Log>
+<Log class="warn" source="parse">Child process 60965 (property directed reachability) exited with return code 2</Log>
+<Property name="integrator_12B_Tustin_IntegratorSpec_1645_009[l121c1].TUI003v3_1656_009[1]" line="94" column="1" scope="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__1544_009">
+  <Runtime unit="sec" timeout="false">0.135</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System integrator_12B_with_contracts_Req_TUI003v3_PP has no property, skipping verification step.</Log>
+
+
+</Results>

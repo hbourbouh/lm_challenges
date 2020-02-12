@@ -1,0 +1,34 @@
+{
+  "FSM_AutopilotSpec": {
+    "contract_name": "FSM_AutopilotSpec",
+    "model_path": "fsm_12B/FiniteStateMachine/Manager",
+    "Inputs": [
+      {
+        "variable_name": "apfail",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/apfail"
+      },
+      {
+        "variable_name": "good",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/good"
+      },
+      {
+        "variable_name": "standby",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/standby"
+      },
+      {
+        "variable_name": "state",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/state"
+      },
+      {
+        "variable_name": "supported",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/supported"
+      }
+    ],
+    "Outputs": [
+      {
+        "variable_name": "STATE",
+        "variable_path": "fsm_12B/FiniteStateMachine/Manager/STATE"
+      }
+    ]
+  }
+}

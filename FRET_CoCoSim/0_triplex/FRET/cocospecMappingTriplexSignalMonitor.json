@@ -1,0 +1,42 @@
+{
+  "TriplexSignalMonitorSpec": {
+    "contract_name": "TriplexSignalMonitorSpec",
+    "model_path": "triplex_12B",
+    "Inputs": [
+      {
+        "variable_name": "PCLimit",
+        "variable_path": "triplex_12B/PClimit"
+      },
+      {
+        "variable_name": "Tlevel",
+        "variable_path": "triplex_12B/Tlevel"
+      },
+      {
+        "variable_name": "ia",
+        "variable_path": "triplex_12B/ia"
+      },
+      {
+        "variable_name": "ib",
+        "variable_path": "triplex_12B/ib"
+      },
+      {
+        "variable_name": "ic",
+        "variable_path": "triplex_12B/ic"
+      }
+    ],
+    "Outputs": [
+      {
+        "variable_name": "FC",
+        "variable_path": "triplex_12B/FC"
+      },
+      {
+        "variable_name": "PC",
+        "variable_path": "triplex_12B/PC"
+      },
+      {
+        "variable_name": "set_val",
+        "variable_path": "triplex_12B/sel_val"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+
+05-Nov-2019 16:17:00
+Checking compatibility for property proving: model 'swim_12B_with_contracts_SLDV'
+Compiling model...done
+Building model representation...done
+
+05-Nov-2019 16:17:08
+'swim_12B_with_contracts_SLDV' is partially compatible for property proving with Simulink Design Verifier.
+
+The model can be analyzed by Simulink Design Verifier. 
+It contains unsupported elements that will be stubbed out during analysis. The results of the analysis might be incomplete. 
+ <a href="matlab:helpview([docroot '/sldv/sldv.map'], 'msginfo_stubbing')">See documentation.</a>
+
+
+Proving properties using model representation from 05-Nov-2019 16:17:08...
+
+UNDECIDED DUE TO STUBBING
+swim_12B_SWIMSpec/SWIM001A
+Objective: T
+Analysis Time = 00:00:14
+
+UNDECIDED DUE TO STUBBING
+swim_12B_SWIMSpec/SWIM001B
+Objective: T
+Analysis Time = 00:00:17
+
+FALSIFIED
+swim_12B_SWIMSpec/SWIM002
+Objective: T
+Analysis Time = 00:00:17
+
+
+05-Nov-2019 16:17:27
+
+Completed normally.
+
+Generating output files:
+
+05-Nov-2019 16:17:27
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/8_swim/SLDV/sldv_output/swim_12B_with_contracts_SLDV/swim_12B_with_contracts_SLDV_sldvdata.mat
+

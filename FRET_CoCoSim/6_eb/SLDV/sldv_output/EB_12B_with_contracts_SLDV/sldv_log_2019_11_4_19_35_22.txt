@@ -1,0 +1,43 @@
+
+04-Nov-2019 19:32:26
+Checking compatibility for property proving: model 'EB_12B_with_contracts_SLDV'
+Compiling model...done
+Building model representation...done
+
+04-Nov-2019 19:32:52
+'EB_12B_with_contracts_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 04-Nov-2019 19:32:52...
+
+UNDECIDED DUE TO NONLINEARITIES
+EB_12B_EBSpec/EB_004
+Objective: T
+Analysis Time = 00:02:08
+
+UNDECIDED DUE TO NONLINEARITIES
+EB_12B_EBSpec/EB_002
+Objective: T
+Analysis Time = 00:02:11
+
+UNDECIDED DUE TO NONLINEARITIES
+EB_12B_EBSpec/EB_001
+Objective: T
+Analysis Time = 00:02:11
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+
+04-Nov-2019 19:35:19
+
+Property proving was stopped.
+
+Generating output files:
+
+04-Nov-2019 19:35:22
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish.arc.nasa.gov/cocosim_tests/lm_new/6_eb/SLDV/sldv_output/EB_12B_with_contracts_SLDV/EB_12B_with_contracts_SLDV_sldvdata.mat
+

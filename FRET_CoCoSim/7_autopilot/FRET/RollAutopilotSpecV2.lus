@@ -1,0 +1,135 @@
+--Historically
+--#open <lustrec_math>
+node H(X:bool) returns (Y:bool);
+let
+    Y = X -> (X and (pre Y));
+tel
+
+--Y since inclusive X
+node SI(X,Y: bool) returns (Z:bool);
+let
+Z = Y and (X or (false -> pre Z));
+tel
+
+--Y since X
+node S(X,Y: bool) returns (Z:bool);
+let
+Z = X or (Y and (false -> pre Z));
+tel
+
+--Once
+node O(X:bool) returns (Y:bool);
+let
+ Y = X or (false -> pre Y);
+tel
+
+--Timed Once: less than or equal to N
+node OTlore(const N: int; X: bool;) returns (Y: bool);
+    var C:int;
+let
+    C = if X then 0
+        else (-1 -> pre C + (if pre C <0 then 0 else 1));
+
+    Y = 0 <= C and C <= N;
+tel
+
+--Timed Once: general case
+node OT(const L: int; const R: int; X: bool;) returns (Y: bool);
+var  D:bool;
+let
+  D=delay(X, R);
+  Y=OTlore(L-R, D);
+tel
+
+-- Timed Historically: general case
+node HT(const L: int; const R: int; X: bool;) returns (Y: bool);
+let
+  Y = not OT(L, R, not X);
+tel
+
+-- Timed Since: general case
+node ST(const L: int; const R: int; X: bool; Y: bool;)  returns (Z: bool);
+let
+  Z = S(X, Y) and OT(L, R, X);
+tel
+
+-- Timed Since: general case
+node SIT(const L: int; const R: int; X: bool; Y: bool;) returns (Z: bool);
+let
+  Z = SI(X, Y) and OT(L, R, X);
+tel
+
+
+node delay(X:bool; const R:int;) returns(Y:bool);
+let
+
+  Y = X;
+ 
+tel
+
+
+(*@contract RollAutopilotSpec (roll_angle:real; Phi:real; TurnKnob:real; HDGmode:bool; autopilot_engaged:bool; ) 
+returns (hdg_hold_mode_cmd: real; roll_actuator_command: real; 
+roll_cmd: real; roll_hold_reference: real; aileron_cmd: real);
+
+let
+
+var FTP: bool = true -> false;
+(*
+var Cb: bool = (roll_angle > -6.0) and (roll_angle < 6.0);
+var Cc1: bool = (Phi >= 30.0);
+var Cc2: bool = (Phi <= -30.0);
+var Cd: bool = (TurnKnob >=3.0 or TurnKnob <= -3.0) and (TurnKnob <=30.0 or TurnKnob >= -30.0);
+*)
+var abs_aileron_cmd: real = if (aileron_cmd >= 0.0) then aileron_cmd else -aileron_cmd;
+--var hdg_mode_is_active: bool = HDGmode;
+var no_other_lateral_mode: bool = not HDGmode;
+var abs_roll_angle: real = if (roll_angle>= 0.0) then roll_angle else -roll_angle;
+
+var at_time_of_roll_hold_engagement : bool = false ->  not pre autopilot_engaged and  autopilot_engaged;
+var Cb : bool = (roll_angle > -6.0)  and  (roll_angle < 6.0) and at_time_of_roll_hold_engagement;
+var Cc: bool = (abs_real(roll_angle) >= 30.0) and at_time_of_roll_hold_engagement;
+var Cd : bool = (TurnKnob >= 3.0 or TurnKnob <= -3.0) and (TurnKnob <= 30.0 or TurnKnob >= -30.0);
+var Ca : bool = not ( Cb or Cc1 or Cc2 or Cd) and at_time_of_roll_hold_engagement;
+
+ mode hdg_hold_mode (
+  require hdg_hold_is_active;
+  ensure "AP-008" roll_cmd = hdg_hold_mode_cmd;
+	
+ );
+
+ mode roll_hold_mode (
+    require no_other_lateral_mode and autopilot_engaged;
+    ensure "AP-002" roll_cmd = roll_hold_reference;
+    ensure "AP-003a" Ca => roll_hold_reference = roll_angle;
+    ensure "AP-003b" Cb => roll_hold_reference = 0.0;
+    ensure "AP-003c" Cc => roll_hold_reference = 30.0*Sign(roll_angle);
+    ensure "AP-003d" Cd => roll_hold_reference = TurnKnob;
+ );
+
+(* Req text: RollAutopilot shall always satisfy ! autopilot_engaged => roll_actuator_command = 0.0  *)
+guarantee "AP-001" not autopilot_engaged => roll_actuator_command = 0.0;
+
+
+(*
+(* Req text: RollAutopilot shall always satisfy (TurnKnob >= 3.0 | TurnKnob <= -3.0) & (TurnKnob <= 30.0 | TurnKnob >= -30.0) => roll_hold_reference = TurnKnob  *)
+guarantee "AP-003D" (H((( TurnKnob >= 3.0 or TurnKnob <= -3.0 ) and ( TurnKnob <= 30.0 or TurnKnob >= -30.0 ) => roll_hold_reference = TurnKnob)));
+
+(* Req text: in roll_hold  mode RollAutopilot shall immediately satisfy abs_roll_angle >= 30.0 => roll_hold_reference = 30.0 * sign(roll_angle)  *)
+guarantee "AP-003C" ((H(((( not roll_hold) and (pre (roll_hold))) and ( not FTP)) => (pre (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (abs_roll_angle >= 30.0 => roll_hold_reference = 30.0 * sign ( roll_angle ))) ))))) and ((SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ( not (( not roll_hold) and (pre (roll_hold)))) )) => (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (abs_roll_angle >= 30.0 => roll_hold_reference = 30.0 * sign ( roll_angle ))) ))));
+
+
+(* Req text: in roll_hold mode RollAutopilot shall immediately satisfy (roll_angle < 6.0 & roll_angle > -6.0) => roll_hold_reference =0.0  *)
+guarantee "AP-003B" ((H(((( not roll_hold) and (pre (roll_hold))) and ( not FTP)) => (pre (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (( roll_angle < 6.0 and roll_angle > -6.0 ) => roll_hold_reference = 0.0)) ))))) and ((SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ( not (( not roll_hold) and (pre (roll_hold)))) )) => (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (( roll_angle < 6.0 and roll_angle > -6.0 ) => roll_hold_reference = 0.0)) ))));
+
+
+(* Req text: in roll_hold mode RollAutopilot shall immediately satisfy !(Cb | Cc1 | Cc2 | Cd)  => roll_hold_reference = roll_angle  *)
+guarantee "AP-003A" ((H(((( not roll_hold) and (pre (roll_hold))) and ( not FTP)) => (pre (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (not ( Cb or Cc1 or Cc2 or Cd ) => roll_hold_reference = roll_angle)) ))))) and ((SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ( not (( not roll_hold) and (pre (roll_hold)))) )) => (SI( (roll_hold and (FTP or (pre ( not roll_hold)))), ((roll_hold and (FTP or (pre ( not roll_hold)))) => (not ( Cb or Cc1 or Cc2 or Cd ) => roll_hold_reference = roll_angle)) ))));
+*)
+
+(* Req text: RollAutopilot shall always satisfy abs_aileron_cmd <= 15.0  *)
+guarantee "AP-007" abs_aileron_cmd <= 15.0;
+
+tel
+
+*)

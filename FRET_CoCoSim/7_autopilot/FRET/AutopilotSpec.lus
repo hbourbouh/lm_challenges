@@ -1,0 +1,133 @@
+--Historically
+node H(X:bool) returns (Y:bool);
+let
+    Y = X -> (X and (pre Y));
+tel
+
+--Y since inclusive X
+node SI(X,Y: bool) returns (Z:bool);
+let
+Z = Y and (X or (false -> pre Z));
+tel
+
+--Y since X
+node S(X,Y: bool) returns (Z:bool);
+let
+Z = X or (Y and (false -> pre Z));
+tel
+
+--Once
+node O(X:bool) returns (Y:bool);
+let
+ Y = X or (false -> pre Y);
+tel
+
+--Timed Once: less than or equal to N
+node OTlore(const N: int; X: bool;) returns (Y: bool);
+    var C:int;
+let
+    C = if X then 0
+        else (-1 -> pre C + (if pre C <0 then 0 else 1));
+
+    Y = 0 <= C and C <= N;
+tel
+
+--Timed Once: general case
+node OT(const L: int; const R: int; X: bool;) returns (Y: bool);
+var  D:bool;
+let
+  D=delay(X, R);
+  Y=OTlore(L-R, D);
+tel
+
+-- Timed Historically: general case
+node HT(const L: int; const R: int; X: bool;) returns (Y: bool);
+let
+  Y = not OT(L, R, not X);
+tel
+
+-- Timed Since: general case
+node ST(const L: int; const R: int; X: bool; Y: bool;)  returns (Z: bool);
+let
+  Z = S(X, Y) and OT(L, R, X);
+tel
+
+-- Timed Since: general case
+node SIT(const L: int; const R: int; X: bool; Y: bool;) returns (Z: bool);
+let
+  Z = SI(X, Y) and OT(L, R, X);
+tel
+
+
+node delay(X:bool; const R:int;) returns(Y:bool);
+let
+
+  Y = X;
+ 
+tel
+node abs_real(x:real) returns(y:real);
+let
+    y = if x>=0.0 then x else -x;
+tel
+
+
+(*@contract AutopilotSpec (ALTMode:bool; HDGmode:bool; autopilot_engaged:bool; ) returns ( Psi: real; altitude: real; roll_angle: real; roll_cmd: real; roll_rate: real; HDGmodeCmd:real);
+
+let
+var abs_roll_angle: real = abs_real(roll_angle);
+var abs_roll_rate: real = abs_real(roll_rate);
+var abs_roller_err: real = abs_real(roll_err);
+var epsilon: real = 0.0001;
+var overshoot: real = (roll_angle - step)/step;
+var rollAtZero: real = roll_angle -> if (rollHoldMode and not pre rollHoldMode) then roll_angle else pre rollAtZero;
+var rollHoldMode: bool = autopilot_engaged and not HDGmode;
+var roll_err: real = roll_angle - roll_cmd;
+var steady_state: bool = false -> roll_err - pre roll_err <= epsilon;
+var step: real = roll_cmd - rollAtZero;
+var hdg_err: real = Psi - HDGmodeCmd;
+var hdg_epsilon: real = 0.0001;
+var hdg_steady_state: bool =false -> abs_real(hdg_err - pre hdg_err) <= hdg_epsilon;
+var initial_hdg_cmd: real = HDGmodeCmd -> pre initial_hdg_cmd;
+var hdg_overshoot : real = (Psi - hdg_step)/hdg_step;
+var hdg_step: real = HDGmodeCmd - psiAtZero;
+var psiAtZero: real = Psi -> if (HDGmode and not pre HDGmode) then Psi else pre psiAtZero;
+
+
+
+--assume calm_air; --this assumption is used in the Simulink model, the wind speed is zero.
+--var initial_roll_cmd: real = roll_cmd -> pre initial_roll_cmd;
+
+
+mode roll_hold_mode(
+    require autopilot_engaged and not HDGmode;
+    ensure "AP-004a" steady_state => abs_real(roll_err) <= 1.0;
+    ensure "AP-004b" overshoot <= 0.1;
+);
+
+
+
+mode hdg_mode (
+    require HDGmode;
+    ensure "AP-010a" hdg_steady_state => abs_real(hdg_err) <= 1.0;
+    ensure "AP-010b"  hdg_overshoot <= 0.1;
+);
+
+
+(* Req text: Autopilot shall always satisfy ALTMode => absOf_alt_minus_altIC <= 35.0  *)
+var altitude_IC : real = 7225.0; -- given in data file
+var absOf_alt_minus_altIC: real = abs_real(altitude - altitude_IC);
+guarantee "AP-000" ALTMode => absOf_alt_minus_altIC <= 35.0;
+
+
+
+(* Req text: Autopilot shall always satisfy  abs_roll_rate <= 6.6  *)
+guarantee "AP-005" abs_roll_rate <= 6.6;
+
+
+(* Req text: Autopilot shall always satisfy abs_roll_angle < 33.0  *)
+guarantee "AP-006" abs_roll_angle < 33.0;
+
+
+tel
+
+*)

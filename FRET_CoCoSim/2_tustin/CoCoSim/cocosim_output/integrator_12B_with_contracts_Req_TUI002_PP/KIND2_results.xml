@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="300.000000" bmc_max="0" compositional="false" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="note" source="parse">System bounds_63_125 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Saturation_newline_Dynamic_22_119 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System assume_126_120 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System TUI002_118_121 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__9_119" concrete="bounds_63_125,assume_126_120,TUI002_118_121,Saturation_newline_Dynamic_22_119" abstract="" assumptions="(TUI002_118_121,1)"/>
+
+<Property name="integrator_12B_Tustin_IntegratorSpec_110_124[l100c1].TUI002_118_121[1]" line="82" column="1" scope="Tustin_newline_Integrator_newline__lpar_Limited_comma_Resettable_comma_States_rpar__9_119">
+  <Runtime unit="sec" timeout="false">0.062</Runtime>
+  <Answer source="ic3">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System integrator_12B_with_contracts_Req_TUI002_PP has no property, skipping verification step.</Log>
+
+
+</Results>

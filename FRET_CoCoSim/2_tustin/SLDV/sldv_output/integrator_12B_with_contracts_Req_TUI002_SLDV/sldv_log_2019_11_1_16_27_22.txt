@@ -1,0 +1,33 @@
+
+01-Nov-2019 16:27:03
+Checking compatibility for property proving: model 'integrator_12B_with_contracts_Req_TUI002_SLDV'
+Compiling model...done
+Building model representation...done
+
+01-Nov-2019 16:27:07
+'integrator_12B_with_contracts_Req_TUI002_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 01-Nov-2019 16:27:07...
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+VALID UNDER APPROXIMATION
+integrator_12B_Tustin_IntegratorSpec/Assertion2
+Objective: T
+Analysis Time = 00:00:07
+
+
+01-Nov-2019 16:27:19
+
+Property proving was stopped.
+
+Generating output files:
+
+01-Nov-2019 16:27:21
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/2_tustin/SLDV/sldv_output/integrator_12B_with_contracts_Req_TUI002_SLDV/integrator_12B_with_contracts_Req_TUI002_SLDV_sldvdata.mat
+

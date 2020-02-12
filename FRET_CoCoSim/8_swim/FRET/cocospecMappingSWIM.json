@@ -1,0 +1,38 @@
+{
+  "SWIMSpec": {
+    "contract_name": "SWIMSpec",
+    "model_path": "swim_12B",
+    "Inputs": [
+      {
+        "variable_name": "weight",
+        "variable_path": "swim_12B/muxGet_T_Mux_AircraftGrossWeight_lbs"
+      },
+      {
+        "variable_name": "storeCat",
+        "variable_path": "swim_12B/diGet_S_CatSwitchPosition"
+      },
+      {
+        "variable_name": "vehAirPress",
+        "variable_path": "swim_12B/E_AI_IMPACT_PRESSURE"
+      }
+    ],
+    "Outputs": [
+      {
+        "variable_name": "CalAirspeedMin",
+        "variable_path": "swim_12B/SWIM_CalAirspeedmin_kts"
+      },
+      {
+        "variable_name": "lowSpeedWarningAllowed",
+        "variable_path": "swim_12B/SWIM_ASWarningAllowed"
+      },
+      {
+        "variable_name": "swimGet_agcasLowSpeedWarn",
+        "variable_path": "swim_12B/swimGet_AgcasLowSpeedWarn"
+      },
+      {
+        "variable_name": "warningTrigForMinPress",
+        "variable_path": "swim_12B/SWIM_Qcmin_lbspft2"
+      }
+    ]
+  }
+}

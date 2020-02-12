@@ -1,0 +1,188 @@
+
+31-Oct-2019 17:09:03
+Checking compatibility for property proving: model 'fsm_12B_with_contracts_SLDV'
+Compiling model...done
+Building model representation...done
+
+31-Oct-2019 17:09:17
+'fsm_12B_with_contracts_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 31-Oct-2019 17:09:17...
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion2
+Objective: T
+Analysis Time = 00:00:12
+
+FALSIFIED
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion1
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion1
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion11
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion12
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion2
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion4
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion6
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion7
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion8
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion3
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion4
+Objective: T
+Analysis Time = 00:00:18
+
+VALID UNDER APPROXIMATION
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion5
+Objective: T
+Analysis Time = 00:00:18
+
+FALSIFIED
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion3
+Objective: T
+Analysis Time = 00:00:21
+
+FALSIFIED
+fsm_12B_FSMSpec/Assertion1
+Objective: T
+Analysis Time = 00:00:25
+
+FALSIFIED
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion5
+Objective: T
+Analysis Time = 00:00:28
+
+FALSIFIED
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion10
+Objective: T
+Analysis Time = 00:00:32
+
+FALSIFIED
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion9
+Objective: T
+Analysis Time = 00:00:35
+
+FALSIFIED
+fsm_12B_FSMSpec/Assertion2
+Objective: T
+Analysis Time = 00:00:38
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+VALID UNDER APPROXIMATION
+fsm_12B_FSMSpec/Assertion3
+Objective: T
+Analysis Time = 00:01:32
+
+VALID
+fsm_12B_FSMSpec/Assertion3
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion1
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion11
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion12
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion2
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion4
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion6
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion7
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_AutopilotSpec1/Assertion8
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion3
+Objective: T
+Analysis Time = 00:01:34
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion4
+Objective: T
+Analysis Time = 00:01:35
+
+VALID
+FiniteStateMachine/FiniteStateMachine_FSM_SensorSpec/Assertion5
+Objective: T
+Analysis Time = 00:01:35
+
+
+31-Oct-2019 17:10:55
+
+Completed normally.
+
+Generating output files:
+
+31-Oct-2019 17:10:56
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/sldv_output/fsm_12B_with_contracts_SLDV/fsm_12B_with_contracts_SLDV_sldvdata.mat
+

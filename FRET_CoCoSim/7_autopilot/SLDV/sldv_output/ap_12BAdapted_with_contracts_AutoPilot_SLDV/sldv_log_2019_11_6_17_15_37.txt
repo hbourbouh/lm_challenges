@@ -1,0 +1,63 @@
+
+06-Nov-2019 17:10:24
+Validating cached model representation from 06-Nov-2019 17:05:35...change detected
+
+06-Nov-2019 17:10:24
+Checking compatibility for property proving: model 'ap_12BAdapted_with_contracts_AutoPilot_SLDV'
+Compiling model...done
+Building model representation...done
+
+06-Nov-2019 17:10:32
+'ap_12BAdapted_with_contracts_AutoPilot_SLDV' is partially compatible for property proving with Simulink Design Verifier.
+
+The model can be analyzed by Simulink Design Verifier. 
+It contains unsupported elements that will be stubbed out during analysis. The results of the analysis might be incomplete. 
+ <a href="matlab:helpview([docroot '/sldv/sldv.map'], 'msginfo_stubbing')">See documentation.</a>
+
+
+Proving properties using model representation from 06-Nov-2019 17:10:32...
+
+UNDECIDED DUE TO STUBBING
+ap_12BAdapted_AutopilotSpec/AP006
+Objective: T
+Analysis Time = 00:00:20
+
+UNDECIDED DUE TO NONLINEARITIES
+ap_12BAdapted_AutopilotSpec/hdg_mode_Asserton
+Objective: T
+Analysis Time = 00:00:20
+
+UNDECIDED DUE TO NONLINEARITIES
+ap_12BAdapted_AutopilotSpec/AP000
+Objective: T
+Analysis Time = 00:01:24
+
+UNDECIDED DUE TO NONLINEARITIES
+ap_12BAdapted_AutopilotSpec/AP005
+Objective: T
+Analysis Time = 00:01:24
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+UNDECIDED DUE TO STUBBING
+ap_12BAdapted_AutopilotSpec/AP000
+Objective: T
+Analysis Time = 00:01:30
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+
+06-Nov-2019 17:15:36
+
+Property proving exceeded time limit.
+
+Generating output files:
+
+06-Nov-2019 17:15:37
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/7_autopilot/SLDV/sldv_output/ap_12BAdapted_with_contracts_AutoPilot_SLDV/ap_12BAdapted_with_contracts_AutoPilot_SLDV_sldvdata.mat
+

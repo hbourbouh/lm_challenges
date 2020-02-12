@@ -1,0 +1,89 @@
+<!-- 
+ This file is part of CoCoSim.
+ Copyright (C) 2018  The university of Iowa
+ Author: Mudathir Mahgoub 
+-->
+
+<html lang="en">
+
+<head>
+    <script src="js/jquery.min.js"></script>	
+    <script src="js/jquery.dataTables.min.js"></script>	
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css"/>
+</head>
+
+<body>
+	<div id="property" class="table-responsive">
+	</div>
+	<br/>
+	<script>		
+
+		$(document).ready(function () {
+
+			var property = {"originPath":"fsm_12B_with_contracts_PP\/FiniteStateMachine\/FiniteStateMachine_FSM_AutopilotSpec1\/FSM003","tables":[{"columnNames":["Time","0"],"data":[["standby (input)","1"],["apfail (input)","0"],["supported (input)","1"],["good (input)","1"],["state (input)","0"],["STATE (output)","3"],["Actions (local)","3"]],"name":"fsm_12B_with_contracts_PP\/FiniteStateMachine\/Manager"},{"columnNames":["Time","0"],"data":[["standby (input)","1"],["apfail (input)","0"],["supported (input)","1"],["good (input)","1"],["state (input)","0"],["STATE (output)","3"],["Merge (local)","3"],["If (local)","0"],["Maneuver (local)","0"],["If (local)","0"],["Nominal (local)","0"],["If (local)","0"],["Standby (local)","0"],["If (local)","1"],["Transition (local)","3"]],"name":"fsm_12B_with_contracts_PP\/FiniteStateMachine\/Manager\/Actions"},{"columnNames":["Time","0"],"data":[["A (input)","1"],["B (input)","0"],["A_equal__equal__gt_B (output)","0"]],"name":"fsm_12B_with_contracts_PP\/FiniteStateMachine\/FiniteStateMachine_FSM_AutopilotSpec1\/spec160_operator"},{"columnNames":["Time","0"],"data":[["In1 (input)","0"],["guarantee (output)","0"]],"name":"fsm_12B_with_contracts_PP\/FiniteStateMachine\/FiniteStateMachine_FSM_AutopilotSpec1\/FSM003"}]};
+
+			$('#property').append('<h1 style="font-weight: bold;">' + property.originPath + '</h1>');
+            if( property.tables.length >= 1) {
+                property.tables.forEach(function (table, index) {
+                    for (var i = 0; i < table.columnNames.length; i++) {
+                        table.columnNames[i] = { title: table.columnNames[i] };
+                    }
+
+                    $('#property').append('<br/>');
+                    $('#property').append('<h2 style="margin-left:10px;">' + property.tables[index].name + '</h2>');
+                    $('#property').append('<table id="table' + index + '" class="display" width="100%"></table>');
+
+                    // handle the cases when there is a single row
+                    if(property.tables[index].data[0].constructor !== Array){
+                        //  DataTable requires data to be a 2 dimensional array
+                        property.tables[index].data = [property.tables[index].data];
+                    }
+
+                    $('#table' + index).DataTable({
+                        data: property.tables[index].data,
+                        columns: property.tables[index].columnNames,
+                        "paging": false,
+                        "ordering": false,
+                        "searching": false,
+                        "info": false,
+                        "columnDefs": [
+                            { className: "dt-left", targets: '_all'}
+                        ]
+                    });
+                });
+            }else{
+                    var table = property.tables;
+                    var index = 1;
+                    for (var i = 0; i < table.columnNames.length; i++) {
+                        table.columnNames[i] = { title: table.columnNames[i] };
+                    }
+
+                    $('#property').append('<br/>');
+                    $('#property').append('<h2 style="margin-left:10px;">' + property.tables.name + '</h2>');
+                    $('#property').append('<table id="table' + index + '" class="display" width="100%"></table>');
+
+					// handle the cases when there is a single row
+					if(property.tables.data[0].constructor !== Array){
+						//  DataTable requires data to be a 2 dimensional array
+						property.tables.data = [property.tables.data];
+					}
+
+                    $('#table' + index).DataTable({
+                        data: property.tables.data,
+                        columns: property.tables.columnNames,
+                        "paging": false,
+                        "ordering": false,
+                        "searching": false,
+                        "info": false,
+                        "columnDefs": [
+                            { className: "dt-left", targets: '_all'}
+                        ]
+                    });
+            }
+		});
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+--Historically
+node H(X:bool) returns (Y:bool);
+let
+    Y = X -> (X and (pre Y));
+tel
+
+--Y since inclusive X
+node SI(X,Y: bool) returns (Z:bool);
+let
+Z = Y and (X or (false -> pre Z));
+tel
+
+--Y since X
+node S(X,Y: bool) returns (Z:bool);
+let
+Z = X or (Y and (false -> pre Z));
+tel
+
+--Once
+node O(X:bool) returns (Y:bool);
+let
+ Y = X or (false -> pre Y);
+tel
+
+--Timed Once: less than or equal to N
+node OTlore(const N: int; X: bool;) returns (Y: bool);
+    var C:int;
+let
+    C = if X then 0
+        else (-1 -> pre C + (if pre C <0 then 0 else 1));
+
+    Y = 0 <= C and C <= N;
+tel
+
+--Timed Once: general case
+node OT(const L: int; const R: int; X: bool;) returns (Y: bool);
+var  D:bool;
+let
+  D=delay(X, R);
+  Y=OTlore(L-R, D);
+tel
+
+-- Timed Historically: general case
+node HT(const L: int; const R: int; X: bool;) returns (Y: bool);
+let
+  Y = not OT(L, R, not X);
+tel
+
+-- Timed Since: general case
+node ST(const L: int; const R: int; X: bool; Y: bool;)  returns (Z: bool);
+let
+  Z = S(X, Y) and OT(L, R, X);
+tel
+
+-- Timed Since: general case
+node SIT(const L: int; const R: int; X: bool; Y: bool;) returns (Z: bool);
+let
+  Z = SI(X, Y) and OT(L, R, X);
+tel
+
+
+node delay(X:bool; const R:int;) returns(Y:bool);
+let
+
+  Y = X;
+ 
+tel
+
+
+
+(*@contract FSM_AutopilotSpec (apfail:bool; good:bool; standby:bool; state:real; supported:bool; ) returns (STATE: real; );
+
+let
+var FTP: bool = true -> false;
+
+var ap_maneuver_state: real = 2.0;
+var ap_nominal_state: real = 1.0;
+var ap_standby_state: real = 3.0;
+var ap_transition_state: real = 0.0;
+
+
+
+(* Req text: FSM_Autopilot shall always satisfy (standby & state = ap_transition_state) => STATE = ap_standby_state  *)
+guarantee "FSM-002" ( standby and state = ap_transition_state ) => STATE = ap_standby_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state=ap_nominal_state & standby)  => STATE = ap_standby_state  *)
+guarantee "FSM-005" ( state = ap_nominal_state and standby ) => STATE = ap_standby_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_transition_state & good & supported) => STATE = ap_nominal_state  *)
+guarantee "FSM-003" ( state = ap_transition_state and good and supported ) => STATE = ap_nominal_state;
+guarantee "FSM-003v2" (state = ap_transition_state and good and supported and not standby) => STATE = ap_nominal_state;
+
+(* Req text:  FSM_Autopilot shall always satisfy (state = ap_standby_state & !standby) => STATE = ap_transition_state  *)
+guarantee "FSM-008v1" ( state = ap_standby_state and not standby ) => STATE = ap_transition_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_standby_state & apfail )=> STATE = ap_maneuver_state  *)
+guarantee "FSM-009" ( state = ap_standby_state and apfail ) => STATE = ap_maneuver_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_nominal_state & ! good & ! standby) => STATE = ap_maneuver_state  *)
+guarantee "FSM-004v2" ( state = ap_nominal_state and not good and not standby ) => STATE = ap_maneuver_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_standby_state & ! standby & ! apfail ) => STATE = ap_transition_state  *)
+guarantee "FSM-008v2" ( state = ap_standby_state and not standby and not apfail ) => STATE = ap_transition_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_maneuver_state & supported & good) => STATE = ap_transition_state  *)
+guarantee "FSM-007" ( state = ap_maneuver_state and supported and good ) => STATE = ap_transition_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (! good & state = ap_nominal_state) => STATE = ap_maneuver_state  *)
+guarantee "FSM-004" ( not good and state = ap_nominal_state ) => STATE = ap_maneuver_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_maneuver_state & supported & good & ! standby) => STATE = ap_transition_state  *)
+guarantee "FSM-007v2" ( state = ap_maneuver_state and supported and good and not standby ) => STATE = ap_transition_state;
+
+
+(* Req text: FSM_Autopilot shall always satisfy (state = ap_maneuver_state & standby & good) => STATE = ap_standby_state  *)
+guarantee "FSM-006" ( state = ap_maneuver_state and standby and good ) => STATE = ap_standby_state;
+
+
+tel
+*)

@@ -1,0 +1,35 @@
+
+05-Nov-2019 21:13:58
+Validating cached model representation from 05-Nov-2019 21:05:23...done
+
+05-Nov-2019 21:13:59
+'euler321_I2B_12B_with_contracts_EUL003_SLDV' is partially compatible for property proving with Simulink Design Verifier.
+
+The model can be analyzed by Simulink Design Verifier. 
+It contains unsupported elements that will be stubbed out during analysis. The results of the analysis might be incomplete. 
+ <a href="matlab:helpview([docroot '/sldv/sldv.map'], 'msginfo_stubbing')">See documentation.</a>
+
+
+Proving properties using model representation from 05-Nov-2019 21:05:23...
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+UNDECIDED DUE TO NONLINEARITIES
+euler321_I2B_12B_euler321_Spec/EUL_003
+Objective: T
+Analysis Time = 00:00:08
+
+
+05-Nov-2019 21:14:11
+
+Property proving was stopped.
+
+Generating output files:
+
+05-Nov-2019 21:14:13
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish/cocosim_tests/lm_new/9_euler/SLDV/sldv_output/euler321_I2B_12B_with_contracts_EUL003_SLDV/euler321_I2B_12B_with_contracts_EUL003_SLDV_sldvdata.mat
+

@@ -1,0 +1,50 @@
+{
+  "RollAutopilotSpec": {
+    "contract_name": "RollAutopilotSpec",
+    "model_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot",
+    "Inputs": [
+      {
+        "variable_name": "HDGmode",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/HDG Mode"
+      },
+      {
+        "variable_name": "Phi",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/Phi"
+      },
+      {
+        "variable_name": "TurnKnob",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/Turn Knob"
+      },
+      {
+        "variable_name": "autopilot_engaged",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/AP Eng"
+      },
+      {
+        "variable_name": "roll_angle",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/Phi"
+      }
+    ],
+    "Outputs": [
+      {
+        "variable_name": "hdg_hold_mode_cmd",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/HdgMode_cmd"
+      },
+      {
+        "variable_name": "roll_actuator_command",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/Ail Cmd"
+      },
+      {
+        "variable_name": "roll_cmd",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/phiCmd"
+      },
+      {
+        "variable_name": "roll_hold_reference",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/PhiRef_cmd"
+      },
+      {
+        "variable_name": "aileron_cmd",
+        "variable_path": "ap_12BAdapted/GlobalScope/Autopilot/Roll_Autopilot/Ail Cmd"
+      }
+    ]
+  }
+}

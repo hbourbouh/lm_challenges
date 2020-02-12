@@ -1,0 +1,38 @@
+{
+    "AutopilotSpec": {
+        "contract_name": "AutopilotSpec",
+        "model_path": "ap_12BAdapted/GlobalScope",
+        "Inputs": [
+            {
+                "variable_name": "HDGmode",
+                "variable_path": "/HDGmode"
+            },
+            {
+                "variable_name": "APeng",
+                "variable_path": "ap_12BAdapted/GlobalScope/APeng"
+            }
+        ],
+        "Outputs": [
+            {
+                "variable_name": "Psi",
+                "variable_path": "/Psi"
+            },
+            {
+                "variable_name": "Altitude",
+                "variable_path": "ap_12BAdapted/GlobalScope/Altitude"
+            },
+            {
+                "variable_name": "Phi",
+                "variable_path": "ap_12BAdapted/GlobalScope/Phi"
+            },
+            {
+                "variable_name": "phiCmd",
+                "variable_path": "ap_12BAdapted/GlobalScope/phiCmd"
+            },
+            {
+                "variable_name": "p",
+                "variable_path": "ap_12BAdapted/GlobalScope/p"
+            }
+        ]
+    }
+}

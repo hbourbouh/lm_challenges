@@ -1,0 +1,1730 @@
+{
+"meta": {
+        "compiler-name": "lustrec",
+        "compiler-version": "1.7-1067-lustrec-seal",
+        "command": "lustrec -emf FSM_AutopilotSpec.lus",
+        "source_file": "FSM_AutopilotSpec"
+        },
+"typedef": [],
+"consts": [],
+"imported_nodes": {
+                  },
+"nodes": {
+         "OTlore": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "N", "datatype": { "kind": "int" }, "original_name": "N"},
+                      {"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [{"name": "__OTlore_9", "datatype": { "kind": "int" }, "original_name": "__OTlore_9"},
+                      {"name": "__OTlore_8", "datatype": { "kind": "int" }, "original_name": "__OTlore_8"},
+                      {"name": "__OTlore_7", "datatype": { "kind": "bool" }, "original_name": "__OTlore_7"},
+                      {"name": "__OTlore_5", "datatype": { "kind": "int" }, "original_name": "__OTlore_5"},
+                      {"name": "__OTlore_4", "datatype": { "kind": "bool" }, "original_name": "__OTlore_4"},
+                      {"name": "__OTlore_3", "datatype": { "kind": "int" }, "original_name": "__OTlore_3"},
+                      {"name": "__OTlore_2", "datatype": { "kind": "bool" }, "original_name": "__OTlore_2"},
+                      {"name": "__OTlore_11", "datatype": { "kind": "int" }, "original_name": "__OTlore_11"},
+                      {"name": "__OTlore_10", "datatype": { "kind": "int" }, "original_name": "__OTlore_10"},
+                      {"name": "__OTlore_1", "datatype": { "kind": "bool" }, "original_name": "__OTlore_1"},
+                      {"name": "C", "datatype": { "kind": "int" }, "original_name": "C"}],
+           "mems": [{"name": "__OTlore_6", "datatype": { "kind": "int" }, "original_name": "__OTlore_6"}],
+           "original_name": "OTlore",
+           "instrs": {  "__OTlore_8": {
+                          "kind": "local_assign",
+                          "lhs": "__OTlore_8",
+                          "rhs": {"type": "constant", "value": "1",
+                                  "datatype": { "kind": "int" } }
+                      },
+                       "__OTlore_7": {
+                         "kind": "operator",
+                         "lhs": "__OTlore_7",
+                         "name": "<",
+                         "args": [{"type": "variable", "value": "__OTlore_6",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "constant", "value": "0",
+                                   "datatype": { "kind": "int" } }]
+                      },
+                       "__OTlore_3": {
+                         "kind": "local_assign",
+                         "lhs": "__OTlore_3",
+                         "rhs": {"type": "constant", "value": "0",
+                                 "datatype": { "kind": "int" } }
+                      },
+                       "branch_1": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__OTlore_7",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__OTlore_9"],
+                         "inputs": [{"name": "__OTlore_3", "datatype": { "kind": "int" }, "original_name": "__OTlore_3"},
+                                    {"name": "__OTlore_7", "datatype": { "kind": "bool" }, "original_name": "__OTlore_7"},
+                                    {"name": "__OTlore_8", "datatype": { "kind": "int" }, "original_name": "__OTlore_8"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__OTlore_3", "datatype": { "kind": "int" }, "original_name": "__OTlore_3"}],
+                             "instrs": {
+                                "__OTlore_9": {
+                                  "kind": "local_assign",
+                                  "lhs": "__OTlore_9",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_3",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__OTlore_8", "datatype": { "kind": "int" }, "original_name": "__OTlore_8"}],
+                             "instrs": {
+                                "__OTlore_9": {
+                                  "kind": "local_assign",
+                                  "lhs": "__OTlore_9",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_8",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "__OTlore_5": {
+                         "kind": "operator",
+                         "lhs": "__OTlore_5",
+                         "name": "uminus",
+                         "args": [{"type": "constant", "value": "1",
+                                   "datatype": { "kind": "int" } }]
+                      },
+                       "__OTlore_4_ni_14": {
+                         "kind": "arrow",
+                         "name": "ni_14",
+                         "lhs": "__OTlore_4",
+                         "rhs": "reset_ni_14"
+                      },
+                       "__OTlore_10": {
+                         "kind": "operator",
+                         "lhs": "__OTlore_10",
+                         "name": "+",
+                         "args": [{"type": "variable", "value": "__OTlore_6",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "__OTlore_9",
+                                   "datatype": { "kind": "int" } }]
+                      },
+                       "branch_2": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__OTlore_4",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__OTlore_11"],
+                         "inputs": [{"name": "__OTlore_10", "datatype": { "kind": "int" }, "original_name": "__OTlore_10"},
+                                    {"name": "__OTlore_4", "datatype": { "kind": "bool" }, "original_name": "__OTlore_4"},
+                                    {"name": "__OTlore_5", "datatype": { "kind": "int" }, "original_name": "__OTlore_5"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__OTlore_5", "datatype": { "kind": "int" }, "original_name": "__OTlore_5"}],
+                             "instrs": {
+                                "__OTlore_11": {
+                                  "kind": "local_assign",
+                                  "lhs": "__OTlore_11",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_5",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__OTlore_10", "datatype": { "kind": "int" }, "original_name": "__OTlore_10"}],
+                             "instrs": {
+                                "__OTlore_11": {
+                                  "kind": "local_assign",
+                                  "lhs": "__OTlore_11",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_10",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "branch_3": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["C"],
+                         "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                                    {"name": "__OTlore_11", "datatype": { "kind": "int" }, "original_name": "__OTlore_11"},
+                                    {"name": "__OTlore_3", "datatype": { "kind": "int" }, "original_name": "__OTlore_3"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__OTlore_3", "datatype": { "kind": "int" }, "original_name": "__OTlore_3"}],
+                             "instrs": {
+                                "C": {
+                                  "kind": "local_assign",
+                                  "lhs": "C",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_3",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__OTlore_11", "datatype": { "kind": "int" }, "original_name": "__OTlore_11"}],
+                             "instrs": {
+                                "C": {
+                                  "kind": "local_assign",
+                                  "lhs": "C",
+                                  "rhs": {"type": "variable",
+                                          "value": "__OTlore_11",
+                                          "datatype": { "kind": "int" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "__OTlore_6": {
+                         "kind": "pre",
+                         "lhs": "__OTlore_6",
+                         "rhs": {"type": "variable", "value": "C",
+                                 "datatype": { "kind": "int" } }
+                      },
+                       "__OTlore_2": {
+                         "kind": "operator",
+                         "lhs": "__OTlore_2",
+                         "name": "<=",
+                         "args": [{"type": "constant", "value": "0",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "C",
+                                   "datatype": { "kind": "int" } }]
+                      },
+                       "__OTlore_1": {
+                         "kind": "operator",
+                         "lhs": "__OTlore_1",
+                         "name": "<=",
+                         "args": [{"type": "variable", "value": "C",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "N",
+                                   "datatype": { "kind": "int" } }]
+                      },
+                       "Y": {
+                         "kind": "operator",
+                         "lhs": "Y",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "__OTlore_2",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__OTlore_1",
+                                   "datatype": { "kind": "bool" } }]
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "delay": {
+           "imported": "false",
+           "kind": "stateless",
+           "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                      {"name": "R", "datatype": { "kind": "int" }, "original_name": "R"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [],
+           "mems": [],
+           "original_name": "delay",
+           "instrs": {  "Y": {
+                          "kind": "local_assign",
+                          "lhs": "Y",
+                          "rhs": {"type": "variable", "value": "X",
+                                  "datatype": { "kind": "bool" } }
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "OT": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "L", "datatype": { "kind": "int" }, "original_name": "L"},
+                      {"name": "R", "datatype": { "kind": "int" }, "original_name": "R"},
+                      {"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [{"name": "__OT_1", "datatype": { "kind": "int" }, "original_name": "__OT_1"},
+                      {"name": "D", "datatype": { "kind": "bool" }, "original_name": "D"}],
+           "mems": [],
+           "original_name": "OT",
+           "instrs": {  "__OT_1": {
+                          "kind": "operator",
+                          "lhs": "__OT_1",
+                          "name": "-",
+                          "args": [{"type": "variable", "value": "L",
+                                    "datatype": { "kind": "int" } },
+                                   {"type": "variable", "value": "R",
+                                    "datatype": { "kind": "int" } }]
+                      },
+                       "D_delay": {
+                         "kind": "statelesscall",
+                         "name": "delay",
+                         "id": "delay",
+                         "lhs": ["D"],
+                         "args": [{"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "R",
+                                   "datatype": { "kind": "int" } }]
+                         
+                      },
+                       "Y_ni_13": {
+                         "kind": "statefulcall",
+                         "name": "OTlore",
+                         "id": "ni_13",
+                         "lhs": ["Y"],
+                         "args": [{"type": "variable", "value": "__OT_1",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "D",
+                                   "datatype": { "kind": "bool" } }],
+                         "reset": { "name": "reset_ni_13", "resetable": "false"}
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "SI": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                      {"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "outputs": [{"name": "Z", "datatype": { "kind": "bool" }, "original_name": "Z"}],
+           "locals": [{"name": "__SI_5", "datatype": { "kind": "bool" }, "original_name": "__SI_5"},
+                      {"name": "__SI_4", "datatype": { "kind": "bool" }, "original_name": "__SI_4"},
+                      {"name": "__SI_2", "datatype": { "kind": "bool" }, "original_name": "__SI_2"},
+                      {"name": "__SI_1", "datatype": { "kind": "bool" }, "original_name": "__SI_1"}],
+           "mems": [{"name": "__SI_3", "datatype": { "kind": "bool" }, "original_name": "__SI_3"}],
+           "original_name": "SI",
+           "instrs": {  "__SI_2": {
+                          "kind": "local_assign",
+                          "lhs": "__SI_2",
+                          "rhs": {"type": "constant", "value": "false",
+                                  "datatype": { "kind": "bool" } }
+                      },
+                       "__SI_1_ni_12": {
+                         "kind": "arrow",
+                         "name": "ni_12",
+                         "lhs": "__SI_1",
+                         "rhs": "reset_ni_12"
+                      },
+                       "branch_4": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__SI_1",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__SI_4"],
+                         "inputs": [{"name": "__SI_1", "datatype": { "kind": "bool" }, "original_name": "__SI_1"},
+                                    {"name": "__SI_2", "datatype": { "kind": "bool" }, "original_name": "__SI_2"},
+                                    {"name": "__SI_3", "datatype": { "kind": "bool" }, "original_name": "__SI_3"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__SI_2", "datatype": { "kind": "bool" }, "original_name": "__SI_2"}],
+                             "instrs": {
+                                "__SI_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__SI_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__SI_2",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__SI_3", "datatype": { "kind": "bool" }, "original_name": "__SI_3"}],
+                             "instrs": {
+                                "__SI_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__SI_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__SI_3",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "__SI_5": {
+                         "kind": "operator",
+                         "lhs": "__SI_5",
+                         "name": "||",
+                         "args": [{"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__SI_4",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "Z": {
+                         "kind": "operator",
+                         "lhs": "Z",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "Y",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__SI_5",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__SI_3": {
+                         "kind": "pre",
+                         "lhs": "__SI_3",
+                         "rhs": {"type": "variable", "value": "Z",
+                                 "datatype": { "kind": "bool" } }
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "S": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                      {"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "outputs": [{"name": "Z", "datatype": { "kind": "bool" }, "original_name": "Z"}],
+           "locals": [{"name": "__S_5", "datatype": { "kind": "bool" }, "original_name": "__S_5"},
+                      {"name": "__S_4", "datatype": { "kind": "bool" }, "original_name": "__S_4"},
+                      {"name": "__S_2", "datatype": { "kind": "bool" }, "original_name": "__S_2"},
+                      {"name": "__S_1", "datatype": { "kind": "bool" }, "original_name": "__S_1"}],
+           "mems": [{"name": "__S_3", "datatype": { "kind": "bool" }, "original_name": "__S_3"}],
+           "original_name": "S",
+           "instrs": {  "__S_2": {
+                          "kind": "local_assign",
+                          "lhs": "__S_2",
+                          "rhs": {"type": "constant", "value": "false",
+                                  "datatype": { "kind": "bool" } }
+                      },
+                       "__S_1_ni_11": {
+                         "kind": "arrow",
+                         "name": "ni_11",
+                         "lhs": "__S_1",
+                         "rhs": "reset_ni_11"
+                      },
+                       "branch_5": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__S_1",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__S_4"],
+                         "inputs": [{"name": "__S_1", "datatype": { "kind": "bool" }, "original_name": "__S_1"},
+                                    {"name": "__S_2", "datatype": { "kind": "bool" }, "original_name": "__S_2"},
+                                    {"name": "__S_3", "datatype": { "kind": "bool" }, "original_name": "__S_3"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__S_2", "datatype": { "kind": "bool" }, "original_name": "__S_2"}],
+                             "instrs": {
+                                "__S_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__S_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__S_2",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__S_3", "datatype": { "kind": "bool" }, "original_name": "__S_3"}],
+                             "instrs": {
+                                "__S_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__S_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__S_3",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "__S_5": {
+                         "kind": "operator",
+                         "lhs": "__S_5",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "Y",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__S_4",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "Z": {
+                         "kind": "operator",
+                         "lhs": "Z",
+                         "name": "||",
+                         "args": [{"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__S_5",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__S_3": {
+                         "kind": "pre",
+                         "lhs": "__S_3",
+                         "rhs": {"type": "variable", "value": "Z",
+                                 "datatype": { "kind": "bool" } }
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "FSM_AutopilotSpec": {
+           "contract": "true",
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "apfail", "datatype": { "kind": "bool" }, "original_name": "apfail"},
+                      {"name": "good", "datatype": { "kind": "bool" }, "original_name": "good"},
+                      {"name": "standby", "datatype": { "kind": "bool" }, "original_name": "standby"},
+                      {"name": "state", "datatype": { "kind": "real" }, "original_name": "state"},
+                      {"name": "supported", "datatype": { "kind": "bool" }, "original_name": "supported"}],
+           "outputs": [{"name": "STATE", "datatype": { "kind": "real" }, "original_name": "STATE"}],
+           "locals": [{"name": "spec301", "datatype": { "kind": "bool" }, "original_name": "spec301"},
+                      {"name": "spec284", "datatype": { "kind": "bool" }, "original_name": "spec284"},
+                      {"name": "spec262", "datatype": { "kind": "bool" }, "original_name": "spec262"},
+                      {"name": "spec247", "datatype": { "kind": "bool" }, "original_name": "spec247"},
+                      {"name": "spec230", "datatype": { "kind": "bool" }, "original_name": "spec230"},
+                      {"name": "spec210", "datatype": { "kind": "bool" }, "original_name": "spec210"},
+                      {"name": "spec189", "datatype": { "kind": "bool" }, "original_name": "spec189"},
+                      {"name": "spec175", "datatype": { "kind": "bool" }, "original_name": "spec175"},
+                      {"name": "spec160", "datatype": { "kind": "bool" }, "original_name": "spec160"},
+                      {"name": "spec143", "datatype": { "kind": "bool" }, "original_name": "spec143"},
+                      {"name": "spec129", "datatype": { "kind": "bool" }, "original_name": "spec129"},
+                      {"name": "ap_transition_state", "datatype": { "kind": "real" }, "original_name": "ap_transition_state"},
+                      {"name": "ap_standby_state", "datatype": { "kind": "real" }, "original_name": "ap_standby_state"},
+                      {"name": "ap_nominal_state", "datatype": { "kind": "real" }, "original_name": "ap_nominal_state"},
+                      {"name": "ap_maneuver_state", "datatype": { "kind": "real" }, "original_name": "ap_maneuver_state"},
+                      {"name": "__FSM_AutopilotSpec_9", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_9"},
+                      {"name": "__FSM_AutopilotSpec_8", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_8"},
+                      {"name": "__FSM_AutopilotSpec_7", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_7"},
+                      {"name": "__FSM_AutopilotSpec_62", "datatype": { "kind": "real" }, "original_name": "__FSM_AutopilotSpec_62"},
+                      {"name": "__FSM_AutopilotSpec_61", "datatype": { "kind": "real" }, "original_name": "__FSM_AutopilotSpec_61"},
+                      {"name": "__FSM_AutopilotSpec_60", "datatype": { "kind": "real" }, "original_name": "__FSM_AutopilotSpec_60"},
+                      {"name": "__FSM_AutopilotSpec_6", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_6"},
+                      {"name": "__FSM_AutopilotSpec_59", "datatype": { "kind": "real" }, "original_name": "__FSM_AutopilotSpec_59"},
+                      {"name": "__FSM_AutopilotSpec_58", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_58"},
+                      {"name": "__FSM_AutopilotSpec_57", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_57"},
+                      {"name": "__FSM_AutopilotSpec_56", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_56"},
+                      {"name": "__FSM_AutopilotSpec_55", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_55"},
+                      {"name": "__FSM_AutopilotSpec_54", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_54"},
+                      {"name": "__FSM_AutopilotSpec_53", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_53"},
+                      {"name": "__FSM_AutopilotSpec_52", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_52"},
+                      {"name": "__FSM_AutopilotSpec_51", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_51"},
+                      {"name": "__FSM_AutopilotSpec_50", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_50"},
+                      {"name": "__FSM_AutopilotSpec_5", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_5"},
+                      {"name": "__FSM_AutopilotSpec_49", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_49"},
+                      {"name": "__FSM_AutopilotSpec_48", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_48"},
+                      {"name": "__FSM_AutopilotSpec_47", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_47"},
+                      {"name": "__FSM_AutopilotSpec_46", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_46"},
+                      {"name": "__FSM_AutopilotSpec_45", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_45"},
+                      {"name": "__FSM_AutopilotSpec_44", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_44"},
+                      {"name": "__FSM_AutopilotSpec_43", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_43"},
+                      {"name": "__FSM_AutopilotSpec_42", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_42"},
+                      {"name": "__FSM_AutopilotSpec_41", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_41"},
+                      {"name": "__FSM_AutopilotSpec_40", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_40"},
+                      {"name": "__FSM_AutopilotSpec_4", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_4"},
+                      {"name": "__FSM_AutopilotSpec_39", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_39"},
+                      {"name": "__FSM_AutopilotSpec_38", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_38"},
+                      {"name": "__FSM_AutopilotSpec_37", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_37"},
+                      {"name": "__FSM_AutopilotSpec_36", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_36"},
+                      {"name": "__FSM_AutopilotSpec_35", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_35"},
+                      {"name": "__FSM_AutopilotSpec_34", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_34"},
+                      {"name": "__FSM_AutopilotSpec_33", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_33"},
+                      {"name": "__FSM_AutopilotSpec_32", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_32"},
+                      {"name": "__FSM_AutopilotSpec_31", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_31"},
+                      {"name": "__FSM_AutopilotSpec_30", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_30"},
+                      {"name": "__FSM_AutopilotSpec_3", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_3"},
+                      {"name": "__FSM_AutopilotSpec_29", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_29"},
+                      {"name": "__FSM_AutopilotSpec_28", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_28"},
+                      {"name": "__FSM_AutopilotSpec_27", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_27"},
+                      {"name": "__FSM_AutopilotSpec_26", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_26"},
+                      {"name": "__FSM_AutopilotSpec_25", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_25"},
+                      {"name": "__FSM_AutopilotSpec_24", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_24"},
+                      {"name": "__FSM_AutopilotSpec_23", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_23"},
+                      {"name": "__FSM_AutopilotSpec_22", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_22"},
+                      {"name": "__FSM_AutopilotSpec_21", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_21"},
+                      {"name": "__FSM_AutopilotSpec_20", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_20"},
+                      {"name": "__FSM_AutopilotSpec_2", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_2"},
+                      {"name": "__FSM_AutopilotSpec_19", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_19"},
+                      {"name": "__FSM_AutopilotSpec_18", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_18"},
+                      {"name": "__FSM_AutopilotSpec_17", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_17"},
+                      {"name": "__FSM_AutopilotSpec_16", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_16"},
+                      {"name": "__FSM_AutopilotSpec_15", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_15"},
+                      {"name": "__FSM_AutopilotSpec_14", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_14"},
+                      {"name": "__FSM_AutopilotSpec_13", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_13"},
+                      {"name": "__FSM_AutopilotSpec_12", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_12"},
+                      {"name": "__FSM_AutopilotSpec_11", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_11"},
+                      {"name": "__FSM_AutopilotSpec_10", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_10"},
+                      {"name": "__FSM_AutopilotSpec_1", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_1"},
+                      {"name": "FTP", "datatype": { "kind": "bool" }, "original_name": "FTP"}],
+           "mems": [],
+           "original_name": "FSM_AutopilotSpec",
+           "instrs": {  "__FSM_AutopilotSpec_61": {
+                          "kind": "local_assign",
+                          "lhs": "__FSM_AutopilotSpec_61",
+                          "rhs": {"type": "constant", "value": "3.0",
+                                  "datatype": { "kind": "real" } }
+                      },
+                       "ap_standby_state": {
+                         "kind": "local_assign",
+                         "lhs": "ap_standby_state",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_61",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "__FSM_AutopilotSpec_59": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_59",
+                         "rhs": {"type": "constant", "value": "2.0",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "ap_maneuver_state": {
+                         "kind": "local_assign",
+                         "lhs": "ap_maneuver_state",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_59",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "__FSM_AutopilotSpec_2": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_2",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_3": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_3",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_2",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_4": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_4",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_3",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_1": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_1",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec301": {
+                         "kind": "operator",
+                         "lhs": "spec301",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_4",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_1",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_62": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_62",
+                         "rhs": {"type": "constant", "value": "0.0",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "ap_transition_state": {
+                         "kind": "local_assign",
+                         "lhs": "ap_transition_state",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_62",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "__FSM_AutopilotSpec_7": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_7",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_8": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_8",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_7",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "supported",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_9": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_9",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_8",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_6": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_6",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_5": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_5",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_10": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_10",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_9",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_6",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "spec284": {
+                         "kind": "operator",
+                         "lhs": "spec284",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_10",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_5",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_60": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_60",
+                         "rhs": {"type": "constant", "value": "1.0",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "ap_nominal_state": {
+                         "kind": "local_assign",
+                         "lhs": "ap_nominal_state",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_60",
+                                 "datatype": { "kind": "real" } }
+                      },
+                       "__FSM_AutopilotSpec_56_ni_10": {
+                         "kind": "arrow",
+                         "name": "ni_10",
+                         "lhs": "__FSM_AutopilotSpec_56",
+                         "rhs": "reset_ni_10"
+                      },
+                       "__FSM_AutopilotSpec_15": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_15",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_13": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_13",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_12": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_12",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_nominal_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_14": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_14",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_13",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_12",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_11": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_11",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_56",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "branch_6": {
+                         "kind": "branch",
+                         "guard": {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_11",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__FSM_AutopilotSpec_16"],
+                         "inputs": [{"name": "__FSM_AutopilotSpec_11", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_11"},
+                                    {"name": "__FSM_AutopilotSpec_14", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_14"},
+                                    {"name": "__FSM_AutopilotSpec_15", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_15"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_14", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_14"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_16": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_16",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_14",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_15", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_15"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_16": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_16",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_15",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "spec262": {
+                         "kind": "local_assign",
+                         "lhs": "spec262",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_16",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "__FSM_AutopilotSpec_18": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_18",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_19": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_19",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_18",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "supported",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_20": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_20",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_19",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_17": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_17",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec247": {
+                         "kind": "operator",
+                         "lhs": "spec247",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_20",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_17",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_55_ni_9": {
+                         "kind": "arrow",
+                         "name": "ni_9",
+                         "lhs": "__FSM_AutopilotSpec_55",
+                         "rhs": "reset_ni_9"
+                      },
+                       "__FSM_AutopilotSpec_27": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_27",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_24": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_24",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_23": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_23",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_25": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_25",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_24",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_23",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_22": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_22",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "apfail",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_26": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_26",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_25",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_22",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_21": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_21",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_55",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "branch_7": {
+                         "kind": "branch",
+                         "guard": {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_21",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__FSM_AutopilotSpec_28"],
+                         "inputs": [{"name": "__FSM_AutopilotSpec_21", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_21"},
+                                    {"name": "__FSM_AutopilotSpec_26", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_26"},
+                                    {"name": "__FSM_AutopilotSpec_27", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_27"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_26", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_26"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_28": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_28",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_26",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_27", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_27"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_28": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_28",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_27",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "spec230": {
+                         "kind": "local_assign",
+                         "lhs": "spec230",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_28",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "__FSM_AutopilotSpec_32": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_32",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_nominal_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_31": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_31",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_33": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_33",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_32",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_31",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_30": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_30",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_34": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_34",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_33",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_30",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_29": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_29",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec210": {
+                         "kind": "operator",
+                         "lhs": "spec210",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_34",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_29",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_36": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_36",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_37": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_37",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_36",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "apfail",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_35": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_35",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_maneuver_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec189": {
+                         "kind": "operator",
+                         "lhs": "spec189",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_37",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_35",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_54_ni_8": {
+                         "kind": "arrow",
+                         "name": "ni_8",
+                         "lhs": "__FSM_AutopilotSpec_54",
+                         "rhs": "reset_ni_8"
+                      },
+                       "__FSM_AutopilotSpec_42": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_42",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_40": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_40",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_39": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_39",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_41": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_41",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_40",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_39",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_38": {
+                         "kind": "local_assign",
+                         "lhs": "__FSM_AutopilotSpec_38",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_54",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "branch_8": {
+                         "kind": "branch",
+                         "guard": {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_38",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__FSM_AutopilotSpec_43"],
+                         "inputs": [{"name": "__FSM_AutopilotSpec_38", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_38"},
+                                    {"name": "__FSM_AutopilotSpec_41", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_41"},
+                                    {"name": "__FSM_AutopilotSpec_42", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_42"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_41", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_41"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_43": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_43",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_41",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__FSM_AutopilotSpec_42", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_42"}],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_43": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_43",
+                                  "rhs": {"type": "variable",
+                                          "value": "__FSM_AutopilotSpec_42",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "spec175": {
+                         "kind": "local_assign",
+                         "lhs": "spec175",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_43",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "__FSM_AutopilotSpec_45": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_45",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_46": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_46",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_45",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "good",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_47": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_47",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_46",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "supported",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_44": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_44",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_nominal_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec160": {
+                         "kind": "operator",
+                         "lhs": "spec160",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_47",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_44",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_49": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_49",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_nominal_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_50": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_50",
+                         "name": "&&",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_49",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_48": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_48",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec143": {
+                         "kind": "operator",
+                         "lhs": "spec143",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_50",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_48",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_52": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_52",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "state",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_transition_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "__FSM_AutopilotSpec_53": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_53",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "standby",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_52",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_51": {
+                         "kind": "operator",
+                         "lhs": "__FSM_AutopilotSpec_51",
+                         "name": "=",
+                         "args": [{"type": "variable", "value": "STATE",
+                                   "datatype": { "kind": "real" } },
+                                  {"type": "variable",
+                                   "value": "ap_standby_state",
+                                   "datatype": { "kind": "real" } }]
+                      },
+                       "spec129": {
+                         "kind": "operator",
+                         "lhs": "spec129",
+                         "name": "impl",
+                         "args": [{"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_53",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_51",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__FSM_AutopilotSpec_57_ni_7": {
+                         "kind": "arrow",
+                         "name": "ni_7",
+                         "lhs": "__FSM_AutopilotSpec_57",
+                         "rhs": "reset_ni_7"
+                      },
+                       "branch_9": {
+                         "kind": "branch",
+                         "guard": {"type": "variable",
+                                   "value": "__FSM_AutopilotSpec_57",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__FSM_AutopilotSpec_58"],
+                         "inputs": [{"name": "__FSM_AutopilotSpec_57", "datatype": { "kind": "bool" }, "original_name": "__FSM_AutopilotSpec_57"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_58": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_58",
+                                  "rhs": {"type": "constant",
+                                          "value": "true",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [],
+                             "instrs": {
+                                "__FSM_AutopilotSpec_58": {
+                                  "kind": "local_assign",
+                                  "lhs": "__FSM_AutopilotSpec_58",
+                                  "rhs": {"type": "constant",
+                                          "value": "false",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "FTP": {
+                         "kind": "local_assign",
+                         "lhs": "FTP",
+                         "rhs": {"type": "variable",
+                                 "value": "__FSM_AutopilotSpec_58",
+                                 "datatype": { "kind": "bool" } }
+                      }
+           },
+           "spec": { "assume": [],
+                     "guarantees": [{"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec129",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec143",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec160",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec175",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec189",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec210",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec230",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec247",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec262",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec284",
+                                                "datatype": { "kind": "bool" }
+                                                } },
+                                    {"quantifiers": "",
+                                     "qfexpr": {"type": "variable",
+                                                "value": "spec301",
+                                                "datatype": { "kind": "bool" }
+                                                } }], "modes": []  },
+           "annots": { 
+           }
+         },
+         "O": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [{"name": "__O_4", "datatype": { "kind": "bool" }, "original_name": "__O_4"},
+                      {"name": "__O_2", "datatype": { "kind": "bool" }, "original_name": "__O_2"},
+                      {"name": "__O_1", "datatype": { "kind": "bool" }, "original_name": "__O_1"}],
+           "mems": [{"name": "__O_3", "datatype": { "kind": "bool" }, "original_name": "__O_3"}],
+           "original_name": "O",
+           "instrs": {  "__O_2": {
+                          "kind": "local_assign",
+                          "lhs": "__O_2",
+                          "rhs": {"type": "constant", "value": "false",
+                                  "datatype": { "kind": "bool" } }
+                      },
+                       "__O_1_ni_6": {
+                         "kind": "arrow",
+                         "name": "ni_6",
+                         "lhs": "__O_1",
+                         "rhs": "reset_ni_6"
+                      },
+                       "branch_10": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__O_1",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__O_4"],
+                         "inputs": [{"name": "__O_1", "datatype": { "kind": "bool" }, "original_name": "__O_1"},
+                                    {"name": "__O_2", "datatype": { "kind": "bool" }, "original_name": "__O_2"},
+                                    {"name": "__O_3", "datatype": { "kind": "bool" }, "original_name": "__O_3"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "__O_2", "datatype": { "kind": "bool" }, "original_name": "__O_2"}],
+                             "instrs": {
+                                "__O_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__O_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__O_2",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__O_3", "datatype": { "kind": "bool" }, "original_name": "__O_3"}],
+                             "instrs": {
+                                "__O_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__O_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__O_3",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "Y": {
+                         "kind": "operator",
+                         "lhs": "Y",
+                         "name": "||",
+                         "args": [{"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__O_4",
+                                   "datatype": { "kind": "bool" } }]
+                      },
+                       "__O_3": {
+                         "kind": "pre",
+                         "lhs": "__O_3",
+                         "rhs": {"type": "variable", "value": "Y",
+                                 "datatype": { "kind": "bool" } }
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "H": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [{"name": "__H_4", "datatype": { "kind": "bool" }, "original_name": "__H_4"},
+                      {"name": "__H_3", "datatype": { "kind": "bool" }, "original_name": "__H_3"},
+                      {"name": "__H_1", "datatype": { "kind": "bool" }, "original_name": "__H_1"}],
+           "mems": [{"name": "__H_2", "datatype": { "kind": "bool" }, "original_name": "__H_2"}],
+           "original_name": "H",
+           "instrs": {  "__H_3": {
+                          "kind": "operator",
+                          "lhs": "__H_3",
+                          "name": "&&",
+                          "args": [{"type": "variable", "value": "X",
+                                    "datatype": { "kind": "bool" } },
+                                   {"type": "variable", "value": "__H_2",
+                                    "datatype": { "kind": "bool" } }]
+                      },
+                       "__H_1_ni_5": {
+                         "kind": "arrow",
+                         "name": "ni_5",
+                         "lhs": "__H_1",
+                         "rhs": "reset_ni_5"
+                      },
+                       "branch_11": {
+                         "kind": "branch",
+                         "guard": {"type": "variable", "value": "__H_1",
+                                   "datatype": { "kind": "bool" } },
+                         "outputs": ["__H_4"],
+                         "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                                    {"name": "__H_1", "datatype": { "kind": "bool" }, "original_name": "__H_1"},
+                                    {"name": "__H_3", "datatype": { "kind": "bool" }, "original_name": "__H_3"}],
+                         "branches": {
+                           "true": {
+                             "guard_value": "true",
+                             "inputs": [{"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+                             "instrs": {
+                                "__H_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__H_4",
+                                  "rhs": {"type": "variable", "value": "X",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           },
+                           "false": {
+                             "guard_value": "false",
+                             "inputs": [{"name": "__H_3", "datatype": { "kind": "bool" }, "original_name": "__H_3"}],
+                             "instrs": {
+                                "__H_4": {
+                                  "kind": "local_assign",
+                                  "lhs": "__H_4",
+                                  "rhs": {"type": "variable",
+                                          "value": "__H_3",
+                                          "datatype": { "kind": "bool" } }
+                               }
+                             }
+                           }
+                         }
+                      },
+                       "Y": {
+                         "kind": "local_assign",
+                         "lhs": "Y",
+                         "rhs": {"type": "variable", "value": "__H_4",
+                                 "datatype": { "kind": "bool" } }
+                      },
+                       "__H_2": {
+                         "kind": "pre",
+                         "lhs": "__H_2",
+                         "rhs": {"type": "variable", "value": "Y",
+                                 "datatype": { "kind": "bool" } }
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "SIT": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "L", "datatype": { "kind": "int" }, "original_name": "L"},
+                      {"name": "R", "datatype": { "kind": "int" }, "original_name": "R"},
+                      {"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                      {"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "outputs": [{"name": "Z", "datatype": { "kind": "bool" }, "original_name": "Z"}],
+           "locals": [{"name": "__SIT_2", "datatype": { "kind": "bool" }, "original_name": "__SIT_2"},
+                      {"name": "__SIT_1", "datatype": { "kind": "bool" }, "original_name": "__SIT_1"}],
+           "mems": [],
+           "original_name": "SIT",
+           "instrs": {  "__SIT_2_ni_4": {
+                          "kind": "statefulcall",
+                          "name": "SI",
+                          "id": "ni_4",
+                          "lhs": ["__SIT_2"],
+                          "args": [{"type": "variable", "value": "X",
+                                    "datatype": { "kind": "bool" } },
+                                   {"type": "variable", "value": "Y",
+                                    "datatype": { "kind": "bool" } }],
+                          "reset": { "name": "reset_ni_4", "resetable": "false"}
+                      },
+                       "__SIT_1_ni_3": {
+                         "kind": "statefulcall",
+                         "name": "OT",
+                         "id": "ni_3",
+                         "lhs": ["__SIT_1"],
+                         "args": [{"type": "variable", "value": "L",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "R",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } }],
+                         "reset": { "name": "reset_ni_3", "resetable": "false"}
+                      },
+                       "Z": {
+                         "kind": "operator",
+                         "lhs": "Z",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "__SIT_2",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__SIT_1",
+                                   "datatype": { "kind": "bool" } }]
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "ST": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "L", "datatype": { "kind": "int" }, "original_name": "L"},
+                      {"name": "R", "datatype": { "kind": "int" }, "original_name": "R"},
+                      {"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"},
+                      {"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "outputs": [{"name": "Z", "datatype": { "kind": "bool" }, "original_name": "Z"}],
+           "locals": [{"name": "__ST_2", "datatype": { "kind": "bool" }, "original_name": "__ST_2"},
+                      {"name": "__ST_1", "datatype": { "kind": "bool" }, "original_name": "__ST_1"}],
+           "mems": [],
+           "original_name": "ST",
+           "instrs": {  "__ST_2_ni_2": {
+                          "kind": "statefulcall",
+                          "name": "S",
+                          "id": "ni_2",
+                          "lhs": ["__ST_2"],
+                          "args": [{"type": "variable", "value": "X",
+                                    "datatype": { "kind": "bool" } },
+                                   {"type": "variable", "value": "Y",
+                                    "datatype": { "kind": "bool" } }],
+                          "reset": { "name": "reset_ni_2", "resetable": "false"}
+                      },
+                       "__ST_1_ni_1": {
+                         "kind": "statefulcall",
+                         "name": "OT",
+                         "id": "ni_1",
+                         "lhs": ["__ST_1"],
+                         "args": [{"type": "variable", "value": "L",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "R",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "X",
+                                   "datatype": { "kind": "bool" } }],
+                         "reset": { "name": "reset_ni_1", "resetable": "false"}
+                      },
+                       "Z": {
+                         "kind": "operator",
+                         "lhs": "Z",
+                         "name": "&&",
+                         "args": [{"type": "variable", "value": "__ST_2",
+                                   "datatype": { "kind": "bool" } },
+                                  {"type": "variable", "value": "__ST_1",
+                                   "datatype": { "kind": "bool" } }]
+                      }
+           },
+           "annots": { 
+           }
+         },
+         "HT": {
+           "imported": "false",
+           "kind": "stateful",
+           "inputs": [{"name": "L", "datatype": { "kind": "int" }, "original_name": "L"},
+                      {"name": "R", "datatype": { "kind": "int" }, "original_name": "R"},
+                      {"name": "X", "datatype": { "kind": "bool" }, "original_name": "X"}],
+           "outputs": [{"name": "Y", "datatype": { "kind": "bool" }, "original_name": "Y"}],
+           "locals": [{"name": "__HT_2", "datatype": { "kind": "bool" }, "original_name": "__HT_2"},
+                      {"name": "__HT_1", "datatype": { "kind": "bool" }, "original_name": "__HT_1"}],
+           "mems": [],
+           "original_name": "HT",
+           "instrs": {  "__HT_1": {
+                          "kind": "operator",
+                          "lhs": "__HT_1",
+                          "name": "not",
+                          "args": [{"type": "variable", "value": "X",
+                                    "datatype": { "kind": "bool" } }]
+                      },
+                       "__HT_2_ni_0": {
+                         "kind": "statefulcall",
+                         "name": "OT",
+                         "id": "ni_0",
+                         "lhs": ["__HT_2"],
+                         "args": [{"type": "variable", "value": "L",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "R",
+                                   "datatype": { "kind": "int" } },
+                                  {"type": "variable", "value": "__HT_1",
+                                   "datatype": { "kind": "bool" } }],
+                         "reset": { "name": "reset_ni_0", "resetable": "false"}
+                      },
+                       "Y": {
+                         "kind": "operator",
+                         "lhs": "Y",
+                         "name": "not",
+                         "args": [{"type": "variable", "value": "__HT_2",
+                                   "datatype": { "kind": "bool" } }]
+                      }
+           },
+           "annots": { 
+           }
+         }}
+}

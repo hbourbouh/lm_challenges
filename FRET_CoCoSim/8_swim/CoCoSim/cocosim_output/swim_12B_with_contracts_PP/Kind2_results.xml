@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<Results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" enabled="bmc,ind,ind2,ic3,invgents,invgenos,invgenintos,invgenintos" timeout="7200.000000" bmc_max="0" compositional="true" modular="true">
+
+
+<Log class="info" source="parse">kind2 v1.1.0</Log>
+<Log class="warn" source="parse" line="166" column="3">Unguarded pre in expression (pre SWIM_AirspeedWarningAllowed_1)</Log>
+<Log class="warn" source="parse" line="195" column="3">Unguarded pre in expression (pre Out1_1)</Log>
+<Log class="warn" source="parse" line="227" column="3">Unguarded pre in expression (pre SWIM_AirspeedWarningAllowed_1)</Log>
+<Log class="warn" source="parse" line="256" column="3">Unguarded pre in expression (pre Out1_1)</Log>
+<Log class="warn" source="parse" line="374" column="3">Unguarded pre in expression (pre o_SWIM_CalAirspeedmin_kts_1)</Log>
+<Log class="warn" source="parse" line="409" column="3">Unguarded pre in expression (pre o_SWIM_CalAirspeedmin_kts_1)</Log>
+<Log class="warn" source="parse" line="481" column="3">Unguarded pre in expression (pre SWIM_SelfAgcasLowSpeedWarn_1)</Log>
+<Log class="warn" source="parse" line="513" column="3">Unguarded pre in expression (pre SWIM_SelfAgcasLowSpeedWarn_1)</Log>
+<Log class="warn" source="parse" line="558" column="3">Unguarded pre in expression (pre SWIM_SelfAgcasLowSpeedWarn_1)</Log>
+<Log class="warn" source="parse" line="587" column="3">Unguarded pre in expression (pre Out1_1)</Log>
+<Log class="note" source="parse">System bool_to_real has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_608_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_608_001_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_592_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_592_001_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_587_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_587_001_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_582_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_582_001_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IssueWarning_570_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System Gettheaircraftweight_566_001 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System int_to_real has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System sqrt has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System kind2_times has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_537_018 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_537_018_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_524_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_524_002_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System CalculatetheminimumcalibratedairspeedbasedonCatSwitch_519_002 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System CalculateminimumimpactpressureforwarningtopilotthatAGCASoperationisdegraded_503_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System CalculateminimumimpactpressureforAGCASoperationtobesuspendedandsenttostandby_495_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem3_457_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem3_457_035_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem2_452_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem2_452_035_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_447_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem1_447_035_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_442_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System IfActionSubsystem_442_035_condExecSS has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System AirspeedMonitoring_435_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SWIM_minus_001A_340_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SWIM_minus_001B_344_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System SWIM_minus_002_348_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System assume_336_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec139_operator_355_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec156_operator_356_035 has no property, skipping verification step.</Log>
+<Log class="note" source="parse">System spec170_operator_357_035 has no property, skipping verification step.</Log>
+
+
+<AnalysisStart top="swim_airspeed_427_035" concrete="sqrt,spec170_operator_357_035,spec156_operator_356_035,spec139_operator_355_035,kind2_times,int_to_real,bool_to_real,assume_336_035,SWIM_minus_002_348_035,SWIM_minus_001B_344_035,SWIM_minus_001A_340_035,IssueWarning_570_001,IfActionSubsystem_587_001_condExecSS,IfActionSubsystem_587_001,IfActionSubsystem_582_001_condExecSS,IfActionSubsystem_582_001,IfActionSubsystem_524_002_condExecSS,IfActionSubsystem_524_002,IfActionSubsystem_442_035_condExecSS,IfActionSubsystem_442_035,IfActionSubsystem3_457_035_condExecSS,IfActionSubsystem3_457_035,IfActionSubsystem2_452_035_condExecSS,IfActionSubsystem2_452_035,IfActionSubsystem1_608_001_condExecSS,IfActionSubsystem1_608_001,IfActionSubsystem1_592_001_condExecSS,IfActionSubsystem1_592_001,IfActionSubsystem1_537_018_condExecSS,IfActionSubsystem1_537_018,IfActionSubsystem1_447_035_condExecSS,IfActionSubsystem1_447_035,Gettheaircraftweight_566_001,CalculatetheminimumcalibratedairspeedbasedonCatSwitch_519_002,CalculateminimumimpactpressureforwarningtopilotthatAGCASoperationisdegraded_503_035,CalculateminimumimpactpressureforAGCASoperationtobesuspendedandsenttostandby_495_035,AirspeedMonitoring_435_035" abstract="" assumptions="(spec170_operator_357_035,1)"/>
+
+<Log class="warn" source="parse">In inductive step: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In bounded model checking: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In 2-induction: Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In two state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (int): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (bool): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Log class="warn" source="parse">In one state invariant generator (real): Yices 2 does not support check-sat-assuming with non-linear models. Disabling check_sat_assume.</Log>
+<Property name="swim_12B_SWIMSpec_328_035[l689c1].SWIM_minus_002_348_035[3]" line="647" column="1" scope="swim_airspeed_427_035">
+  <Runtime unit="sec" timeout="false">2.193</Runtime>
+  <K>1</K>
+  <Answer source="bmc">falsifiable</Answer>
+   <CounterExample>
+    <Node name="swim_airspeed_427_035">
+      <Stream name="muxGet_T_Mux_AircraftGrossWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+      </Stream>
+      <Stream name="diGet_S_CatSwitchPosition_1" type="int" class="input"><Value instant="0">-1073741824</Value><Value instant="1">-1073741824</Value>
+      </Stream>
+      <Stream name="E_AI_IMPACT_PRESSURE_1" type="real" class="input"><Value instant="0">(real -116)</Value><Value instant="1">(real -126)</Value>
+      </Stream>
+      <Stream name="diGet_S_LandingGearAltFlap_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+      </Stream>
+      <Stream name="muxGet_T_Mux_AirspeedMonitorEnable_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="cvGet_V_AgcasLowSpeedWarn_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="olcGet_AgcasInterlocks_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+      </Stream>
+      <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+      </Stream>
+      <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+      </Stream>
+      <Stream name="swimGet_AgcasLowSpeedWarn_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+      </Stream>
+      <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="output">
+        <Value instant="0">-125452041/1000000</Value>
+        <Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+      </Stream>
+      <Stream name="SWIM_ASWarningAllowed_1" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+      </Stream>
+      <Stream name="CalculateminimumimpactpressureforwarningtopilotthatAGCASoperationisdegraded_1" type="real" class="local">
+        <Value instant="0">-125452041/1000000</Value>
+        <Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+      </Stream>
+      <Stream name="CalculatetheminimumcalibratedairspeedbasedonCatSwitch_1" type="real" class="local"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+      </Stream>
+      <Stream name="Gettheaircraftweight_1" type="real" class="local"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+      </Stream>
+      <Stream name="AirspeedMonitoring_1" type="real" class="local"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+      </Stream>
+      <Stream name="IssueWarning_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+      </Stream>
+      <Stream name="CalculateminimumimpactpressureforAGCASoperationtobesuspendedandsenttostandby_1" type="real" class="local">
+        <Value instant="0">-154172041/1000000</Value>
+        <Value instant="1">-3830302810680625707029407227/25000000000000000000000000</Value>
+      </Stream>
+      <Node name="CalculateminimumimpactpressureforAGCASoperationtobesuspendedandsenttostandby_495_035" line="697" column="82">
+        <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="input">
+          <Value instant="0">-125452041/1000000</Value>
+          <Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="o_SWIM_QcMinDisable_lbspft2_1" type="real" class="output">
+          <Value instant="0">-154172041/1000000</Value>
+          <Value instant="1">-3830302810680625707029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="Sum_1" type="real" class="local">
+          <Value instant="0">-154172040999999999/1000000000000000</Value>
+          <Value instant="1">-3830302810680625707029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="Constant_1" type="real" class="local"><Value instant="0">-28719999999999999/1000000000000000</Value><Value instant="1">-28719999999999999/1000000000000000</Value>
+        </Stream>
+      </Node>
+      <Node name="IssueWarning_570_001" line="701" column="18">
+        <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="input">
+          <Value instant="0">-154172041/1000000</Value>
+          <Value instant="1">-3830302810680625707029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="muxGet_T_Mux_AirspeedMonitorEnable_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="cvGet_V_AgcasLowSpeedWarn_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="olcGet_AgcasInterlocks_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="S_ImpactPressure_lbspft2_1" type="real" class="input"><Value instant="0">(real -116)</Value><Value instant="1">(real -126)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem_582_001" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="LogicalOperator2_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="LogicalOperator1_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="RelationalOperator1_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Constant1_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="RelationalOperator2_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Constant2_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="RelationalOperator3_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Constant3_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="RelationalOperator4_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Constant4_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem1_608_001" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="UnitDelay_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+        </Stream>
+        <Node name="IfActionSubsystem1_608_001_condExecSS" line="618" column="24">
+          <Stream name="In1_1" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="Out1_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="pre_Out1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="IfActionSubsystem1_608_001" line="590" column="3">
+            <Stream name="In1_1" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="Out1_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="IfActionSubsystem_582_001_condExecSS" line="616" column="23">
+          <Stream name="S_ImpactPressure_lbspft2_1" type="real" class="input"><Value instant="0">(real -116)</Value><Value instant="1">(real -126)</Value>
+          </Stream>
+          <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="input">
+            <Value instant="0">-154172041/1000000</Value>
+            <Value instant="1">-3830302810680625707029407227/25000000000000000000000000</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="pre_SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="IfActionSubsystem_582_001" line="561" column="3">
+            <Stream name="S_ImpactPressure_lbspft2_1" type="real" class="input">
+            </Stream>
+            <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output">
+            </Stream>
+            <Stream name="Merge_1" type="real" class="local">
+            </Stream>
+            <Stream name="ExecutionCond_of_IfActionSubsystem_587_001" type="bool" class="local">
+            </Stream>
+            <Stream name="If_1" type="bool" class="local">
+            </Stream>
+            <Stream name="RelationalOperator_1" type="bool" class="local">
+            </Stream>
+            <Stream name="IfActionSubsystem_1" type="real" class="local">
+            </Stream>
+            <Stream name="ExecutionCond_of_IfActionSubsystem1_592_001" type="bool" class="local">
+            </Stream>
+            <Stream name="If_2" type="bool" class="local">
+            </Stream>
+            <Stream name="IfActionSubsystem1_1" type="real" class="local">
+            </Stream>
+            <Node name="IfActionSubsystem1_592_001_condExecSS" line="537" column="24">
+              <Stream name="_isEnabled" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output">
+              </Stream>
+              <Stream name="pre_SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="local">
+              </Stream>
+              <Node name="IfActionSubsystem1_592_001" line="516" column="3">
+                <Stream name="__time_step" type="real" class="input">
+                </Stream>
+                <Stream name="__nb_step" type="int" class="input">
+                </Stream>
+                <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output">
+                </Stream>
+                <Stream name="Constant_1" type="real" class="local">
+                </Stream>
+              </Node>
+            </Node>
+            <Node name="IfActionSubsystem_587_001_condExecSS" line="535" column="23">
+              <Stream name="_isEnabled" type="bool" class="input">
+              </Stream>
+              <Stream name="__time_step" type="real" class="input">
+              </Stream>
+              <Stream name="__nb_step" type="int" class="input">
+              </Stream>
+              <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output">
+              </Stream>
+              <Stream name="pre_SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="local">
+              </Stream>
+              <Node name="IfActionSubsystem_587_001" line="484" column="3">
+                <Stream name="__time_step" type="real" class="input">
+                </Stream>
+                <Stream name="__nb_step" type="int" class="input">
+                </Stream>
+                <Stream name="SWIM_SelfAgcasLowSpeedWarn_1" type="real" class="output">
+                </Stream>
+                <Stream name="Constant_1" type="real" class="local">
+                </Stream>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="bool_to_real" line="628" column="26">
+          <Stream name="x" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="bool_to_real" line="627" column="26">
+          <Stream name="x" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+        <Node name="bool_to_real" line="626" column="26">
+          <Stream name="x" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="AirspeedMonitoring_435_035" line="696" column="24">
+        <Stream name="S_ImpactPressure_lbspft2_1" type="real" class="input"><Value instant="0">(real -116)</Value><Value instant="1">(real -126)</Value>
+        </Stream>
+        <Stream name="SWIM_Qcmin_lbspft2_1" type="real" class="input">
+          <Value instant="0">-125452041/1000000</Value>
+          <Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="diGet_S_LandingGearAltFlap_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="Merge1_1" type="real" class="local"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem2_452_035" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If1_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="RelationalOperator3_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Constant2_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem2_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem3_457_035" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If1_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem3_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem_442_035" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="LogicalOperator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="RelationalOperator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="RelationalOperator2_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="Constant1_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem_1" type="real" class="local"><Value instant="0">1</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem1_447_035" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="UnitDelay_1" type="real" class="local"><Value instant="0">(real 0)</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Node name="IfActionSubsystem1_447_035_condExecSS" line="288" column="24">
+          <Stream name="In1_1" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="Out1_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="pre_Out1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="IfActionSubsystem1_447_035" line="198" column="3">
+            <Stream name="In1_1" type="real" class="input"><Value instant="1">(real 1)</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="1">1/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="Out1_1" type="real" class="output"><Value instant="1">(real 1)</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="IfActionSubsystem_442_035_condExecSS" line="286" column="23">
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="pre_SWIM_AirspeedWarningAllowed_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Node name="IfActionSubsystem_442_035" line="169" column="3">
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value>
+            </Stream>
+            <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="output"><Value instant="0">(real 1)</Value>
+            </Stream>
+            <Stream name="Constant_1" type="real" class="local"><Value instant="0">1</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="IfActionSubsystem3_457_035_condExecSS" line="292" column="24">
+          <Stream name="In1_1" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="Out1_1" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="pre_Out1_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Node name="IfActionSubsystem3_457_035" line="259" column="3">
+            <Stream name="In1_1" type="real" class="input"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="Out1_1" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="IfActionSubsystem2_452_035_condExecSS" line="290" column="24">
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="pre_SWIM_AirspeedWarningAllowed_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="IfActionSubsystem2_452_035" line="230" column="3">
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="SWIM_AirspeedWarningAllowed_1" type="real" class="output">
+            </Stream>
+            <Stream name="Constant_1" type="real" class="local">
+            </Stream>
+          </Node>
+        </Node>
+        <Node name="bool_to_real" line="305" column="26">
+          <Stream name="x" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real 1)</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="Gettheaircraftweight_566_001" line="700" column="26">
+        <Stream name="muxGet_T_Mux_AircraftGrossWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="AircraftWeight_lbs_1" type="real" class="output"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+      </Node>
+      <Node name="CalculatetheminimumcalibratedairspeedbasedonCatSwitch_519_002" line="699" column="59">
+        <Stream name="AircraftWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+        </Stream>
+        <Stream name="diGet_S_CatSwitchPosition_1" type="int" class="input"><Value instant="0">-1073741824</Value><Value instant="1">-1073741824</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="SWIM_CalAirspeedmin_kts_1" type="real" class="output"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+        </Stream>
+        <Stream name="Merge_1" type="real" class="local"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem_524_002" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="If_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="RelationalOperator_1" type="bool" class="local"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Constant_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+        </Stream>
+        <Stream name="ExecutionCond_of_IfActionSubsystem1_537_018" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="If_2" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="IfActionSubsystem1_1" type="real" class="local"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+        </Stream>
+        <Node name="IfActionSubsystem1_537_018_condExecSS" line="435" column="24">
+          <Stream name="AircraftWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">true</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="o_SWIM_CalAirspeedmin_kts_1" type="real" class="output"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+          </Stream>
+          <Stream name="pre_o_SWIM_CalAirspeedmin_kts_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">1066847/100000</Value>
+          </Stream>
+          <Node name="IfActionSubsystem1_537_018" line="412" column="3">
+            <Stream name="AircraftWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+            </Stream>
+            <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+            </Stream>
+            <Stream name="o_SWIM_CalAirspeedmin_kts_1" type="real" class="output"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+            </Stream>
+            <Stream name="Sum_1" type="real" class="local"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+            </Stream>
+            <Stream name="Constant_1" type="real" class="local"><Value instant="0">10</Value><Value instant="1">10</Value>
+            </Stream>
+            <Stream name="Gain_1" type="real" class="local"><Value instant="0">66847/100000</Value><Value instant="1">66847/50000</Value>
+            </Stream>
+            <Stream name="Sqrt_1" type="real" class="local"><Value instant="0">1/2</Value><Value instant="1">(real 1)</Value>
+            </Stream>
+            <Node name="sqrt" line="393" column="10">
+              <Stream name="x" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+              </Stream>
+              <Stream name="y" type="real" class="output"><Value instant="0">1/2</Value><Value instant="1">(real 1)</Value>
+              </Stream>
+            </Node>
+            <Node name="kind2_times" line="392" column="11">
+              <Stream name="x" type="real" class="input"><Value instant="0">1/2</Value><Value instant="1">(real 1)</Value>
+              </Stream>
+              <Stream name="y" type="real" class="input"><Value instant="0">66847/50000</Value><Value instant="1">66847/50000</Value>
+              </Stream>
+              <Stream name="z" type="real" class="output"><Value instant="0">66847/100000</Value><Value instant="1">66847/50000</Value>
+              </Stream>
+              <Stream name="abs_x" type="real" class="local"><Value instant="0">1/2</Value><Value instant="1">1</Value>
+              </Stream>
+              <Stream name="abs_y" type="real" class="local"><Value instant="0">66847/50000</Value><Value instant="1">66847/50000</Value>
+              </Stream>
+              <Stream name="abs_z" type="real" class="local"><Value instant="0">66847/100000</Value><Value instant="1">66847/50000</Value>
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="IfActionSubsystem_524_002_condExecSS" line="433" column="23">
+          <Stream name="AircraftWeight_lbs_1" type="real" class="input"><Value instant="0">1/4</Value><Value instant="1">(real 1)</Value>
+          </Stream>
+          <Stream name="_isEnabled" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+          </Stream>
+          <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+          </Stream>
+          <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+          </Stream>
+          <Stream name="o_SWIM_CalAirspeedmin_kts_1" type="real" class="output"><Value instant="0">(real 0)</Value><Value instant="1">(real 0)</Value>
+          </Stream>
+          <Stream name="pre_o_SWIM_CalAirspeedmin_kts_1" type="real" class="local"><Value instant="0">0</Value><Value instant="1">0</Value>
+          </Stream>
+          <Node name="IfActionSubsystem_524_002" line="377" column="3">
+            <Stream name="AircraftWeight_lbs_1" type="real" class="input">
+            </Stream>
+            <Stream name="__time_step" type="real" class="input">
+            </Stream>
+            <Stream name="__nb_step" type="int" class="input">
+            </Stream>
+            <Stream name="o_SWIM_CalAirspeedmin_kts_1" type="real" class="output">
+            </Stream>
+            <Stream name="Sum_1" type="real" class="local">
+            </Stream>
+            <Stream name="Constant_1" type="real" class="local">
+            </Stream>
+            <Stream name="Gain_1" type="real" class="local">
+            </Stream>
+            <Stream name="Sqrt_1" type="real" class="local">
+            </Stream>
+            <Node name="sqrt" line="358" column="10"><Stream name="x" type="real" class="input"></Stream><Stream name="y" type="real" class="output"></Stream>
+            </Node>
+            <Node name="kind2_times" line="357" column="11">
+              <Stream name="x" type="real" class="input">
+              </Stream>
+              <Stream name="y" type="real" class="input">
+              </Stream>
+              <Stream name="z" type="real" class="output">
+              </Stream>
+              <Stream name="abs_x" type="real" class="local">
+              </Stream>
+              <Stream name="abs_y" type="real" class="local">
+              </Stream>
+              <Stream name="abs_z" type="real" class="local">
+              </Stream>
+            </Node>
+          </Node>
+        </Node>
+        <Node name="int_to_real" line="441" column="25">
+          <Stream name="x" type="int" class="input"><Value instant="0">-1073741824</Value><Value instant="1">-1073741824</Value>
+          </Stream>
+          <Stream name="y" type="real" class="output"><Value instant="0">(real -1073741824)</Value><Value instant="1">(real -1073741824)</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="CalculateminimumimpactpressureforwarningtopilotthatAGCASoperationisdegraded_503_035" line="698" column="81">
+        <Stream name="SWIM_CalAirspeedmin_kts_1" type="real" class="input"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="o_SWIM_Qcmin_lbspft2_1" type="real" class="output">
+          <Value instant="0">-125452041/1000000</Value>
+          <Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="Gain1_1" type="real" class="local"><Value instant="0">-125452041/1000000</Value><Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+        </Stream>
+        <Stream name="Sum1_1" type="real" class="local"><Value instant="0">-886983/500000</Value><Value instant="1">-44009802409/25000000000</Value>
+        </Stream>
+        <Stream name="Constant1_1" type="real" class="local"><Value instant="0">1/10</Value><Value instant="1">1/10</Value>
+        </Stream>
+        <Stream name="Sum_1" type="real" class="local"><Value instant="0">-936983/500000</Value><Value instant="1">-46509802409/25000000000</Value>
+        </Stream>
+        <Stream name="Constant_1" type="real" class="local"><Value instant="0">-10453/5000</Value><Value instant="1">-10453/5000</Value>
+        </Stream>
+        <Stream name="Gain_1" type="real" class="local"><Value instant="0">108317/500000</Value><Value instant="1">5755197591/25000000000</Value>
+        </Stream>
+        <Node name="kind2_times" line="339" column="11">
+          <Stream name="x" type="real" class="input"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">10153/500000</Value><Value instant="1">10153/500000</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">108317/500000</Value><Value instant="1">5755197591/25000000000</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">1066847/100000</Value><Value instant="1">566847/50000</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">10153/500000</Value><Value instant="1">10153/500000</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">108317/500000</Value><Value instant="1">5755197591/25000000000</Value>
+          </Stream>
+        </Node>
+        <Node name="kind2_times" line="340" column="12">
+          <Stream name="x" type="real" class="input"><Value instant="0">-886983/500000</Value><Value instant="1">-44009802409/25000000000</Value>
+          </Stream>
+          <Stream name="y" type="real" class="input"><Value instant="0">70718400000000003/1000000000000000</Value><Value instant="1">70718400000000003/1000000000000000</Value>
+          </Stream>
+          <Stream name="z" type="real" class="output"><Value instant="0">-125452041/1000000</Value><Value instant="1">-3112302810680625732029407227/25000000000000000000000000</Value>
+          </Stream>
+          <Stream name="abs_x" type="real" class="local"><Value instant="0">886983/500000</Value><Value instant="1">44009802409/25000000000</Value>
+          </Stream>
+          <Stream name="abs_y" type="real" class="local"><Value instant="0">70718400000000003/1000000000000000</Value><Value instant="1">70718400000000003/1000000000000000</Value>
+          </Stream>
+          <Stream name="abs_z" type="real" class="local"><Value instant="0">125452041/1000000</Value><Value instant="1">3112302810680625732029407227/25000000000000000000000000</Value>
+          </Stream>
+        </Node>
+      </Node>
+      <Node name="spec170_operator_357_035" line="655" column="33">
+        <Stream name="A_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">true</Value>
+        </Stream>
+        <Stream name="B_1" type="bool" class="input"><Value instant="0">false</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="A_equal__equal__gt_B_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Logical_newline_Operator_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="Logical_newline_Operator1_1" type="bool" class="local"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+      <Node name="SWIM_minus_002_348_035" line="646" column="31">
+        <Stream name="In1_1" type="bool" class="input"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+        <Stream name="__time_step" type="real" class="input"><Value instant="0">(real 0)</Value><Value instant="1">1/5</Value>
+        </Stream>
+        <Stream name="__nb_step" type="int" class="input"><Value instant="0">0</Value><Value instant="1">1</Value>
+        </Stream>
+        <Stream name="guarantee_1" type="bool" class="output"><Value instant="0">true</Value><Value instant="1">false</Value>
+        </Stream>
+      </Node>
+    </Node>
+  </CounterExample>
+</Property>
+<Property name="swim_12B_SWIMSpec_328_035[l689c1].SWIM_minus_001A_340_035[1]" line="643" column="1" scope="swim_airspeed_427_035">
+  <Runtime unit="sec" timeout="false">2.482</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+<Property name="swim_12B_SWIMSpec_328_035[l689c1].SWIM_minus_001B_344_035[2]" line="645" column="1" scope="swim_airspeed_427_035">
+  <Runtime unit="sec" timeout="false">2.482</Runtime>
+  <Answer source="ind">valid</Answer>
+</Property>
+
+<AnalysisStop/>
+
+<Log class="note" source="parse">System swim_12B_with_contracts_PP has no property, skipping verification step.</Log>
+
+
+</Results>

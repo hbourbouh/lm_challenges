@@ -1,0 +1,429 @@
+[
+  {
+    "file_path": "/Users/amavrido/Documents/cocosim/cocosim_tests/lm_challenges/6_eb/EB_12B.mdl",
+    "date": "26-Aug-2019",
+    "Declarations": {
+      "Enumerations": []
+    }
+  },
+  {
+    "id": "EB_12B/B",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "B",
+    "portType": "Inport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      5
+    ],
+    "width": 15
+  },
+  {
+    "id": "EB_12B/EB/Wp",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Wp",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      5,
+      5
+    ],
+    "width": 25
+  },
+  {
+    "id": "EB_12B/EB/B",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "B",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      5
+    ],
+    "width": 15
+  },
+  {
+    "id": "EB_12B/EB/d",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "d",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "EB_12B/EB/up",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "up",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      5
+    ],
+    "width": 5
+  },
+  {
+    "id": "EB_12B/EB/ridge/In1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "In1",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB/ridge",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/EB/ridge/det/Matrix",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Matrix",
+    "portType": "Inport",
+    "component_name": "EB_12B/EB/ridge/det",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/EB/ridge/det/det(Matrix)",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "det(Matrix)",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB/ridge/det",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "EB_12B/EB/ridge/Out1",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Out1",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB/ridge",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/EB/ridge/ridge_on",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ridge_on",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB/ridge",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "EB_12B/EB/check",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "check",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/EB/yinv",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "yinv",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/EB/P",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "P",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      5,
+      3
+    ],
+    "width": 15
+  },
+  {
+    "id": "EB_12B/EB/u",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "u",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      5
+    ],
+    "width": 5
+  },
+  {
+    "id": "EB_12B/EB/Buminusd",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Buminusd",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "EB_12B/EB/J",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "J",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "EB_12B/EB/ridge_on",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ridge_on",
+    "portType": "Outport",
+    "component_name": "EB_12B/EB",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "EB_12B/check",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "check",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/yinv",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "yinv",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      3,
+      3
+    ],
+    "width": 9
+  },
+  {
+    "id": "EB_12B/P",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "P",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      2,
+      5,
+      3
+    ],
+    "width": 15
+  },
+  {
+    "id": "EB_12B/u",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "u",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      5
+    ],
+    "width": 5
+  },
+  {
+    "id": "EB_12B/Buminusd",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "Buminusd",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      3
+    ],
+    "width": 3
+  },
+  {
+    "id": "EB_12B/J",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "J",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "double"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  },
+  {
+    "id": "EB_12B/ridge_on",
+    "project": "",
+    "modeldoc": true,
+    "variable_name": "ridge_on",
+    "portType": "Outport",
+    "component_name": "EB_12B",
+    "tool": "Simulink",
+    "dataType": [
+      "boolean"
+    ],
+    "dimensions": [
+      1,
+      1
+    ],
+    "width": 1
+  }
+]

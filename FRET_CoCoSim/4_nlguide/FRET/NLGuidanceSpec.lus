@@ -1,0 +1,118 @@
+--Historically
+node H(X:bool) returns (Y:bool);
+let
+    Y = X -> (X and (pre Y));
+tel
+
+--Y since inclusive X
+node SI(X,Y: bool) returns (Z:bool);
+let
+Z = Y and (X or (false -> pre Z));
+tel
+
+--Y since X
+node S(X,Y: bool) returns (Z:bool);
+let
+Z = X or (Y and (false -> pre Z));
+tel
+
+--Once
+node O(X:bool) returns (Y:bool);
+let
+ Y = X or (false -> pre Y);
+tel
+
+--Timed Once: less than or equal to N
+node OTlore(const N: int; X: bool;) returns (Y: bool);
+    var C:int;
+let
+    C = if X then 0
+        else (-1 -> pre C + (if pre C <0 then 0 else 1));
+
+    Y = 0 <= C and C <= N;
+tel
+
+--Timed Once: general case
+node OT(const L: int; const R: int; X: bool;) returns (Y: bool);
+var  D:bool;
+let
+  D=delay(X, R);
+  Y=OTlore(L-R, D);
+tel
+
+-- Timed Historically: general case
+node HT(const L: int; const R: int; X: bool;) returns (Y: bool);
+let
+  Y = not OT(L, R, not X);
+tel
+
+-- Timed Since: general case
+node ST(const L: int; const R: int; X: bool; Y: bool;)  returns (Z: bool);
+let
+  Z = S(X, Y) and OT(L, R, X);
+tel
+
+-- Timed Since: general case
+node SIT(const L: int; const R: int; X: bool; Y: bool;) returns (Z: bool);
+let
+  Z = SI(X, Y) and OT(L, R, X);
+tel
+
+
+node delay(X:bool; const R:int;) returns(Y:bool);
+let
+
+  Y = X;
+ 
+tel
+(*
+node  mag(x : real^3) returns (y : real;);
+let
+	y = sqrt( x[0] * x[0]  +  x[1] * x[1]  +  x[2] * x[2] );
+tel
+*)
+node  dot_product(x : real^3; y : real^3) returns (z : real;);
+let
+	z =  x[0] * y[0]  +  x[1] * y[1]  +  x[2] * y[2] ;
+tel
+
+
+
+(*contract NLGuidanceSpec (Vt:real^3; Vv:real^3; Xtarg:real^3; Xv:real^3; r:real; ) returns (Xap1: real^3; Xap2: real^3; r1: real^3; r2: real^3; yout: real^3; );
+
+let
+var FTP: bool = true -> false;
+var T: real = 0.02;
+var Xr: real^3 = Xtarg - Xv;
+
+
+(* Req text: NLGuidance shall always satisfy (Vv * yout) > 0  *)
+guarantee "NLG-001" dot_product( Vv, yout ) > 0;
+
+
+(* Req text: NLGuidance shall always satisfy mag(yout - Xtarg) >= r & dot_product((yout - Xtarg),(yout - Xv)) = 0  *)
+guarantee "NLG-002&3" mag ( yout - Xtarg ) >= r and dot_product ( ( yout - Xtarg ) , ( yout - Xv ) ) = 0;
+
+
+(* Req text: if mag(Xr) < r & mag(r1) < mag(r2) NLGuidance shall always satisfy yout = Xap1  *)
+guarantee "NLG-005a" H( not (mag ( Xr ) < r and mag ( r1 ) < mag ( r2 )))) or (SI( ((mag ( Xr ) < r and mag ( r1 ) < mag ( r2 )) and ((pre ( not (mag ( Xr ) < r and mag ( r1 ) < mag ( r2 )))) or FTP)), (yout = Xap1));
+
+
+(* Req text: if mag(Xr) < r & mag(r1) >= mag(r2) NLGuidance shall always satisfy yout = Xap2  *)
+guarantee "NLG-005b" H( not (mag ( Xr ) < r and mag ( r1 ) >= mag ( r2 )))) or (SI( ((mag ( Xr ) < r and mag ( r1 ) >= mag ( r2 )) and ((pre ( not (mag ( Xr ) < r and mag ( r1 ) >= mag ( r2 )))) or FTP)), (yout = Xap2));
+
+
+(* Req text: NLGuidance shall always satisfy ( 0.0 -> mag ( yout - pre yout ) ) <= T * mag(Vt + Vv)  *)
+guarantee "NLG-006" ( 0.0 -> mag ( yout - pre yout ) ) <= T * mag ( Vt + Vv );
+
+
+(* Req text: NLGuidance shall always satisfy yout * Xr > 0  *)
+guarantee "NLG-004" dot_product(yout, Xr) > 0;
+
+
+(* Req text: NLGuidance shall always satisfy (yout[2] - Xtarg[2])=0  *)
+guarantee "NLG-007" (yout[2] - Xtarg[2])=0;
+
+
+tel
+*)

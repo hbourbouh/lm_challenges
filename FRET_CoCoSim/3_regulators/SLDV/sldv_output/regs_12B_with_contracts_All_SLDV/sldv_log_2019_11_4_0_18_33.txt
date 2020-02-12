@@ -1,0 +1,43 @@
+
+03-Nov-2019 22:18:15
+Checking compatibility for property proving: model 'regs_12B_with_contracts_All_SLDV'
+Compiling model...done
+Building model representation...done
+
+03-Nov-2019 22:18:29
+'regs_12B_with_contracts_All_SLDV' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using model representation from 03-Nov-2019 22:18:29...
+
+VALID
+regs_12B_RegulatorSpec/Assertion3
+Objective: T
+Analysis Time = 00:00:12
+
+UNDECIDED DUE TO NONLINEARITIES
+regs_12B_RegulatorSpec/Assertion7
+Objective: T
+Analysis Time = 00:22:01
+
+UNDECIDED DUE TO NONLINEARITIES
+regs_12B_RegulatorSpec/Assertion8
+Objective: T
+Analysis Time = 00:36:03
+
+Running additional analysis to reduce instances of rational approximation...
+
+
+
+04-Nov-2019 00:18:32
+
+Property proving exceeded time limit.
+
+Generating output files:
+
+04-Nov-2019 00:18:33
+Results generation completed.
+
+    Data file:
+    /Users/hbourbou/Documents/babelfish.arc.nasa.gov/cocosim_tests/lm_new/3_regulators/sldv_output/regs_12B_with_contracts_All_SLDV/regs_12B_with_contracts_All_SLDV_sldvdata.mat
+
